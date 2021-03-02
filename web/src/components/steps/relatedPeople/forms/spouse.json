@@ -128,7 +128,6 @@
                      "visible": false,
                      "visibleIf": "{panel.spouseIsAlive} = \"y\" and ({panel.spouseIsAdult} = \"y\" or ({panel.spouseIsAdult} = \"n\" and {panel.spouseHasGuardian} = \"n\"))",
                      "title": "Is {panel.spouseName} `mentally competent`?",
-                     "description": "Update this logic so that living guardian comes here as well."
                   },
                   {
                      "type": "infotext",
