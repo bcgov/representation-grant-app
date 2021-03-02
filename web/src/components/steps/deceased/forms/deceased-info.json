@@ -205,7 +205,6 @@
                      "visible": false,
                      "visibleIf": "{deceasedFirstNations} = \"y\"",
                      "title": "Which Nation did {deceasedName} belong to? [was a member of? check with an Indigenous authority]",
-                     "description": "This service will help you notify the appropriate Nation in a later step.",
                      "choices": [
                         "Nisga'a",
                         "Huu-ay-aht",
