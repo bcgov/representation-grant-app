@@ -5529,7 +5529,7 @@
       {
        "type": "yesno",
        "name": "spouseIsYou",
-       "title": "Are you a spouse of {deceasedName}?"
+       "title": "Are you {deceasedName}'s `spouse`?"
       },
       {
        "type": "yesno",
@@ -6340,7 +6340,7 @@
    "elements": [
     {
      "type": "panel",
-     "name": "applicantsIntroPanel",
+     "name": "applicantIntroPanel",
      "elements": [
       {
        "type": "infotext",
@@ -6594,9 +6594,9 @@
       },
       {
        "type": "infotext",
-       "name": "question278",
+       "name": "applicantAWOWQuestionsBookmark",
        "visible": false,
-       "title": "AWOW - temp bookmark",
+       "title": "AWOW Questions",
        "titleLocation": "hidden",
        "messageStyle": "inline"
       },
@@ -6631,9 +6631,9 @@
       },
       {
        "type": "infotext",
-       "name": "question277",
+       "name": "applicantExecutorQuestionsBookmark",
        "visible": false,
-       "title": "Executors - temp bookmark",
+       "title": "Executor Questions",
        "titleLocation": "hidden",
        "messageStyle": "inline"
       },
@@ -6662,9 +6662,9 @@
       },
       {
        "type": "infotext",
-       "name": "question279",
+       "name": "applicantAWWQuestionsBookmark",
        "visible": false,
-       "title": "AWW - temp bookmark",
+       "title": "AWW Questions",
        "titleLocation": "hidden",
        "messageStyle": "inline"
       },
@@ -6692,6 +6692,14 @@
        "description": "yes, (a.1). no, (c)"
       },
       {
+       "type": "infotext",
+       "name": "applicantCitationQuestionsBookmark",
+       "visible": false,
+       "title": "Citation Questions",
+       "titleLocation": "hidden",
+       "messageStyle": "inline"
+      },
+      {
        "type": "yesno",
        "name": "applicantCited",
        "visible": false,
@@ -6712,15 +6720,15 @@
     },
     {
      "type": "infotext",
-     "name": "question280",
+     "name": "applicantForeignGrantBookmark",
      "visible": false,
-     "title": "Foreign Grant - temp bookmark",
+     "title": "Foreign Grant",
      "titleLocation": "hidden",
      "messageStyle": "inline"
     },
     {
      "type": "panel",
-     "name": "panel20",
+     "name": "applicantForeignGrantPanel",
      "elements": [
       {
        "type": "infotext",
@@ -6762,15 +6770,68 @@
     },
     {
      "type": "infotext",
-     "name": "question303",
+     "name": "applicantExitCheckBookmark",
      "visible": false,
-     "title": "Multiple Applicants Selection",
+     "title": "Applicant Exit Check",
      "titleLocation": "hidden",
      "messageStyle": "inline"
     },
     {
      "type": "panel",
-     "name": "panel8",
+     "name": "applicantExitCheckPanel",
+     "elements": [
+      {
+       "type": "yesno",
+       "name": "applicantIsYou",
+       "title": "Are you applying to represent {deceasedName}?"
+      },
+      {
+       "type": "yesno",
+       "name": "applicantIsYouIncluded",
+       "visible": false,
+       "visibleIf": "{applicantIsYou} = \"y\"",
+       "title": "Did you enter your own information as part of this step?"
+      },
+      {
+       "type": "infotext",
+       "name": "applicantIsYouIncludedNoEffor",
+       "visible": false,
+       "visibleIf": "{applicantIsYou} = 'y' and {applicantIsYouIncluded} = \"n\"",
+       "title": "Before moving on to the next step, please add your information as a spouse or descendant. It is important to identify your relationship to <Deceased Name> as this service will prepare the paperwork based on this information.",
+       "titleLocation": "hidden",
+       "messageStyle": "error"
+      },
+      {
+       "type": "yesno",
+       "name": "applicantCompleted",
+       "visible": false,
+       "visibleIf": "{applicantIsYou} = \"n\" or ({applicantIsYou} = \"y\" and {applicantIsYouIncluded} = \"y\")",
+       "title": "Have you included everyone who you want to be on the `representation grant` for {deceasedName}?  "
+      },
+      {
+       "type": "infotext",
+       "name": "applicantCompletedNoError",
+       "visible": false,
+       "visibleIf": "({applicantIsYou} = \"n\" and {applicantCompleted} = \"n\") or ({applicantIsYou} = \"y\" and {applicantIsYouIncluded} = \"y\" and {applicantCompleted} = \"n\") ",
+       "title": "Please make sure to include anyone who may be considered a spouse of {deceasedName}.  It is important to identify your relationship to <Deceased Name> as this service will prepare the paperwork based on this information.",
+       "titleLocation": "hidden",
+       "messageStyle": "error"
+      }
+     ],
+     "visible": false,
+     "visibleIf": "{applicantInfoPanel[0].applicantCited} = \"n\" or ({applicantInfoPanel[0].applicantCited} = \"y\" and {applicantInfoPanel[0].applicantCitedByName} notempty)"
+    },
+    {
+     "type": "infotext",
+     "name": "applicantMultipleApplicantsBookmark",
+     "visible": false,
+     "title": "Multiple Applicants",
+     "titleLocation": "hidden",
+     "messageStyle": "inline"
+    },
+    {
+     "type": "panel",
+     "name": "applicantMultipleApplicantsPanel",
      "elements": [
       {
        "type": "infotext",
@@ -6803,28 +6864,7 @@
     },
     {
      "type": "infotext",
-     "name": "question269",
-     "visible": false,
-     "title": "All Applicants Check",
-     "titleLocation": "hidden",
-     "messageStyle": "inline"
-    },
-    {
-     "type": "panel",
-     "name": "panel21",
-     "elements": [
-      {
-       "type": "yesno",
-       "name": "question270",
-       "visible": false,
-       "title": "Add all applicants? [Fill out for Story 2]"
-      }
-     ],
-     "visible": false
-    },
-    {
-     "type": "infotext",
-     "name": "question30",
+     "name": "applicantServiceAddressBookmark",
      "visible": false,
      "title": "Service Address",
      "titleLocation": "hidden",
@@ -6832,7 +6872,7 @@
     },
     {
      "type": "panel",
-     "name": "panel13",
+     "name": "applicantServiceAddressPanel",
      "elements": [
       {
        "type": "infotext",
@@ -6914,6 +6954,14 @@
        "inputType": "tel"
       },
       {
+       "type": "text",
+       "name": "applicantServiceEmail",
+       "visible": false,
+       "visibleIf": "{applicantLawyer} notempty",
+       "title": "Service Email Address",
+       "inputType": "email"
+      },
+      {
        "type": "infotext",
        "name": "question268",
        "visible": false,
@@ -6937,15 +6985,22 @@
       },
       {
        "type": "dropdown",
-       "name": "applicantCourthouseDifferent",
-       "visible": false,
-       "visibleIf": "{applicantCourthouseClosest} = \"n\"",
+       "name": "applicantCourthouseSelection",
        "title": "select the court location you want to file at",
        "description": "courthouse location",
        "choices": [
-        "item1",
-        "item2",
-        "item3"
+        {
+         "value": "item1",
+         "text": "Vancouver"
+        },
+        {
+         "value": "item2",
+         "text": "Victoria"
+        },
+        {
+         "value": "item3",
+         "text": "New Westminster"
+        }
        ]
       },
       {
@@ -6973,15 +7028,6 @@
       },
       {
        "type": "text",
-       "name": "applicantServiceEmail",
-       "visible": false,
-       "visibleIf": "{applicantLawyerFirmAddress} notempty or {applicantServiceAddress} notempty",
-       "title": "Service Email Address (Optional)",
-       "description": "usually optional but If the service address provided is not within 30 km of a court registry, you must provide one or more of the following: email address, fax number or postal address (PO Box) in British Columbia.",
-       "inputType": "email"
-      },
-      {
-       "type": "text",
        "name": "applicantServiceFax",
        "visible": false,
        "visibleIf": "{applicantLawyerFirmAddress} notempty or {applicantServiceAddress} notempty",
@@ -7006,13 +7052,13 @@
       }
      ],
      "visible": false,
-     "visibleIf": "{applicantInfoPanel[0].applicantCited} = \"n\" or ({applicantInfoPanel[0].applicantCited} = \"y\" and {applicantInfoPanel[0].applicantCitedByName} notempty)"
+     "visibleIf": "{applicantCompleted} = \"y\""
     },
     {
      "type": "infotext",
-     "name": "question263",
+     "name": "applicantAWOWExitPanel",
      "visible": false,
-     "title": "No Will Exit",
+     "title": "AWOW Exit Explanations",
      "titleLocation": "hidden",
      "messageStyle": "inline"
     },
@@ -7028,7 +7074,7 @@
       }
      ],
      "visible": false,
-     "visibleIf": "{applicantCourthouseClosest} notempty"
+     "visibleIf": "{applicantCourthouseSelection} notempty"
     }
    ],
    "title": "The Applicant(s)"
@@ -7237,7 +7283,7 @@
     },
     {
      "type": "address",
-     "name": "p1EarlyDelievererOrdinaryAddress",
+     "name": "p1EarlyDelivererOrdinaryAddress",
      "title": "Server Ordinary Address",
      "description": "city, prov, country only"
     },
@@ -7317,7 +7363,7 @@
     },
     {
      "type": "text",
-     "name": "question422",
+     "name": "p1EarlyDelivererP9SwornDate",
      "title": "Date the P9 was sworn by {applicantX}. occupation and address for non-applicant left blank to be filled by hand.[JIRA ability to put this off until later - applicant(s) can leave blank to swear everything at the courthouse]",
      "inputType": "date"
     },
@@ -9186,7 +9232,7 @@
       {
        "type": "infotext",
        "name": "willSearchIntroExplanation",
-       "title": "Generic Intro to Will Search\n<br><br>\nYou will need to do a will search for all of the spellings of {deceasedName}'s name. Click here to download the form. (Click here to generate a PDF?)",
+       "title": "You will need to do a will search for all of the spellings of {deceasedName}'s name. Click here to download the form. (Click here to generate a PDF?)",
        "isRequired": true,
        "titleLocation": "hidden"
       }
@@ -9377,19 +9423,19 @@
        "type": "infotext",
        "name": "JIRAWillSearch2",
        "visible": false,
-       "visibleIf": "{willSearchAlias} = \"n\"",
        "title": "[JIRA] Dynamically create a yes/no question for each alias, including {deceasedName}",
        "titleLocation": "hidden"
       },
       {
        "type": "yesno",
        "name": "willSearchAlias",
-       "title": "Did you do a will search with this spellings of {deceasedName}'s name? {alias} Tim A. Taylor"
+       "title": "Did you do a will search with the spelling of {deceasedName}'s name listed below?\n<br>\"{alias}\""
       },
       {
        "type": "yesno",
        "name": "willSearchWillsExist",
        "visible": false,
+       "visibleIf": "{willSearchAlias} = \"y\"",
        "title": "Was there one or more Wills listed on the will search under this alias?",
        "description": "Just because Vital Stats doesn't know about a will, doesn't mean the Will is invalid or that it doesn't exist. (this needs work) just because the will you have doesn't show up in vital stats, doesn't mean there isn't anything wrong with the will.\n<br>\nNo - end"
       },
@@ -9397,7 +9443,7 @@
        "type": "yesno",
        "name": "willSearchWillsCurrent",
        "visible": false,
-       "visibleIf": "{willSearchWillsExist} = \"y\"",
+       "visibleIf": "{willSearchWillsExist} = \"yy\"",
        "title": "[If there is a will] Are all of the Wills listed in the will search for {alias} dated {willDate} or older?",
        "description": "If the will in the will search is older and you are using a newer will, this is ok.\n<br>\nYes - end"
       },
@@ -9405,7 +9451,7 @@
        "type": "yesno",
        "name": "willSearchInvalidWillsDeclared",
        "visible": false,
-       "visibleIf": "{willSearchWillsCurrent} = \"n\"",
+       "visibleIf": "{willSearchWillsCurrent} = \"nn\"",
        "title": "[JIRA - newer invalid will] Are all of the Wills listed in the will search for {alias} any of these newer invalid wills you have already identified?",
        "description": "List of newer invalid wills from will page. Date - Reason not using <br> yes - end"
       },
@@ -9421,12 +9467,14 @@
       {
        "type": "yesno",
        "name": "willSearchFin",
+       "visible": false,
        "title": "[Jul 7 2020] Are you able to find the most recent Will (or a copy) listed under {alias} in the wills search?",
        "description": "(whether or not the will was in the location specified in the wills search notice or not)"
       },
       {
        "type": "yesno",
        "name": "question452",
+       "visible": false,
        "title": "destroyed will??"
       },
       {
@@ -9447,17 +9495,20 @@
       {
        "type": "yesno",
        "name": "question445",
+       "visible": false,
        "title": "Was {deceasedName} mentally competent when they made the will ({willDate})?"
       },
       {
        "type": "yesno",
        "name": "question446",
+       "visible": false,
        "title": "Did {deceasedName} make their Will (dated {willDate}) under any undue influence?",
        "description": "For example, a nurse that threatened to not care of {deceasedName} unless they made a Will that gifted everything to the nurse."
       },
       {
        "type": "yesno",
        "name": "question447",
+       "visible": false,
        "title": "Do you think is any other issue with how this will was made that someone (for example the person reviewing this application) may question?",
        "description": "(make this question distinct from appearance problems)"
       },
@@ -9465,7 +9516,7 @@
        "type": "matrixdynamic",
        "name": "question444",
        "visible": false,
-       "visibleIf": "{willNewerInvalidMultiple} = \"y\" or {willNewerInvalidAwow} = \"y\"",
+       "visibleIf": "{willNewerInvalidMultiple} = \"yy\" or {willNewerInvalidAwow} = \"yy\"",
        "title": "Date and Reason not using that will",
        "columns": [
         {
@@ -9494,23 +9545,38 @@
       }
      ],
      "visible": false,
-     "visibleIf": "{willSearchStarted} = \"y\""
+     "visibleIf": "{willSearchStarted} = \"y\" "
     },
     {
-     "type": "checkbox",
-     "name": "willSearchApplicantDiligentSearchConfirmed",
-     "title": "[Diligent Search Confirmation] Are you ({name of applicants}) satisfied that there was a diligent search for {deceasedName}'s Will and other testamentary documents? \n[Doesn't seem like P8 people need to swear this]",
-     "choices": [
+     "type": "panel",
+     "name": "willSearchApplicantDiligentSearchPanel",
+     "elements": [
       {
-       "value": "item1",
-       "text": "Yes can confirm"
+       "type": "checkbox",
+       "name": "willSearchApplicantDiligentSearchConfirmed",
+       "title": "Are you, (name of main applicant), satisfied that there was a diligent search for {deceasedName}'s `Will` and `other testamentary documents` ",
+       "choices": [
+        {
+         "value": "yes",
+         "text": "Yes, I am satisfied that there was a diligent search for {deceasedName}'s Will and other testamentary documents."
+        }
+       ]
+      },
+      {
+       "type": "helptext",
+       "name": "willSearchApplicantDiligentSearchConfirmedFAQ1",
+       "title": "What is a diligent search>",
+       "titleLocation": "hidden",
+       "body": "A diligent search is doing your best to check all the places where {deceasedName} usually kept their important documents. This means checking physical places as well electronic places.\n<br>\n<ul>\n<li>Physical places include their home, safety deposit box, and their lawyer's office.</li>\n<li>Electronic places include their smart phone, computer, external hard drive, and cloud storage.</li>\n</ul>\nIf people are working together to apply for a `Representation Grant`, the `applicants` can decide which applicant searches which place.\n<br><br>\nThere is also a document called a Search of Wills Notice. This document can help reveal the location of a will.  You don't need to have gotten a Search of Wills Notice to answer \"Yes\" that you have done a diligent search. \n<br><br>\nThis document is not necessary for your diligent search yes/no but it is eventually necessary. this service will complete it at a later point. "
       }
-     ]
+     ],
+     "visibleIf": "{willSearchAlias} = \"y\" and {willSearchWillsExist} = \"n\""
     },
     {
      "type": "infotext",
      "name": "question462",
-     "title": "[Delete when reference not useful anymore]\n<br>\nA diligent search is doing your best to check all the places where {deceasedName} usually kept their important documents. This means checking physical places as well electronic places.\n<br><br>\n<ul>\n<li>Physical places include their home, safety deposit box, and their lawyer's office.</li>\n<li>Electronic places include their smart phone, computer, external hard drive, and cloud storage.</li>\n</ul>\nIf people are working together to apply for a `Representation Grant`, the `applicants` can decide which applicant searches which place.\n<br><br>\nThere is also a document called a Search of Wills Notice. This document can help reveal the location of a will.  You don't need to have gotten a Search of Wills Notice to answer \"Yes\" that you have done a diligent search. \n<br><br>\nThis document is not necessary for your diligent search yes/no but it is eventually necessary. this service will complete it at a later point. ",
+     "visible": false,
+     "title": "[Delete when reference not useful anymore]\n<br>\nA diligent search is doing your best to check all the places where {deceasedName} usually kept their important documents. This means checking physical places as well electronic places.\n<br>\n<ul>\n<li>Physical places include their home, safety deposit box, and their lawyer's office.</li>\n<li>Electronic places include their smart phone, computer, external hard drive, and cloud storage.</li>\n</ul>\nIf people are working together to apply for a `Representation Grant`, the `applicants` can decide which applicant searches which place.\n<br><br>\nThere is also a document called a Search of Wills Notice. This document can help reveal the location of a will.  You don't need to have gotten a Search of Wills Notice to answer \"Yes\" that you have done a diligent search. \n<br><br>\nThis document is not necessary for your diligent search yes/no but it is eventually necessary. this service will complete it at a later point. ",
      "titleLocation": "hidden"
     },
     {
@@ -9521,7 +9587,7 @@
        "type": "infotext",
        "name": "JIRAwillSearch4",
        "visible": false,
-       "visibleIf": "{willSearchAlias} = \"n\"",
+       "visibleIf": "{willSearchAlias} = \"nn\"",
        "title": "[JIRA] If any no,\n<br><br>\nYou need to do a will search for each alias. \n<br><br>\nClick here for a form that includes the aliases you still need to search for.",
        "titleLocation": "hidden"
       },
@@ -9529,7 +9595,7 @@
        "type": "infotext",
        "name": "JIRAwillSearch5",
        "visible": false,
-       "visibleIf": "{willSearchAlias} = \"n\"",
+       "visibleIf": "{willSearchAlias} = \"nn\"",
        "title": "[JIRA] Can we auto-generate form AND allow people to pay AND send directly to Vital Stats?",
        "titleLocation": "hidden"
       },
@@ -9537,7 +9603,7 @@
        "type": "infotext",
        "name": "question440",
        "visible": false,
-       "visibleIf": "{willSearchAlias} = \"n\"",
+       "visibleIf": "{willSearchAlias} = \"nn\"",
        "title": "When you get your response, go back and check off \"Yes\" for the aliases that were just searched.",
        "titleLocation": "hidden"
       }
@@ -9550,20 +9616,20 @@
       {
        "type": "infotext",
        "name": "willSearchExitABC",
-       "visible": false,
-       "visibleIf": "{willSearchAlias} = \"n\"",
-       "title": "[single will search]\nYou've done a will search for all of the spellings/aliases required.\n\nYou will need to provide 2 copies of the wills search (originals or copies ok?). ",
+       "visibleIf": "{willSearchApplicantDiligentSearchConfirmed} = ['yes']",
+       "title": "You have done all of the searches for {deceasedName}'s name that are required. \n<br><br>\nYou will need to provide 2 photocopies of the Notice of Wills Search when you file your application. This service will remind you in a later step.\n<br><br>\nNext, you will review and finish your application.",
        "titleLocation": "hidden"
       },
       {
        "type": "infotext",
        "name": "willSearchExitDCE",
        "visible": false,
-       "visibleIf": "{willSearchAlias} = \"n\"",
        "title": "[multiple will search]\nYou've done a will search for all of the spellings/aliases required.\n<br><br>\nYou will need to provide 2 copies of each of the the wills search (originals or copies ok?). \n<br><br>\nFor example, 2 copies of the first ",
        "titleLocation": "hidden"
       }
-     ]
+     ],
+     "visible": false,
+     "visibleIf": "{willSearchApplicantDiligentSearchConfirmed} = ['yes']"
     }
    ],
    "title": "Will Search Check",
@@ -9665,7 +9731,7 @@
     },
     {
      "type": "text",
-     "name": "question433",
+     "name": "PrintCertifiedCopies",
      "title": "How many certified copies of the Representation Grant do you need?",
      "description": "$40 each so call ahead to see if they will accept a photo copy instead of a certified court copy."
     },
