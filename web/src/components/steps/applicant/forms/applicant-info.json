@@ -119,10 +119,10 @@
                   },
                   {
                      "type": "infotext",
-                     "name": "applicantIsYouIncludedNoEffor",
+                     "name": "applicantIsYouIncludedNoError",
                      "visible": false,
                      "visibleIf": "{applicantIsYou} = 'y' and {applicantIsYouIncluded} = \"n\"",
-                     "title": "Before moving on to the next step, please add your information as a spouse or descendant. It is important to identify your relationship to <Deceased Name> as this service will prepare the paperwork based on this information.",
+                     "title": "Before moving on to the next step, please add your information as an `applicant`. It is important to identify yourself as this service will prepare the paperwork based on this information.",
                      "titleLocation": "hidden",
                      "messageStyle": "error"
                   },
@@ -131,14 +131,14 @@
                      "name": "applicantCompleted",
                      "visible": false,
                      "visibleIf": "{applicantIsYou} = \"n\" or ({applicantIsYou} = \"y\" and {applicantIsYouIncluded} = \"y\")",
-                     "title": "Have you included everyone who you want to be on the `representation grant` for {deceasedName}?  "
+                     "title": "Have you included everyone who you want to be on the `Representation Grant` for {deceasedName}?  "
                   },
                   {
                      "type": "infotext",
                      "name": "applicantCompletedNoError",
                      "visible": false,
                      "visibleIf": "({applicantIsYou} = \"n\" and {applicantCompleted} = \"n\") or ({applicantIsYou} = \"y\" and {applicantIsYouIncluded} = \"y\" and {applicantCompleted} = \"n\") ",
-                     "title": "Please make sure to include anyone who may be considered a spouse of {deceasedName}.  It is important to identify your relationship to <Deceased Name> as this service will prepare the paperwork based on this information.",
+                     "title": "If several people are applying together to represent {deceasedName}, you need to identify them all as `applicants` on this page so that they appear on the `Representation Grant`.",
                      "titleLocation": "hidden",
                      "messageStyle": "error"
                   }
