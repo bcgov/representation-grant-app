@@ -448,7 +448,11 @@ export default class FormP9 extends Vue {
 
         recipient.p1DelivererName = this.getChoiceFromValue(base.p1DelivererName, recipientQuestion.panels[i].questions);
         recipient.p1DeliveryMethod = base.p1DeliveryMethod || "";
-        recipient.p1DeliveryDate = format(new Date(base.p1DeliveryDate.replace(/-/g, '\/')), "MMMM d, yyyy") || "";
+
+        const deliveryDate = base.p1DeliveryDate || "";
+        if (deliveryDate) {
+          recipient.p1DeliveryDate = format(new Date(base.p1DeliveryDate.replace(/-/g, '\/')), "MMMM d, yyyy");
+        }
         recipient.p1DeliveryElectronicReceipt = base?.p1DeliveryElectronicReceipt || "";
         recipient.p1DeliveryElectronicReceiptRetain = base?.p1DeliveryElectronicReceiptRetain ? base.p1DeliveryElectronicReceiptRetain[0] : "";
       }
@@ -503,6 +507,7 @@ export default class FormP9 extends Vue {
   deceasedName
   */
   public populateFromSurvey(survey) {
+    this.applicantList = [];
     const allQuestions = survey.getAllQuestions();
     const applicants = this.buildApplicantList(allQuestions);
     const recipients = this.buildRecipientList(allQuestions);
