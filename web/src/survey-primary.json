@@ -7156,7 +7156,8 @@
        "type": "yesno",
        "name": "childCompleted",
        "visibleIf": "{childExitCheckReview} > 0",
-       "title": "Have you identified everyone who may be considered {deceasedName}'s child?  "
+       "title": "Have you identified everyone who may be considered {deceasedName}'s child?  ",
+       "isRequired": true
       },
       {
        "type": "infotext",
@@ -7229,6 +7230,7 @@
      "visibleIf": "{childCompleted} = \"y\""
     }
    ],
+   "visible": false,
    "visibleIf": "{surveyEnvironment} = 'DEV' or isContainerReady('spousePage')",
    "title": "{deceasedName}'s Children"
   },
@@ -8216,7 +8218,8 @@
        "name": "creditorComplete",
        "visible": false,
        "visibleIf": "{creditorExitCheckReview} > 0",
-       "title": "Have you identified all the people and organizations who {deceasedName} owed each  who may be considered {deceasedName}'s `spouse`  "
+       "title": "Have you identified all the people and organizations who {deceasedName} owed each  who may be considered {deceasedName}'s `spouse`  ",
+       "isRequired": true
       },
       {
        "type": "infotext",
@@ -8253,6 +8256,7 @@
      "visibleIf": "{creditorPersonExists} = 'n' and {creditorOrganizationExists} = 'n' and {creditorComplete} = 'y'"
     }
    ],
+   "visible": false,
    "visibleIf": "{surveyEnvironment} = 'DEV' or isContainerReady('childPage')",
    "title": "{deceasedName}'s Creditors"
   },
@@ -9202,6 +9206,7 @@
      "visibleIf": "{applicantCourthouse} notempty"
     }
    ],
+   "visible": false,
    "visibleIf": "{surveyEnvironment} = 'DEV' or isContainerReady('creditorPage')",
    "title": "Who is Applying to Represent {deceasedName}?"
   },
@@ -9728,6 +9733,7 @@
      "visibleIf": "{surveyEnvironment} = 'DEV'"
     }
    ],
+   "visible": false,
    "visibleIf": "{surveyEnvironment} = 'DEV' or isContainerReady('applicantPage')",
    "title": "Tell People You Are Applying"
   },
