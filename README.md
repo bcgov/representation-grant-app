@@ -2,7 +2,7 @@
 
 # Representation Grant
 ## Dev environment
-Currently it requires: Npm 6.14.14, Node 12, Python 3.8/3.9/3.10. Running on Docker is recommended.
+Currently it requires: `Npm 6.14.14`, `Node 12`, `Python 3.8/3.9/3.10`. Running on Docker is recommended.
 
 ### Client Application (web)
 A Vue client application which serves out the SurveyJS based questionnaire.
