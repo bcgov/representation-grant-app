@@ -69,11 +69,10 @@ class EFilingResources(EFilingHubCallerBase):
                     "location_code": location["identifierCode"],
                 }"""
             for location in cso_locations["courts"]:
-                locations.append({
-                    "id": location["identifierCode"],
-                    "name": location["name"]
-                })
-                
+                locations.append(
+                    {"id": location["identifierCode"], "name": location["name"]}
+                )
+
             cache.set("courts", locations)
             return locations
         logger.error("Error getting locations.")

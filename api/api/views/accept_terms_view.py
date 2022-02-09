@@ -10,4 +10,4 @@ class AcceptTermsView(APIView):
     def post(self, request):
         request.user.accepted_terms_at = datetime.now()
         request.user.save()
-        return Response({'ok': True})
+        return Response({"ok": True})

@@ -5,21 +5,19 @@ from rest_framework.views import APIView
 from api.send_email import send_email
 from django.http import HttpResponseForbidden
 from rest_framework.response import Response
-from core.auth import (
-    grecaptcha_verify
-)
+from core.auth import grecaptcha_verify
+
 LOGGER = logging.getLogger(__name__)
 
 
 class FeedbackView(APIView):
-
     def post(self, request: Request, name=None):
         check_captcha = grecaptcha_verify(request)
 
         if not check_captcha["status"]:
             return HttpResponseForbidden(
-                content_type="text/plain",
-                content=check_captcha["message"])
+                content_type="text/plain", content=check_captcha["message"]
+            )
 
         data = request.data.get("value")
 
@@ -28,7 +26,7 @@ class FeedbackView(APIView):
             ip_addr = x_forwarded_for.split(",")[0]
         else:
             ip_addr = request.META.get("REMOTE_ADDR")
-        app_url = request.build_absolute_uri().split('/api', 1)[0]
+        app_url = request.build_absolute_uri().split("/api", 1)[0]
         from_name = data.get("name")
         from_email = data.get("email")
         reason = data.get("reason")
@@ -40,7 +38,7 @@ class FeedbackView(APIView):
 
         reason_map = {
             "problem": "Report a problem with this service",
-            "positive": "Positive feedback for this service"
+            "positive": "Positive feedback for this service",
         }
         reason_text = reason_map.get(reason) or ""
         subject = "Represent Someone Who Died Feedback: {}".format(reason_text)
@@ -68,7 +66,7 @@ class FeedbackView(APIView):
         attachment = ""
         feedback_sent = send_email(body, bodyType, subject, recip_email, attachment)
         if feedback_sent:
-            msg_id = feedback_sent['messages'][0]['msgId']
+            msg_id = feedback_sent["messages"][0]["msgId"]
             LOGGER.debug("Feedback Sent, Message Id is %s", msg_id)
             return Response({"status": "sent"})
         return Response({"status": "failed"})

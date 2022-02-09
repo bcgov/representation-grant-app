@@ -6,35 +6,35 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('api', '0008_user_location'),
+        ("api", "0008_user_location"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='application',
-            name='protected_child_name',
+            model_name="application",
+            name="protected_child_name",
         ),
         migrations.RemoveField(
-            model_name='application',
-            name='protected_party_name',
+            model_name="application",
+            name="protected_party_name",
         ),
         migrations.RemoveField(
-            model_name='application',
-            name='respondent_name',
+            model_name="application",
+            name="respondent_name",
         ),
         migrations.AddField(
-            model_name='application',
-            name='date_of_will',
+            model_name="application",
+            name="date_of_will",
             field=models.DateTimeField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='application',
-            name='deceased_date_of_death',
+            model_name="application",
+            name="deceased_date_of_death",
             field=models.DateTimeField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='application',
-            name='deceased_name',
+            model_name="application",
+            name="deceased_name",
             field=models.JSONField(blank=True, null=True),
         ),
     ]

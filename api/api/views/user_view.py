@@ -1,6 +1,4 @@
-from django.http import (
-    HttpResponseForbidden
-)
+from django.http import HttpResponseForbidden
 from django.middleware.csrf import get_token
 from rest_framework.request import Request
 from rest_framework.response import Response
@@ -13,7 +11,7 @@ from urllib.parse import urlparse
 
 class UserView(APIView):
     def put(self, request):
-        if (not isinstance(request.user, User)):
+        if not isinstance(request.user, User):
             return HttpResponseForbidden()
         location = request.data.get("location")
         request.user.location = location

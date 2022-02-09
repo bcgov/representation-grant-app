@@ -16,9 +16,11 @@ framework.
 import os
 import logging
 
+
 class NoHealthFilter(logging.Filter):
     def filter(self, record):
-        return record.getMessage().find('GET /health/') == -1
+        return record.getMessage().find("GET /health/") == -1
+
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "api.settings")
 
@@ -26,6 +28,7 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "api.settings")
 # file. This includes Django's development server, if the WSGI_APPLICATION
 # setting points here.
 from django.core.wsgi import get_wsgi_application
+
 application = get_wsgi_application()
 
 if __name__ != "__main__":

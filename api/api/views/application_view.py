@@ -3,7 +3,8 @@ import logging
 from django.conf import settings
 from django.http import (
     HttpResponseBadRequest,
-    HttpResponseNotFound, HttpResponseForbidden
+    HttpResponseNotFound,
+    HttpResponseForbidden,
 )
 from django.utils import timezone
 from rest_framework import permissions, status
@@ -33,17 +34,19 @@ class ApplicationView(APIView):
         application = get_application_for_user(pk, uid)
         steps_dec = settings.ENCRYPTOR.decrypt(application.key_id, application.steps)
         steps = json.loads(steps_dec)
-        data = {"id": application.id,
-                "type": application.app_type,
-                "steps": steps,
-                "lastUpdate": application.last_updated,
-                "lastFiled": application.last_filed,
-                "lastPrinted": application.last_printed,
-                "currentStep": application.current_step,
-                "allCompleted": application.all_completed,
-                "userId": application.user_id,
-                "deceasedName": application.deceased_name,
-                "applicationLocation": application.application_location}
+        data = {
+            "id": application.id,
+            "type": application.app_type,
+            "steps": steps,
+            "lastUpdate": application.last_updated,
+            "lastFiled": application.last_filed,
+            "lastPrinted": application.last_printed,
+            "currentStep": application.current_step,
+            "allCompleted": application.all_completed,
+            "userId": application.user_id,
+            "deceasedName": application.deceased_name,
+            "applicationLocation": application.application_location,
+        }
         return Response(data)
 
     def post(self, request: Request):
@@ -66,7 +69,8 @@ class ApplicationView(APIView):
             steps=steps_enc,
             key_id=steps_key_id,
             application_location=body.get("applicationLocation"),
-            user_id=uid)
+            user_id=uid,
+        )
 
         db_app.save()
         return Response({"app_id": db_app.pk})

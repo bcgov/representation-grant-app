@@ -2,6 +2,7 @@ from django.contrib import admin
 from .models.user import User
 from django.apps import apps
 
+
 class UserAdmin(admin.ModelAdmin):
     exclude = [
         "authorization_guid",
@@ -22,7 +23,7 @@ class UserAdmin(admin.ModelAdmin):
         "is_active",
         "date_joined",
         "universal_id",
-        "idir_userid"
+        "idir_userid",
     ]
 
     # Disable adding, because logging in should seed the user.
@@ -35,7 +36,6 @@ class UserAdmin(admin.ModelAdmin):
 
     def has_delete_permission(self, request, obj=None):
         return False
-
 
 
 # De-register all models for all apps.

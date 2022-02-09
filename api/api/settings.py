@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     "core",
     "api",
     "corsheaders",
-    "oidc_rp"
+    "oidc_rp",
 ]
 
 MIDDLEWARE = [
@@ -64,7 +64,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "oidc_rp.middleware.OIDCRefreshIDTokenMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
-    "core.XForwardedForPortMiddleware"
+    "core.XForwardedForPortMiddleware",
 ]
 
 SESSION_ENGINE = "django.contrib.sessions.backends.signed_cookies"
@@ -144,7 +144,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
-STATIC_URL = os.getenv("WEB_BASE_HREF", "/represent-someone-who-died/")  + "/api/static/"
+STATIC_URL = os.getenv("WEB_BASE_HREF", "/represent-someone-who-died/") + "/api/static/"
 
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
@@ -156,12 +156,13 @@ SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
-    "filters": {"require_debug_false": {"()": "django.utils.log.RequireDebugFalse"},
-        "filter_logging_requests":
-        {
+    "filters": {
+        "require_debug_false": {"()": "django.utils.log.RequireDebugFalse"},
+        "filter_logging_requests": {
             "()": "django.utils.log.CallbackFilter",
-            "callback": filter_logging_requests
-        }},
+            "callback": filter_logging_requests,
+        },
+    },
     "formatters": {
         "verbose": {
             "format": (
@@ -227,10 +228,12 @@ if OIDC_RP_PROVIDER_ENDPOINT:
     OIDC_RP_PROVIDER_SIGNATURE_ALG = "RS256"
     OIDC_RP_SCOPES = "openid profile email"  # address phone
     OIDC_RP_ID_TOKEN_INCLUDE_USERINFO = True
-    OIDC_RP_AUTHENTICATION_FAILURE_REDIRECT_URI = os.getenv("OIDC_RP_FAILURE_URI", "/represent-someone-who-died/")
+    OIDC_RP_AUTHENTICATION_FAILURE_REDIRECT_URI = os.getenv(
+        "OIDC_RP_FAILURE_URI", "/represent-someone-who-died/"
+    )
     OIDC_RP_USER_DETAILS_HANDLER = "core.auth.sync_keycloak_user"
-    OIDC_RP_AUTHENTICATION_REDIRECT_URI = (
-        os.getenv("OIDC_RP_AUTHENTICATION_REDIRECT_URI", "/represent-someone-who-died/")
+    OIDC_RP_AUTHENTICATION_REDIRECT_URI = os.getenv(
+        "OIDC_RP_AUTHENTICATION_REDIRECT_URI", "/represent-someone-who-died/"
     )
     OIDC_RP_KC_IDP_HINT = os.getenv("OIDC_RP_KC_IDP_HINT")
 
@@ -248,11 +251,13 @@ REST_FRAMEWORK = {
         "rest_framework.authentication.SessionAuthentication",
     )
 }
-DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 
 EFILING_APP_NAME = os.environ.get("EFILING_APP_NAME", "Representation Grant")
 EFILING_COURT_LEVEL = os.environ.get("EFILING_COURT_LEVEL", "S")
-EFILING_COURT_CLASS = os.environ.get("EFILING_COURT_CLASS", "P")  # https://bcgov.github.io/jag-file-submission/#/data?id=court-classification
+EFILING_COURT_CLASS = os.environ.get(
+    "EFILING_COURT_CLASS", "P"
+)  # https://bcgov.github.io/jag-file-submission/#/data?id=court-classification
 EFILING_COURT_DIVISION = os.environ.get("EFILING_COURT_DIVISION", "I")
 EFILING_HUB_API_BASE_URL = os.environ.get("EFILING_HUB_API_BASE_URL", "")
 EFILING_HUB_KEYCLOAK_BASE_URL = os.environ.get("EFILING_HUB_KEYCLOAK_BASE_URL", "")
@@ -263,7 +268,9 @@ EFILING_HUB_KEYCLOAK_SECRET = os.environ.get("EFILING_HUB_KEYCLOAK_SECRET", "")
 ENCRYPTOR = Encryptor("DATA_SECURITY_KEY")
 FORCE_SCRIPT_NAME = os.getenv("WEB_BASE_HREF", "/represent-someone-who-died/")
 LOGOUT_REDIRECT_URL = os.getenv("LOGOUT_REDIRECT_URL", "/represent-someone-who-died/")
-SITEMINDER_LOGOFF_URL = os.getenv("SITEMINDER_LOGOFF_URL", "https://logontest.gov.bc.ca/clp-cgi/logoff.cgi")
+SITEMINDER_LOGOFF_URL = os.getenv(
+    "SITEMINDER_LOGOFF_URL", "https://logontest.gov.bc.ca/clp-cgi/logoff.cgi"
+)
 
 # Settings for feedback page
 RECAPTCHA_SITE_KEY = os.getenv("RECAPTCHA_SITE_KEY", "")

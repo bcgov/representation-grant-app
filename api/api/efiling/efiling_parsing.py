@@ -41,7 +41,9 @@ class EFilingParsing:
             "successUrl": self.url_from_headers(
                 request, f"result/{application.id}/success"
             ),
-            "errorUrl": self.url_from_headers(request, f"result/{application.id}/error"),
+            "errorUrl": self.url_from_headers(
+                request, f"result/{application.id}/error"
+            ),
             "cancelUrl": self.url_from_headers(
                 request, f"result/{application.id}/cancel"
             ),

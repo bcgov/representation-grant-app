@@ -6,18 +6,29 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('api', '0011_user_idir_userid'),
+        ("api", "0011_user_idir_userid"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='SandboxSurvey',
+            name="SandboxSurvey",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('create_timestamp', models.DateTimeField(auto_now_add=True, null=True)),
-                ('update_timestamp', models.DateTimeField(auto_now=True, null=True)),
-                ('sandbox_name', models.CharField(max_length=100, unique=True)),
-                ('sandbox_data', models.TextField(blank=True)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "create_timestamp",
+                    models.DateTimeField(auto_now_add=True, null=True),
+                ),
+                ("update_timestamp", models.DateTimeField(auto_now=True, null=True)),
+                ("sandbox_name", models.CharField(max_length=100, unique=True)),
+                ("sandbox_data", models.TextField(blank=True)),
             ],
         ),
     ]

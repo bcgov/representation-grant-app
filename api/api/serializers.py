@@ -28,16 +28,9 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 class ApplicationListSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = Application
-        fields = [
-            "id",
-            "app_type",
-            "last_updated",
-            "last_filed",
-            "deceased_name"
-        ]
+        fields = ["id", "app_type", "last_updated", "last_filed", "deceased_name"]
 
 
 class ApplicationSerializer(serializers.ModelSerializer):

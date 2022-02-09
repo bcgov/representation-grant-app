@@ -54,14 +54,14 @@ class EFilingPackaging:
                 "organizationParties": [
                     {
                         "roleType": organizationParty["roleType"],
-                        "name": organizationParty["name"]
+                        "name": organizationParty["name"],
                     }
                     for organizationParty in data["organizationParties"]
-                ]
+                ],
             },
             "navigationUrls": {
                 "success": data["successUrl"],
                 "error": data["errorUrl"],
                 "cancel": data["cancelUrl"],
-            }
+            },
         }

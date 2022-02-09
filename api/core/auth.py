@@ -32,10 +32,12 @@ def get_logout_uri(request: Request = None) -> str:
     uri = None
     if request:
         try:
-            uri = settings.SITEMINDER_LOGOFF_URL \
+            uri = (
+                settings.SITEMINDER_LOGOFF_URL
                 + "?returl={end_session}&retnow=1".format(
                     end_session=reverse("oidc_end_session", request=request)
-                    )
+                )
+            )
         except NoReverseMatch:
             pass
     return uri
@@ -45,9 +47,9 @@ def sync_keycloak_user(oidc_user: OIDCUser, claims: dict):
     """Copy attributes from JWT claims."""
     oidc_user.user.universal_id = claims.get("universal-id")
     oidc_user.user.authorization_id = claims.get("sub")
-    oidc_user.user.first_name = claims.get("given_name") or ''
-    oidc_user.user.last_name = claims.get("family_name") or ''
-    oidc_user.user.display_name = claims.get("display_name") or ''
+    oidc_user.user.first_name = claims.get("given_name") or ""
+    oidc_user.user.last_name = claims.get("family_name") or ""
+    oidc_user.user.display_name = claims.get("display_name") or ""
     oidc_user.user.email = claims.get("email")
     oidc_user.user.save()
 
@@ -63,8 +65,9 @@ def build_get_user_object(logged_in, request):
         "is_staff": logged_in and request.user.is_staff,
         "universal_id": logged_in and request.user.universal_id,
         "login_uri": get_login_uri(request),
-        "logout_uri": get_logout_uri(request)
+        "logout_uri": get_logout_uri(request),
     }
+
 
 def get_client_ip(request):
     x_forwarded_for = request.META.get("HTTP_X_FORWARDED_FOR")
@@ -74,12 +77,14 @@ def get_client_ip(request):
         ip = request.META.get("REMOTE_ADDR")
     return ip
 
+
 def grecaptcha_site_key() -> str:
     return settings.RECAPTCHA_SITE_KEY
 
 
 def grecaptcha_secret_key() -> str:
     return settings.RECAPTCHA_SECRET_KEY
+
 
 def grecaptcha_verify(request) -> dict:
     secret_key = grecaptcha_secret_key()

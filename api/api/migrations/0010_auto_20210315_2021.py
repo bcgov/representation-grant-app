@@ -7,26 +7,49 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('api', '0009_auto_20210212_0815'),
+        ("api", "0009_auto_20210212_0815"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='EFilingSubmission',
+            name="EFilingSubmission",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('created_date', models.DateTimeField(auto_now_add=True)),
-                ('last_updated', models.DateTimeField(blank=True, null=True)),
-                ('submission_id', models.CharField(max_length=100, null=True)),
-                ('transaction_id', models.CharField(max_length=100, null=True)),
-                ('package_number', models.CharField(max_length=100, null=True)),
-                ('package_url', models.CharField(max_length=200, null=True)),
-                ('application', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='efiling_submission_application_id', to='api.application')),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("created_date", models.DateTimeField(auto_now_add=True)),
+                ("last_updated", models.DateTimeField(blank=True, null=True)),
+                ("submission_id", models.CharField(max_length=100, null=True)),
+                ("transaction_id", models.CharField(max_length=100, null=True)),
+                ("package_number", models.CharField(max_length=100, null=True)),
+                ("package_url", models.CharField(max_length=200, null=True)),
+                (
+                    "application",
+                    models.ForeignKey(
+                        blank=True,
+                        null=True,
+                        on_delete=django.db.models.deletion.SET_NULL,
+                        related_name="efiling_submission_application_id",
+                        to="api.application",
+                    ),
+                ),
             ],
         ),
         migrations.AddField(
-            model_name='application',
-            name='last_efiling_submission',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='submission_application_id', to='api.efilingsubmission'),
+            model_name="application",
+            name="last_efiling_submission",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.SET_NULL,
+                related_name="submission_application_id",
+                to="api.efilingsubmission",
+            ),
         ),
     ]

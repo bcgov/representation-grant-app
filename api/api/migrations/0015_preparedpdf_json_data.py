@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('api', '0014_auto_20211123_1526'),
+        ("api", "0014_auto_20211123_1526"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='preparedpdf',
-            name='json_data',
+            model_name="preparedpdf",
+            name="json_data",
             field=models.BinaryField(blank=True, null=True),
         ),
     ]

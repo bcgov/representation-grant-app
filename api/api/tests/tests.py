@@ -8,6 +8,7 @@ Replace this with more appropriate tests for your application.
 import django
 from django.test import TestCase
 
+
 class SimpleTest(TestCase):
     """Tests for the application views."""
 
@@ -16,7 +17,6 @@ class SimpleTest(TestCase):
     def setUpClass(cls):
         super(SimpleTest, cls).setUpClass()
         django.setup()
-
 
     def test_basic_addition(self):
         """

@@ -11,20 +11,38 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('api', '0001_initial'),
+        ("api", "0001_initial"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='SurveyResult',
+            name="SurveyResult",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('create_timestamp', models.DateTimeField(auto_now_add=True, null=True)),
-                ('update_timestamp', models.DateTimeField(auto_now=True, null=True)),
-                ('completed_timestamp', models.DateTimeField(auto_now=True, null=True)),
-                ('survey_type', models.CharField(max_length=100)),
-                ('result', django.contrib.postgres.fields.jsonb.JSONField(blank=True)),
-                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='survey_results', to=settings.AUTH_USER_MODEL)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "create_timestamp",
+                    models.DateTimeField(auto_now_add=True, null=True),
+                ),
+                ("update_timestamp", models.DateTimeField(auto_now=True, null=True)),
+                ("completed_timestamp", models.DateTimeField(auto_now=True, null=True)),
+                ("survey_type", models.CharField(max_length=100)),
+                ("result", django.contrib.postgres.fields.jsonb.JSONField(blank=True)),
+                (
+                    "user",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="survey_results",
+                        to=settings.AUTH_USER_MODEL,
+                    ),
+                ),
             ],
         ),
     ]

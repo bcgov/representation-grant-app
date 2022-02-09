@@ -7,48 +7,57 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('api', '0012_sandboxsurvey'),
+        ("api", "0012_sandboxsurvey"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='application',
-            name='applicant_name',
+            model_name="application",
+            name="applicant_name",
         ),
         migrations.RemoveField(
-            model_name='application',
-            name='date_of_will',
+            model_name="application",
+            name="date_of_will",
         ),
         migrations.RemoveField(
-            model_name='application',
-            name='deceased_date_of_death',
+            model_name="application",
+            name="deceased_date_of_death",
         ),
         migrations.RemoveField(
-            model_name='application',
-            name='prepared_pdf',
+            model_name="application",
+            name="prepared_pdf",
         ),
         migrations.AddField(
-            model_name='application',
-            name='version',
+            model_name="application",
+            name="version",
             field=models.CharField(blank=True, max_length=32, null=True),
         ),
         migrations.AddField(
-            model_name='preparedpdf',
-            name='application',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='prepared_pdf_application_id', to='api.application'),
+            model_name="preparedpdf",
+            name="application",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.SET_NULL,
+                related_name="prepared_pdf_application_id",
+                to="api.application",
+            ),
         ),
         migrations.AddField(
-            model_name='preparedpdf',
-            name='pdf_type',
+            model_name="preparedpdf",
+            name="pdf_type",
             field=models.CharField(blank=True, max_length=32, null=True),
         ),
         migrations.AddField(
-            model_name='preparedpdf',
-            name='version',
+            model_name="preparedpdf",
+            name="version",
             field=models.CharField(blank=True, max_length=32, null=True),
         ),
         migrations.AddConstraint(
-            model_name='preparedpdf',
-            constraint=models.UniqueConstraint(fields=('application_id', 'pdf_type'), name='unique_pdf_type_application_id'),
+            model_name="preparedpdf",
+            constraint=models.UniqueConstraint(
+                fields=("application_id", "pdf_type"),
+                name="unique_pdf_type_application_id",
+            ),
         ),
     ]

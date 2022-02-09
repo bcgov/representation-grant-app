@@ -6,43 +6,45 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('api', '0006_auto_20201130_0945'),
+        ("api", "0006_auto_20201130_0945"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='application',
-            name='applicant_name',
+            model_name="application",
+            name="applicant_name",
             field=models.JSONField(blank=True, null=True),
         ),
         migrations.AlterField(
-            model_name='application',
-            name='application_location',
+            model_name="application",
+            name="application_location",
             field=models.JSONField(blank=True, null=True),
         ),
         migrations.AlterField(
-            model_name='application',
-            name='protected_child_name',
+            model_name="application",
+            name="protected_child_name",
             field=models.JSONField(blank=True, null=True),
         ),
         migrations.AlterField(
-            model_name='application',
-            name='protected_party_name',
+            model_name="application",
+            name="protected_party_name",
             field=models.JSONField(blank=True, null=True),
         ),
         migrations.AlterField(
-            model_name='application',
-            name='respondent_name',
+            model_name="application",
+            name="respondent_name",
             field=models.JSONField(blank=True, null=True),
         ),
         migrations.AlterField(
-            model_name='surveyresult',
-            name='result',
+            model_name="surveyresult",
+            name="result",
             field=models.JSONField(blank=True),
         ),
         migrations.AlterField(
-            model_name='user',
-            name='first_name',
-            field=models.CharField(blank=True, max_length=150, verbose_name='first name'),
+            model_name="user",
+            name="first_name",
+            field=models.CharField(
+                blank=True, max_length=150, verbose_name="first name"
+            ),
         ),
     ]

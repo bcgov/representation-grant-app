@@ -15,9 +15,7 @@ class StatsView(APIView):
         stats = []
 
         for app in Application.objects.all():
-            row = {
-                "ID": app.id
-            }
+            row = {"ID": app.id}
 
             for form in forms:
                 try:
@@ -27,25 +25,35 @@ class StatsView(APIView):
 
                 form_key = f"{form}"
                 date_key = f"{form} Created Date"
-                    
+
                 if px:
-                    row.update({
-                        form_key: "Yes",
-                        date_key: px.created_date,
-                    })
+                    row.update(
+                        {
+                            form_key: "Yes",
+                            date_key: px.created_date,
+                        }
+                    )
 
                 else:
-                    row.update({
-                        form_key: "No",
-                        date_key: None,
-                    })
-                
+                    row.update(
+                        {
+                            form_key: "No",
+                            date_key: None,
+                        }
+                    )
+
             stats.append(row)
 
-        stats.append({
-            "Total Applications": len(stats),
-            "Total FormP1s": len([True for stat in stats if stat[forms[0]] == "Yes"]),
-            "Total FormP9s": len([True for stat in stats if stat[forms[1]] == "Yes"])
-        })
+        stats.append(
+            {
+                "Total Applications": len(stats),
+                "Total FormP1s": len(
+                    [True for stat in stats if stat[forms[0]] == "Yes"]
+                ),
+                "Total FormP9s": len(
+                    [True for stat in stats if stat[forms[1]] == "Yes"]
+                ),
+            }
+        )
 
         return Response(stats)

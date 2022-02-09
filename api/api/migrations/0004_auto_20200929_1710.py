@@ -9,53 +9,111 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('api', '0003_surveyresult'),
+        ("api", "0003_surveyresult"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='PreparedPdf',
+            name="PreparedPdf",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('created_date', models.DateTimeField(auto_now_add=True)),
-                ('data', models.BinaryField(blank=True, null=True)),
-                ('key_id', models.CharField(blank=True, max_length=32, null=True)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("created_date", models.DateTimeField(auto_now_add=True)),
+                ("data", models.BinaryField(blank=True, null=True)),
+                ("key_id", models.CharField(blank=True, max_length=32, null=True)),
             ],
         ),
         migrations.AddField(
-            model_name='user',
-            name='universal_id',
+            model_name="user",
+            name="universal_id",
             field=models.CharField(blank=True, max_length=500, null=True),
         ),
         migrations.AlterField(
-            model_name='user',
-            name='first_name',
-            field=models.CharField(blank=True, max_length=150, verbose_name='first name'),
+            model_name="user",
+            name="first_name",
+            field=models.CharField(
+                blank=True, max_length=150, verbose_name="first name"
+            ),
         ),
         migrations.AlterField(
-            model_name='user',
-            name='last_name',
-            field=models.CharField(blank=True, max_length=150, verbose_name='last name'),
+            model_name="user",
+            name="last_name",
+            field=models.CharField(
+                blank=True, max_length=150, verbose_name="last name"
+            ),
         ),
         migrations.CreateModel(
-            name='Application',
+            name="Application",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('app_type', models.CharField(blank=True, default='', max_length=100)),
-                ('last_updated', models.DateTimeField(blank=True, null=True)),
-                ('current_step', models.IntegerField(blank=True, null=True)),
-                ('all_completed', models.BooleanField(blank=True, null=True)),
-                ('last_printed', models.DateTimeField(blank=True, null=True)),
-                ('user_type', models.CharField(blank=True, default='', max_length=100)),
-                ('user_name', models.CharField(blank=True, default='', max_length=100)),
-                ('applicant_name', django.contrib.postgres.fields.jsonb.JSONField(blank=True, null=True)),
-                ('respondent_name', django.contrib.postgres.fields.jsonb.JSONField(blank=True, null=True)),
-                ('protected_party_name', django.contrib.postgres.fields.jsonb.JSONField(blank=True, null=True)),
-                ('protected_child_name', django.contrib.postgres.fields.jsonb.JSONField(blank=True, null=True)),
-                ('key_id', models.CharField(blank=True, max_length=32, null=True)),
-                ('steps', models.BinaryField(blank=True, null=True)),
-                ('prepared_pdf', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='pdf_data', to='api.preparedpdf')),
-                ('user', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='app_user_Id', to=settings.AUTH_USER_MODEL)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("app_type", models.CharField(blank=True, default="", max_length=100)),
+                ("last_updated", models.DateTimeField(blank=True, null=True)),
+                ("current_step", models.IntegerField(blank=True, null=True)),
+                ("all_completed", models.BooleanField(blank=True, null=True)),
+                ("last_printed", models.DateTimeField(blank=True, null=True)),
+                ("user_type", models.CharField(blank=True, default="", max_length=100)),
+                ("user_name", models.CharField(blank=True, default="", max_length=100)),
+                (
+                    "applicant_name",
+                    django.contrib.postgres.fields.jsonb.JSONField(
+                        blank=True, null=True
+                    ),
+                ),
+                (
+                    "respondent_name",
+                    django.contrib.postgres.fields.jsonb.JSONField(
+                        blank=True, null=True
+                    ),
+                ),
+                (
+                    "protected_party_name",
+                    django.contrib.postgres.fields.jsonb.JSONField(
+                        blank=True, null=True
+                    ),
+                ),
+                (
+                    "protected_child_name",
+                    django.contrib.postgres.fields.jsonb.JSONField(
+                        blank=True, null=True
+                    ),
+                ),
+                ("key_id", models.CharField(blank=True, max_length=32, null=True)),
+                ("steps", models.BinaryField(blank=True, null=True)),
+                (
+                    "prepared_pdf",
+                    models.ForeignKey(
+                        blank=True,
+                        null=True,
+                        on_delete=django.db.models.deletion.SET_NULL,
+                        related_name="pdf_data",
+                        to="api.preparedpdf",
+                    ),
+                ),
+                (
+                    "user",
+                    models.ForeignKey(
+                        blank=True,
+                        null=True,
+                        on_delete=django.db.models.deletion.SET_NULL,
+                        related_name="app_user_Id",
+                        to=settings.AUTH_USER_MODEL,
+                    ),
+                ),
             ],
         ),
     ]

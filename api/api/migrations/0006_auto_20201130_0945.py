@@ -7,18 +7,20 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('api', '0005_application_application_location'),
+        ("api", "0005_application_application_location"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='application',
-            name='last_filed',
+            model_name="application",
+            name="last_filed",
             field=models.DateTimeField(blank=True, null=True),
         ),
         migrations.AlterField(
-            model_name='user',
-            name='first_name',
-            field=models.CharField(blank=True, max_length=30, verbose_name='first name'),
+            model_name="user",
+            name="first_name",
+            field=models.CharField(
+                blank=True, max_length=30, verbose_name="first name"
+            ),
         ),
     ]

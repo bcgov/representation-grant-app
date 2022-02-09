@@ -1,7 +1,4 @@
-
-from django.http import (
-    HttpResponseForbidden, Http404
-)
+from django.http import HttpResponseForbidden, Http404
 from rest_framework import permissions
 from rest_framework import generics
 from rest_framework.response import Response
@@ -15,6 +12,7 @@ class ApplicationListView(generics.ListAPIView):
     """
     List all application for a user
     """
+
     def get_app_list(self, id):
         try:
             return Application.objects.filter(user_id=id)
