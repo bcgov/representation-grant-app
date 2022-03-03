@@ -38,7 +38,7 @@
     "lodash": "^4.17.21",
     "popper.js": "^1.16.1",
     "sass-loader": "^8.0.2",
-    "showdown": "~2.0.1",
+    "showdown": "~2.0.2",
     "survey-creator": "^1.9.8",
     "survey-vue": "^1.9.8",
     "surveyjs-widgets": "^1.9.8",
