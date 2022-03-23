@@ -52,7 +52,7 @@ const getTypescriptDefinitionLine = question => {
   switch (question.getType()) {
     //TODO use bound strings here.
     case "address":
-      questionType = "AddressAndConact";
+      questionType = "AddressAndContact";
       break;
     case "contactinfo":
       questionType = "ContactInfo";

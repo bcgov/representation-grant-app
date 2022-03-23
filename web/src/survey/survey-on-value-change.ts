@@ -189,7 +189,7 @@ const determinePotentialApplicants = (sender, options) => {
     
     citorInfoPanel = SurveyQuestionNames.applicantCitorInfoPanel,
     cited = SurveyQuestionNames.applicantCited,
-    citorNew = SurveyQuestionNames.applicantCitorNew,
+    citorNew = SurveyQuestionNames.applicantCitorNewExists,
   };
 
   if (!Object.values(QuestionNamesToWatch).includes(options.name)) return;
