@@ -52,6 +52,7 @@
        "visible": false,
        "title": "<a href=\"https://justice.gov.bc.ca/jira/browse/REPGRANT-28\" target=\"_blank\">JIRA ticket REPGRANT-28 - Name Capitalization based on Input Device</a>",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       }
      ],
@@ -82,6 +83,7 @@
        "visible": false,
        "title": "<a href=\"https://justice.gov.bc.ca/jira/browse/REPGRANT-29\" target=\"_blank\">JIRA ticket REPGRANT-29 - Deceased Nickname Substitution</a>",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       }
      ],
@@ -161,7 +163,8 @@
        "name": "question438",
        "visible": false,
        "title": "[Location triggered Explanation Obsolete here?? - Will questions determine which asset affidavit to use regardless of where the address is]\n<br><br>\nThis service can help you extend the powers of a `Representation Grant` from another place.\n<br><br>\nIt makes sense to first get a `Representation Grant` from where {deceasedName} spent most of their time. There may be benefits to getting grants in this order that a lawyer can explain to you. [link to lawyer info]\n<br><br>\nIf you don't already have a Representation Grant from the place where {deceasedName} spent most of their time, this service can still help you apply for a B.C. Representation Grant.  ",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
@@ -169,6 +172,7 @@
        "visible": false,
        "title": "<a href=\"https://justice.gov.bc.ca/jira/browse/REPGRANT-3X\" target=\"_blank\">JIRA ticket REPGRANT3X - PO Box</a>\n<br><br>TB Finished\n(pick either “Street number and street name:” or “Post office box:” the other options can be deleted)\n<br><br>Maybe irrelevant if the person can just write in PO Box in street number/name? But change label??",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       },
       {
@@ -177,6 +181,7 @@
        "visible": false,
        "title": "<a href=\"https://justice.gov.bc.ca/jira/browse/REPGRANT-3X\" target=\"_blank\">JIRA ticket REPGRANT3X - Homeless postal code</a>\n<br><br>TB Finished\nIf the person had no fixed address, they don't have a postal code so validation needs to ignore that sometimes but validate most of the time.\n<br><br>\nInput mask? Probably not because we don't know postal codes around the world work.",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       }
      ],
@@ -259,7 +264,8 @@
        "type": "infotext",
        "name": "deceasedExitExplanation",
        "title": "Next, this service will ask if {deceasedName} made any `Wills`.\n",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       }
      ],
      "visible": false,
@@ -291,6 +297,7 @@
      "visible": false,
      "title": "Previous Will Check",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -324,6 +331,7 @@
        "visibleIf": "{willCheck} = \"n\"",
        "title": "You are responsible for making sure if {deceasedName} made a `Will` or not.\n<br><br>\nPlease look in all the places where {deceasedName} kept important documents.\n<br><br>\nPhysical places include their home, safety deposit box, and their lawyer's office.\n<br><br>\nElectronic places include their smart phone, computer, external hard drive, and cloud storage.\n<br><br>\nIf you believe {deceasedName} made a Will and you feel you need help finding it, click on \"Do I need to get a \"Search of Wills Notice\" right now?\". (This can be found right above)",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       }
      ],
@@ -336,6 +344,7 @@
      "visible": false,
      "title": "Grant Already Exists",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -372,7 +381,8 @@
        "name": "question441",
        "visible": false,
        "title": "[Reference only - delete later]\n<br>\nIf you believe a `Representation Grant` for {deceasedName} already exists, this service cannot help you apply for a `Representation Grant` at this time.\n<br><br>\nFor now, this service has only been developed for a limited number of situations. Select \"Yes\" for the question above to see the next steps that you can take. You will need to take these steps on your own without this service. ",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
@@ -381,6 +391,7 @@
        "visibleIf": "{willGrantExists} = \"y\"",
        "title": "For now, this service has only been developed for a limited number of situations. At this time, this service cannot help you apply for a `Representation Grant`. \n<br><br>\nIf the existing Representation Grant is from British Columbia, and you need to add a new person onto the Representation Grant, please talk to a lawyer. This is not a simple matter.\n<br><br>\nIf the existing Representation Grant is from British Columbia, and you have more `assets` to report, stop using this service. Use either form P14 or P15 to tell the court. <a href=\"https://www2.gov.bc.ca/gov/content/justice/courthouse-services/documents-forms-records/court-forms/probate-forms\" target=\"blank\">Forms P14 and P15 can be found here.</a> (This link opens in a new tab)\n<br><br>\nIf the existing Representation Grant is from a British Commonwealth country, the United States of America or Hong Kong, the existing Representation Grant can be resealed. Please refer to the Supreme Court Civil Rules under <a href=\"http://www.bclaws.ca/civix/document/id/complete/statreg/168_2009_03_1#rule25-6\" target=\"blank\">Rule 25-6 - Application for Resealing</a> for information on resealing the Representation Grant. (This link opens in a new tab)\n<br><br>\nIf the existing Representation Grant is not from a British Commonwealth country, the United States of America or Hong Kong, you will have to apply for an ancillary Representation Grant. <a href=\"https://www2.gov.bc.ca/gov/content/justice/courthouse-services/documents-forms-records/court-forms/probate-forms\" target=\"blank\">The forms to apply for an ancillary grant can be found here.</a> (This link opens in a new tab)",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       },
       {
@@ -396,6 +407,7 @@
        "visible": false,
        "title": "[Nov 5 2020 - copied from qualify page]\n<br>\n[Feb 2 2021 - chop up for future when different scenarios are available for beta via product manager]\n<br>\nFor now, this service has only been developed for a limited number of situations. At this time, this service cannot help you apply for a Representation Grant. \n<br><br>\nIf the existing Representation Grant is from British Columbia, and you need to add a new person onto the existing Representation Grant, please seek help from a lawyer. This is not a simple matter.\n<br><br>\nIf the existing Representation Grant is from British Columbia, and you have more assets to report, do not apply for another Representation Grant. Use either form P14 or P15 to tell the court.\n<br><br>\nIf the grant is from a British Commonwealth country, the United States of America or Hong Kong, you will have to reseal the original grant. Please refer to the Supreme Court Civil Rules under <a href=\"http://www.bclaws.ca/civix/document/id/complete/statreg/168_2009_03_1#rule25-6\" target=\"blank\">Rule 25-6 - Application for Resealing</a> for information on resealing your grant.\n<br>\n<br>\nIf the grant is not from a British Commonwealth country, the United States of America or Hong Kong, you will have to apply for an ancillary grant. <a href=\"https://www2.gov.bc.ca/gov/content/justice/courthouse-services/documents-forms-records/court-forms/probate-forms\" target=\"blank\">The forms to apply for an ancillary grant can be found here.</a>",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       },
       {
@@ -439,7 +451,8 @@
        "name": "question285",
        "visible": false,
        "title": "check p2 para 6 vs p21 para 6. P21 looks neater. ",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -565,6 +578,7 @@
      "visible": false,
      "title": "Foreign Grant Info",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -576,7 +590,8 @@
        "name": "question284",
        "visible": false,
        "title": "Decision from Jack and Tyler - Resealing automatically makes them do a P25 regardless if they lived in BC or not.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -589,6 +604,7 @@
        "visibleIf": "{willFGSameApplicants} = \"n\"",
        "title": "If you're not exactly the same people applying, you can't get it resealed. \n\nOption 1 is to get your old grant amended for the people applying in BC.\nOption 2\nGo back and say you can't use it with a reason like \"not the same people applying\" and apply for a new grant in BC.",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       },
       {
@@ -622,6 +638,7 @@
        "visibleIf": "{willFGSameApplicants} = \"y\" and {willFGHaveGrant} = \"n\"",
        "title": "got to get a court certified copy of the rep grant. if the rep grant does not come with a copy of the will attached, you will need a separate court certified copy of the will.\n<br>\nif you can't get one, you cannot reseal. go back to the top and say you can't get court certified copy of the rep grant/will as a reason you aren't using this grant.",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       },
       {
@@ -652,6 +669,7 @@
        "visibleIf": "{willFGSameApplicants} = \"y\" and {willFGHaveGrant} = \"y\" and {willFGWillExists} = \"y\" and {willFGWillAttached} = \"n\" and {willFGWillAttachable} = \"n\"",
        "title": "got to get a court certified copy of the will.\n<br>\nif you can't get one, you cannot reseal. go back to the top and say you can't get court certified copy of the will as a reason you aren't using this grant.",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       },
       {
@@ -699,6 +717,7 @@
        "visibleIf": "{willFGSameApplicants} = \"y\" and {willFGHaveGrant} = \"y\" and {willFGWillExists} = \"y\" and \n({willFGWillAttached} = \"y\" or ({willFGWillAttached} = \"n\" and\n{willFGWillAttachable} = \"y\")) and {willFGValidityOrders} = \"y\" and {willFGValidityOrdersAttachable} = \"n\"",
        "title": "if you cannot provide validity orders, go back to say you can't use this foreign grant",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       },
       {
@@ -804,14 +823,16 @@
        "name": "question424",
        "visible": false,
        "title": "[May 19 2021 - is this incoporated?]\nWESA 39 (2) A will-maker's signature that conforms to this section does not give effect to\n         [] (a) a gift or direction in the will that follows the will-maker's signature, or\n         [] (b) a gift or direction inserted in the will after the will-maker signed the will.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
        "name": "question433",
        "visible": false,
        "title": "[May 19 2021 - is this incoporated?]\nWESA Deferred or Irrelevant?\n [] 40 (2) A person may witness a will even though he or she may receive a gift under it, but the gift may be void under section 43 [gifts to witnesses].\n [] 40 (3) A will is not invalid only because a witness was, at the time the will was signed by the will-maker, or afterwards became, legally incapable of proving the will, unless the witness was not 19 years of age or older at the time the will was signed by the will-maker.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -908,6 +929,7 @@
        "visibleIf": "{willFGSameApplicants} = \"y\" and {willFGHaveGrant} = \"y\" and ({willFGWillExists} = \"n\" or ({willFGWillExists} = \"y\" and ({willFGWillAttached} = \"y\" or ({willFGWillAttached} = \"n\" and\n{willFGWillAttachable} = \"y\")) and ({willFGValidityOrders} = \"n\" or \n({willFGValidityOrders} = \"y\" and {willFGValidityOrdersAttachable} = \"y\" and {willFGValidityOrderList} notempty)))) and {willFGEnglish} = \"n\" and {willFGTranslated} = \"n\"",
        "title": "Stop - everything must be translated in English. Do that, come back and answer \n<br>\nYes. If you can't get it translated, go back and say you can't use grant.",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       },
       {
@@ -951,7 +973,8 @@
        "name": "question283",
        "visible": false,
        "title": "yes activates P11\n<br>\nno activates P10 and disables P11. (regularly lived questions also does the same for any place other than BC). \n<br>resealing application assumes this. but if the ancillary grant applicant selects (no) even though, they are doing an ancillary grant, we can't trust them, and they need to include property outside of BC.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       }
      ],
      "visible": false,
@@ -963,6 +986,7 @@
      "visible": false,
      "title": "Will Exists",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -1011,6 +1035,7 @@
        "visibleIf": "{willExists} = \"y\"",
        "title": "If you believe {deceasedName} made a `Will`, this service cannot help you apply for a `Representation Grant` at this time.\n<br><br>\nFor now, this service has only been developed for a limited number of situations.\n<br><br>\nThe Government of British Columbia offers PDF forms that you may find helpful for your application. <a href=\"https://www2.gov.bc.ca/gov/content/justice/courthouse-services/documents-forms-records/court-forms/probate-forms\" target=\"_blank\">Click here to go to the forms.</a> (This link opens in a new tab)",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       },
       {
@@ -1035,6 +1060,7 @@
        "visibleIf": "{willExists} = \"n\" and {willOtherDocExists} = \"y\" and {willOtherDocRecognize} = \"y\"",
        "title": "If you want to have an `other testamentary document` recognized as {deceasedName}'s `Will`, this service cannot help you apply for a `Representation Grant` at this time.\n<br><br>\nFor now, this service has only been developed for a limited number of situations.\n<br><br>\nThe Government of British Columbia offers PDF forms that you may find helpful for your application. <a href=\"https://www2.gov.bc.ca/gov/content/justice/courthouse-services/documents-forms-records/court-forms/probate-forms\" target=\"_blank\">Click here to go to the forms.</a> (This link opens in a new tab)",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       },
       {
@@ -1121,6 +1147,7 @@
        "visibleIf": "{willExists} = \"n\" and {willOtherDocExists} = \"y\" and {willOtherDocRecognize} = \"n\" and {willOtherDocRecognizeNoReasons[0].Column 3} notempty and {willOtherDocRecognizeNoReasonsFinished} = \"n\"",
        "title": "Keep listing `other testamentary documents` until you are finished and then select \"Yes\". Click on \"Add other testamentary document\" to list another document.",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       }
      ],
@@ -1133,6 +1160,7 @@
      "visible": false,
      "title": "Multiple Wills",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -1226,6 +1254,7 @@
      "visible": false,
      "title": "Will Possession",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -1257,7 +1286,8 @@
        "name": "question27",
        "visible": false,
        "title": "[no - single will] AWOW\n[no - multiple wills] - do they have an earlier will that deals with property in BC? yes, keep going - no - ask questions to get to citation/subpoena",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -1340,6 +1370,7 @@
        "visibleIf": "{willOriginal} = \"n\" and {willOriginalExists} = \"y\" and {willOriginalVoluntaryTransfer} = \"y\"",
        "title": "Go get the original will. Select \"Yes\" for Will they give you the original Will? [JIRA - jump to relevant question.",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       },
       {
@@ -1361,14 +1392,16 @@
        "name": "question82",
        "visible": false,
        "title": "[no have will + no original at court + no original anywhere + yes court has copy] Go get a copy from that courthouse and use the info from that will.\n<br>\naffidavit questions",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
        "name": "question81",
        "visible": false,
        "title": "[JIRA - markup for highlight in yellow?] The word Copy here for example",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -1384,6 +1417,7 @@
        "visibleIf": "{willHave} = \"n\" and {willOriginalExists} = \"n\" and {willCopyExists} = \"y\" and {willCopyVoluntaryTransfer} = \"y\"",
        "title": "Go get the copy the will. \n<br><br>\nSelect \"Yes\" for haveWill [JIRA - jump to relevant question.",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       },
       {
@@ -1440,7 +1474,8 @@
        "name": "question225",
        "visible": false,
        "title": "[no; single will] - AWOW\n[no; multiple will] - Is there an older will that does deal with BC property? [yes] - jump back to top of section \"do you have this will? [no - AWOW]",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       }
      ],
      "visible": false,
@@ -1452,6 +1487,7 @@
      "visible": false,
      "title": "Will Search?? or something else?",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -1482,13 +1518,15 @@
        "type": "infotext",
        "name": "question156",
        "title": "[no - deceased made more than 1 will] keep going and answer questions about older will.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
        "name": "question65",
        "title": "[multiple wills, No original, no copy, will search yes, cannot find the latest will???]\nGo back to \"do you have this will? and answer using an older will",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       }
      ],
      "visible": false
@@ -1499,6 +1537,7 @@
      "visible": false,
      "title": "Will at a Courthouse",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -1559,7 +1598,8 @@
        "type": "infotext",
        "name": "question94",
        "title": "[JIRA] - generate PDF affidavit for third party Will detective",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       }
      ],
      "visible": false
@@ -1572,7 +1612,8 @@
        "type": "infotext",
        "name": "question19",
        "title": "P4 6. (c.1) Affidavit questions. Explain why you only have a copy. (move section up??)",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       }
      ],
      "visible": false
@@ -1588,6 +1629,7 @@
      "visible": false,
      "title": "Will Date",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -1605,21 +1647,24 @@
        "name": "question66",
        "visible": false,
        "title": "[JIRA]<br>\nOption 1 only display \"(Will dated {willDate}\" if deceased only made 1 will<br>\nOption 2 - only display Month and Year, no day",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
        "name": "question153",
        "visible": false,
        "title": "[JIRA] - Possibly not important but if multiple wills, future pages need to know which will date to include as part of the timing of questions. ",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
        "name": "question154",
        "visible": false,
        "title": "[JIRA] Questions in separate round boxes for 1 will. All will questions in one round box for multiple wills? Probably a bad idea.\nTreat each will like a child in Protection Order/Family? with its own sub page?",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -1649,6 +1694,7 @@
      "visible": false,
      "title": "Codicil",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -1664,7 +1710,8 @@
        "type": "infotext",
        "name": "question10",
        "title": "intercepts will validation questions. if codicil is valid, codicil is valid. may skip some will validation questions.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -1691,42 +1738,48 @@
        "name": "question291",
        "visible": false,
        "title": "follow Will possession script including citation/subpoena/courthouse stuff/will search",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
        "name": "question292",
        "visible": false,
        "title": "follow Will date script",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
        "name": "question293",
        "visible": false,
        "title": "follow Will written script",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
        "name": "question294",
        "visible": false,
        "title": "following will signed (exclude military questions?)",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
        "name": "question295",
        "visible": false,
        "title": "following will witnessed script",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
        "name": "question296",
        "visible": false,
        "title": "following the rest of the will script up to \"newer invalid will/codicil\".\n\nIf the codicil is good, continue on. ",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       }
      ],
      "visible": false
@@ -1737,6 +1790,7 @@
      "visible": false,
      "title": "Will Written",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -1755,6 +1809,7 @@
        "visibleIf": "{willWritten} = \"n\"",
        "title": "[No - no multiple will]. This service has been designed to work with Wills that are written documents. WESA 37 & 58 puts limits on what can be recognized as a Will. See these forms. If you need help, get a lawyer. \n<br><br>\nIf {deceasedName} made a will in an audio or video recording you may see a lawyer if you want to try and get the recording recognized as a Will.",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       },
       {
@@ -1763,6 +1818,7 @@
        "visible": false,
        "title": "Jan 10 2020 - re-work this section about wills being recordings. offer the option to go with the newer video will ",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -1791,7 +1847,8 @@
        "name": "question169",
        "visible": false,
        "title": "[JIRA] if recorded will is approved, can we auto-fill certain questions? atestation clause questions etc. just treat the will is good.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -1804,7 +1861,8 @@
        "name": "question164",
        "visible": false,
        "title": "[yes] disregard the recording and use an older written will. go back to willDate",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -1912,6 +1970,7 @@
      "visible": false,
      "title": "Will Signed",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -1961,7 +2020,8 @@
        "name": "question251",
        "visible": false,
        "title": "[no acknowledgement and not military will] keep going as regular to sec80/58",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -1974,7 +2034,8 @@
        "name": "question252",
        "visible": false,
        "title": "[not witnessed] doesn't meet the qualifiations for a BC military will. go to sec80.then 58",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -1989,7 +2050,8 @@
        "name": "question244",
        "visible": false,
        "title": "insert questions similar to witnesses signed ? then sec80, then 58",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -2008,14 +2070,16 @@
        "name": "question209",
        "visible": false,
        "title": "yes to signature on rando page; no explanation. will is likely to get accepted but may only be recognized up the page it is signed. well ask more questions. - ask if they want to do sec80 first. ",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
        "name": "question210",
        "visible": false,
        "title": "yes signature on rando page; yes to some hand written (or typed?) explanation anywhere\n<br>\ngenerally, documents need to be signed at the end but because there is an explanation, it might be get accepted by court. there may be restrictions on what part of the will is recognized. \n<br>\nyou may want to do sec 80. It will require affidavits. If you already have some, no extra cost. If you need someone to swear/affirm an affidavit, may cost up $40 per affidavit.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -2058,7 +2122,8 @@
        "name": "question218",
        "visible": false,
        "title": "if yes, go through sec80 script until it finishes",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -2087,7 +2152,8 @@
        "name": "question222",
        "visible": false,
        "title": "P43 option says we'll stop asking about the will, we will just enough about who to give notice to so you can do P43 first. then come to \"did you get your will recognized?\"",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -2106,7 +2172,8 @@
        "name": "question223",
        "visible": false,
        "title": "P42 option jumps to sec58 page. and comes back to next question",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -2125,6 +2192,7 @@
        "visible": false,
        "title": "[not 16 not military]\nsec 80 first; proceed as if no will if sec80 failed",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       },
       {
@@ -2132,7 +2200,8 @@
        "name": "question246",
        "visible": false,
        "title": "military will, ignore mental competency, and other issues. do ask undue influence.\nyou will need to provide evidence that they were in the military and on activity duty when the will was made.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -2145,6 +2214,7 @@
        "visible": false,
        "title": "not competent at will making date] no sec80. no sec58.<br>\n[proceed as if no will for single will. mulitple will - ask if they want to use another will]\n<br>\n",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       },
       {
@@ -2158,7 +2228,8 @@
        "name": "question7",
        "visible": false,
        "title": "[yes, use older will] clear answers, jump back to will date\n<br>\n[no, always mentally incompetent wills] - AWOW",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -2172,6 +2243,7 @@
        "visible": false,
        "title": "[undue influence at will making date] no sec80. no sec58.<br>\n[proceed as if no will for single will. mulitple will - ask if they want to use another will]",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       },
       {
@@ -2185,7 +2257,8 @@
        "name": "question17",
        "visible": false,
        "title": "[yes, use older will] clear answers, jump back to will date\n<br>\n[no, always undue influence wills] - AWOW",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -2224,7 +2297,8 @@
        "name": "question21",
        "visible": false,
        "title": "P4 6 (d). Could this be a non-affidavit statement so we don't need to produce an affidavit? or some other evidence? should make it an option to create an affidavit??",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       }
      ],
      "visible": false,
@@ -2236,6 +2310,7 @@
      "visible": false,
      "title": "Will Witnessed",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -2247,7 +2322,8 @@
        "name": "question247",
        "visible": false,
        "title": "ignore witness section if military will and will is signed on the last page by signature or by mark.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -2265,7 +2341,8 @@
        "name": "question245",
        "visible": false,
        "title": "[yes 1 witness signed] see X-Mind for 2 witnesses signing",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -2280,7 +2357,8 @@
        "name": "question231",
        "visible": false,
        "title": "[not signed by 2] section 80 first (start at \"n (will made outside of BC)\" in X Mind; stuff before is irrelevant), then section 58",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -2300,6 +2378,7 @@
      "visible": false,
      "title": "Will Appearance Issues",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -2422,7 +2501,8 @@
          "name": "question11",
          "visible": false,
          "title": "reminder on instructions to hand-write date of affidavit sworn on the P4 Paragraph 7",
-         "titleLocation": "hidden"
+         "titleLocation": "hidden",
+         "requiredErrorText": "Please press Continue"
         }
        ],
        "visible": false,
@@ -2451,7 +2531,8 @@
        "name": "question257",
        "visible": false,
        "title": "affidavit questions here.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "panel",
@@ -2580,6 +2661,7 @@
      "visible": false,
      "title": "Extra Documents",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -2597,6 +2679,7 @@
        "name": "question41",
        "title": "Apr 14 2021 - what if there is a codicil? should ask about both or just will or just codicil?",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       },
       {
@@ -2604,6 +2687,7 @@
        "name": "question241",
        "title": "Apr 14 2021 - fee agreements and memorandums? Create FAQs to say whether to include them or not?",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       },
       {
@@ -2677,6 +2761,7 @@
      "visible": false,
      "title": "Newer Invalid Wills",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -2688,7 +2773,8 @@
        "name": "question45",
        "visible": false,
        "title": "[See above for questions for multiple wills that did not get revoked by newer wills]",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -2743,6 +2829,7 @@
      "visible": false,
      "title": "P3 Exit Explanations",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -2756,7 +2843,8 @@
        "visibleIf": "{willHave} = \"y\" and {willPropertyInBC1} = \"y\" and {willOriginal} = \"y\" and {willMadeOutsideBC} notempty and {willWritten} = \"y\" and {willEnglish} = \"y\" and {willBlind} = \"n\" and {willLiterate} = \"y\" and {willLanguageUnderstood} = \"y\" and {willSigned} = \"y\" and {willSignatureSpace} = \"y\" and {willMakerOver16} = \"y\" and {willMakerCompetent} = \"y\" and {willUndueInfluence} = \"n\" and {willOtherIssue} = \"n\" and {willWitnessed} =\"y\" and {willWitnessedOnSamePage} = \"y\" and {willWitnessSignatureSpace} = \"y\" and {willInterlineation} = \"n\" and {willErasures} = \"n\" and {willOtherAppearanceIssues} = [5] and {willExtraDocs} = \"n\"",
        "title": "This Will dated {willDate} is valid according to the law in British Columbia.\n<br><br>\nNext, this service will ask about any executors named in this Will.",
        "titleLocation": "hidden",
-       "description": "1 Will; Well executed; No codicil"
+       "description": "1 Will; Well executed; No codicil",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
@@ -2764,7 +2852,8 @@
        "visible": false,
        "visibleIf": "{willStatus} = \"item1\"",
        "title": "This will is good.  Even if it is a military, the will doesn't need to be treated as a military will and will save you time and paper so you will be swearing that it is not a military will. ??",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       }
      ]
     },
@@ -2774,6 +2863,7 @@
      "visible": false,
      "title": "P4 Exit Explanations",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -2786,6 +2876,7 @@
      "visible": false,
      "title": "P5 Exit Explanations \n",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -2799,7 +2890,8 @@
        "visibleIf": "{willCheck} = \"y\" and {willGrantExists} = \"n\" and {willExists} = \"n\" and {willOtherDocExists} = \"n\"",
        "title": "Because {deceasedName} did not make a `Will` or any `other testamentary document`, you can move on to the next step.\n<br><br>\nThe next step is to identify the people in {deceasedName}'s life who need to know that you are applying for a `Representation Grant`. This service will start by asking if {deceasedName} had a spouse or any children.",
        "titleLocation": "hidden",
-       "description": "[P5 no will, no other docs]"
+       "description": "[P5 no will, no other docs]",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
@@ -2808,7 +2900,8 @@
        "visibleIf": "{willCheck} = \"y\" and {willGrantExists} = \"n\" and {willExists} = \"n\" and {willOtherDocExists} = \"y\" and {willOtherDocRecognize} = \"n\" and {willOtherDocRecognizeNoReasonsFinished} = \"y\"",
        "title": "Moving forward, this service will help you apply as if {deceasedName} did not make a `Will` because you've indicated that:\n<br><br>\n<ul>\n<li>{deceasedName} didn't make a valid Will,</li>\n<li>{deceasedName} did make one or more `osther testamentary document` but you don't believe any of them should be recognized as {deceasedName}'s Will</li>\n</ul>\n<br>\nYou will need to provide a copy of the other testamentary document(s) in your application. This service will remind you to make a copy at the end.\n<br><br>\nThe next step is to identify the people in {deceasedName}'s life who need to know that you are applying for a `Representation Grant`. This service will start by asking if {deceasedName} had a spouse or any children.\n",
        "titleLocation": "hidden",
-       "description": "[P5 no will, yes other doc, do not recognize]\n"
+       "description": "[P5 no will, yes other doc, do not recognize]\n",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
@@ -2816,7 +2909,8 @@
        "visible": false,
        "title": "Because of the following situation:\n<ul>\n<li>{deceasedName} didn't make a valid `Will`,</li> <li>{deceasedName} did make (one or more?) an `other testamentary document`,</li>\n<li>you don't believe should the other testamentary document should be recognized as a Will</li>\n</ul>\nthis service will help you apply as if {deceasedName} did not make a Will. \n<br><br>\nYou will need to provide a copy of the other testamentary document in your application. This service will remind you to make a copy at the end.\n<br><br>\nNext, we can move on to asking about {deceasedName}'s spouse and children. \n",
        "titleLocation": "hidden",
-       "description": "[P5 no will, yes other doc, yes recognize, other doc invalid]\n"
+       "description": "[P5 no will, yes other doc, yes recognize, other doc invalid]\n",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
@@ -2825,35 +2919,40 @@
        "visibleIf": "{willCheck} = \"y\" and \n{willExists} = \"n\" and {willOtherDocExists} = \"n\" and {willNewerInvalidAwow} = \"y\" and {willNewerInvalidList} notempty",
        "title": "Because {deceasedName} made a Will, but this Will is invalid, this service will continue as if {deceasedName} did not make a Will.\n<br><br>\nWe can move on to asking about {deceasedName}'s spouse and children.",
        "titleLocation": "hidden",
-       "description": "[P5 yes will, no other docs, yes newer will]???"
+       "description": "[P5 yes will, no other docs, yes newer will]???",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
        "name": "question157",
        "visible": false,
        "title": "[P5 - believe there is a will but cannot be found - deceased only made 1 will] AWOW\n",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
        "name": "question40",
        "visible": false,
        "title": "[P5 no will, yes other doc, do not recognize, invalid will and other docs] \nYou will need to provide a copy of the invalid Will and the `other testamentary documents` that you've listed. This service will remind you to make copies at the end.\n<br><br>\nBecause {deceasedName} didn't leave a valid Will, we can move on to asking about {deceasedName}'s spouse and children. \n",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
        "name": "question38",
        "visible": false,
        "title": "[P5 no will, yes other doc, do not recognize, all other docs except invalid will] \nYou will need to provide a copy of the `other testamentary documents` that you've listed. This service will remind you to make a copy at the end.\n\nBecause {deceasedName} didn't leave a Will, we can move on to asking about {deceasedName}'s spouse and children.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
        "name": "question33",
        "visible": false,
        "title": "[P5 yes will, no original, no copy, will search no luck] \ntreat as if no will. if you find a will later, you can apply again.\n<br><br>\nwe can move on to asking about {deceasedName}'s spouse and children.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       }
      ]
     }
@@ -5470,6 +5569,7 @@
      "visible": false,
      "title": "Spouse Intro",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -5499,6 +5599,7 @@
        "visible": false,
        "title": "To Do List:",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "<li>content for GP/AWW intro that explains there may be overlap with executors\n<li>create intro and logic for AGAWOW\n<li>create intro and logic for AGP/AGAWW\n<li>create intro and logic for RAWOW\n<li>create intro and logic for RGP/RAWW",
        "messageStyle": "error"
       }
@@ -5510,6 +5611,7 @@
      "visible": false,
      "title": "Spouse Exists",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -5533,7 +5635,7 @@
       {
        "type": "helptext",
        "name": "spouseExistsFAQ2",
-       "title": "Do I include someone who was in marriage-like relationship (also known as a common-law marriage) with {deceasedName}, but they broke up before {deceasedName} died?",
+       "title": "Do I include someone who was in marriage-like relationship (also know as a common-law marriage) with {deceasedName}, but they broke up before {deceasedName} died?",
        "titleLocation": "hidden",
        "body": "No, you do not need to include {deceasedName}'s marriage-like partner (also known as a common-law partner) if they broke up. \n<br><br>\nA marriage-like relationship ends immediately after the break up. {deceasedName}'s ex-partner would not be considered {deceasedName}'s `spouse` anymore.\n<br><br>\nHowever, if you are not sure if {deceasedName} and their partner were broken up when {deceasedName} died, it is safer for you to include this person. This person should know that you are applying for a `Representation Grant`. \n<br><br>\nYou want as much transparency in your application as possible in case the Court decides that this person should be considered {deceasedName}'s spouse. \n<br><br>\nEven though you are telling this person you are applying for a Representation Grant, they don't automatically get part of {deceasedName}'s `estate`. \n<br><br>\n<a href=\"https://www.bclaws.gov.bc.ca/civix/document/id/lc/statreg/09013_01#section2\" target=\"_blank\">\nFor more information, click here to read about who should be included as {deceasedName}'s spouse from the <i>Wills, Estate and Succession Act</i> (WESA).</a> (This link opens in a new tab)"
       },
@@ -5542,7 +5644,7 @@
        "name": "spouseExistsFAQ3",
        "title": "Do I include someone who was in an on-again, off-again marriage-like relationship with {deceasedName}?",
        "titleLocation": "hidden",
-       "body": "If {deceasedName} lived together with a marriage-like partner (also known as a common-law partner) for at least 2 years, this person would be considered {deceasedName}'s `spouse`. \n<br><br>\nA marriage-like (common law) relationship ends immediately after the break up. However, under the law in British Columbia, this person could still be considered {deceasedName}'s spouse if they broke up and got back together again within a year. \n<br><br>\nIf you are not sure if {deceasedName} and this person had gotten back together before {deceasedName} died, it is safer for you to include this person. This person should know that you are applying for a `Representation Grant`. \n<br><br>\nYou want as much transparency in your application as possible in case the Court decides that this person should be considered {deceasedName}'s spouse. \n<br><br>\nEven though you are telling this person you are applying for a Representation Grant, they don't automatically get part of {deceasedName}'s `estate`. \n<br><br>\n<a href=\"https://www.bclaws.gov.bc.ca/civix/document/id/lc/statreg/09013_01#section2\" target=\"_blank\">\nFor more information, click here to read about who should be included as {deceasedName}'s spouse from the <i>Wills, Estate and Succession Act</i> (WESA).</a> (This link opens in a new tab)"
+       "body": "If {deceasedName} lived together with a marriage-like partner (also know as a common-law partner) for at least 2 years, this person would be considered {deceasedName}'s `spouse`. \n<br><br>\nA marriage-like (common law) relationship ends immediately after the break up. However, under the law in British Columbia, this person could still be considered {deceasedName}'s spouse if they broke up and got back together again within a year. \n<br><br>\nIf you are not sure if {deceasedName} and this person had gotten back together before {deceasedName} died, it is safer for you to include this person. This person should know that you are applying for a `Representation Grant`. \n<br><br>\nYou want as much transparency in your application as possible in case the Court decides that this person should be considered {deceasedName}'s spouse. \n<br><br>\nEven though you are telling this person you are applying for a Representation Grant, they don't automatically get part of {deceasedName}'s `estate`. \n<br><br>\n<a href=\"https://www.bclaws.gov.bc.ca/civix/document/id/lc/statreg/09013_01#section2\" target=\"_blank\">\nFor more information, click here to read about who should be included as {deceasedName}'s spouse from the <i>Wills, Estate and Succession Act</i> (WESA).</a> (This link opens in a new tab)"
       }
      ],
      "visible": false,
@@ -5555,6 +5657,7 @@
      "visible": false,
      "title": "Spouse Info",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -5585,11 +5688,20 @@
        "defaultSubstitution": "(the person who died's spouse)"
       },
       {
+       "type": "helptext",
+       "name": "spouseNameFAQ1",
+       "visible": false,
+       "title": "[new] what if i don't know the full name? ",
+       "titleLocation": "hidden",
+       "body": "it's ok, try your best. you are resposible for notifying them but we understand that maybe you can't find them. later on, if you can't notify them, you will be required to try hard to find them and provide evidence.\nthis service can (or can't) handle situations where you can't notify them."
+      },
+      {
        "type": "infotext",
        "name": "spouseExtraWillQuestionsBookmark",
        "visible": false,
        "title": "Spouse Extra Will Questions ",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -5643,6 +5755,7 @@
        "visible": false,
        "title": "Spouse Is Alive",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -5664,6 +5777,7 @@
        "visible": false,
        "title": "Spouse Is Adult",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -5680,7 +5794,8 @@
        "visible": false,
        "title": "Logic Documentation - successorIsAdult = \"n\"",
        "titleLocation": "hidden",
-       "body": "If [successorHasGuardian = 'y',\nnotice needs to go to 2 people:\n<li>1. [successorGuardianName]\n<li>2. PGT\n<br><br>\nIf [successorHasGuardian] = 'n', \nnotice needs to go to 3 people:\n<li>1. [successorName]\n<li>2. PGT\n<li>3. Provincial Director of Child Welfare\n<br>\nhttps://dir.gov.bc.ca/gtds.cgi?show=Branch&organizationCode=MCF&organizationalUnitCode=YDC",
+       "requiredErrorText": "Please press Continue",
+       "body": "If [successorHasGuardian] = 'y',\nnotice needs to go to 2 people:\n<li>1. [successorGuardianName]\n<li>2. PGT\n<br><br>\nIf [successorHasGuardian] = 'n', \nnotice needs to go to 3 people:\n<li>1. [successorName]\n<li>2. PGT\n<li>3. Provincial Director of Child Welfare\n<br>\nhttps://dir.gov.bc.ca/gtds.cgi?show=Branch&organizationCode=MCF&organizationalUnitCode=YDC",
        "messageStyle": "error"
       },
       {
@@ -5689,6 +5804,7 @@
        "visible": false,
        "title": "Rule 25-2 (8) - If person to whom notice is to be delivered is a minor",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "Rule 25-2 (8) - If person to whom notice is to be delivered is a minor\n<br>\n(8) If a person to whom documents are to be delivered under subrule (1) is a minor, the intended applicant must deliver those documents\n- (a) as follows:\n---   (i) if the applicant knows that the minor resides with all of the minor's parents, to those parents;\n---  (ii) if subparagraph (i) does not apply but the applicant knows that a parent or guardian has responsibility for financial decisions relating to the minor, to that parent or guardian;\n---   (iii) if neither subparagraph (i) nor subparagraph (ii) applies but the applicant knows of one or more addresses at which the minor resides, to the minor at each of those addresses, and\n- (b) subject to subrule (9), to the Public Guardian and Trustee.",
        "messageStyle": "error"
       },
@@ -5698,6 +5814,7 @@
        "visible": false,
        "title": "Rule 25-2 (9) - If testamentary trust exists\n",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "Jack & Tyler (Jul 6 2021) decided to ignore this subrule in favour of service regardless of this situation. The amount of extra programming would likely not be worth the effort considering that a) this subrule doesn't take away that much work from an applicant and b) unnecessary service to minors and their guardians is not likely going to be extra burden.\n<br><br>\nRule 25-2 (9) - If testamentary trust exists\n<br>\n(9) An intended applicant need not deliver documents under subrule (8) (b) to the Public Guardian and Trustee if\n- (a) the intended applicant is an executor or alternate executor of the deceased's estate,\n- (b) the minor is not a spouse or child of the deceased, and\n- (c) the deceased's will:\n---   (i) creates a trust for the interest of the minor in the estate, and\n---   (ii) appoints a trustee for that trust.",
        "messageStyle": "error"
       },
@@ -5707,6 +5824,7 @@
        "visible": false,
        "title": "Rule 25-2 (13) - Notice to Public Guardian and Trustee",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "Rule 25-2 (13) - Notice to Public Guardian and Trustee\n<br><br>\n(13) At the time that a notice is delivered to the Public Guardian and Trustee under subrule (8) or (11), the intended applicant must also deliver to the Public Guardian and Trustee a notice, in writing, setting out\n<br>\n- (a) the name of every other person to whom notice is required to be delivered under subrule (8) or (11), and\n<br>\n- (b) the most recent of each of the following that is known to the intended applicant about each of those persons:\n<br>\n--- (i) the person's residential address, inside or outside British Columbia;\n<br>\n--- (ii) the person's postal address, inside or outside British Columbia;\n<br>\n--- (iii) the person's e-mail address;\n<br>\n--- (iv) the person's fax number.",
        "messageStyle": "error"
       },
@@ -5812,6 +5930,7 @@
        "visible": false,
        "title": "Spouse has Guardian",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -5828,7 +5947,8 @@
        "visible": false,
        "visibleIf": "{panel.spouseIsAlive} = \"y\" and {panel.spouseIsAdult} = \"n\" and {panel.spouseHasGuardian} = \"n\"",
        "title": "Because {panel.spouseName} is under the age of 19 and does not have a parent or guardian, the Provincial Direct of Child Welfare needs to know that you are applying for a `Representation Grant`.\n<br><br>\nThis service will tell you how to let them know in a later step.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "text",
@@ -5921,6 +6041,7 @@
        "visible": false,
        "title": "Spouse Is Competent",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -5929,6 +6050,7 @@
        "visible": false,
        "title": "Logic Documentation - successorIsCompetent = \"n\"",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "This service is requiring the applicant to notify a non-committee nominee even though the rules don't require it. Jack and Tyler made this decision on the basis that if the applicant knows enough information to answer questions about a formal, but non-committee nominee, it will not likely be a big hardship to also notify them.\n<br><br>\nIf {successorName} is a minor, we don't care if they are mentally competent or not because minors will trigger a PGT notification anyway. The PGT only needs to be notified once.\n<br><br>\nIf {successorHasNominee} = \"y\",\nnotice needs to go to 3 people:\n<li>1. {successorName}\n<li>2. {successorNomineeName}\n<li>3. PGT\n<br><br>\nIf {successorHasNominee} = \"n\", \nnotice needs to go to 2 people:\n<li>1. {successorName}\n<li>2. PGT",
        "messageStyle": "error"
       },
@@ -5938,6 +6060,7 @@
        "visible": false,
        "title": "Rule 25-2 (10) and (11)",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "If person to whom notice is to be delivered is a mentally incompetent person\n(10) Subrule (11) applies if\n- (a) there has been appointed for a person to whom documents are to be delivered under subrule (1)\n--- (i) a committee appointed under the Patients Property Act, or\n--- (ii) the equivalent of a committee appointed by a court outside British Columbia, or\n- (b) a person to whom documents are to be delivered under subrule (1) is or may be mentally incompetent and paragraph (a) of this subrule does not apply to the person.\n<br><br>\nHow notice may be delivered to a mentally incompetent person\n(11) If subrule (10) applies to a person to whom documents are to be delivered under subrule (1), the intended applicant must deliver the documents to the person as follows:\n- (a) if subrule (10) (a) (i) applies, by delivering the documents to\n--- (i) the committee referred to in that subparagraph, and\n--- (ii) the Public Guardian and Trustee;\n- (b) if subrule (10) (a) (ii) applies, by delivering the documents to\n--- (i) the equivalent person referred to in that subparagraph, and\n--- (ii) the Public Guardian and Trustee;\n- (c) if subrule (10) (b) applies, by delivering the documents to the Public Guardian and Trustee in addition to delivering those documents to the person.",
        "messageStyle": "error"
       },
@@ -6051,6 +6174,7 @@
        "visible": false,
        "title": "Spouse has Nominee",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -6068,7 +6192,8 @@
        "visible": false,
        "visibleIf": "{panel.spouseIsAlive} = \"y\" and {panel.spouseIsAdult} = \"y\" and {panel.spouseIsCompetent} = \"n\" and {panel.spouseHasNominee} = \"n\"",
        "title": "Because {panel.spouseName} is not `mentally competent`, but they do not have a `nominee`, you need to let {panel.spouseName} know directly that you are applying for a `Representation Grant`.\n<br><br>\nThis service will tell you how to let them know in a later step.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "text",
@@ -6189,6 +6314,7 @@
        "visible": false,
        "title": "Spouse is Dead",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -6214,7 +6340,8 @@
        "visible": false,
        "visibleIf": "{panel.spouseIsAlive} = \"n\" and {panel.spouseDied5DaysAfter} = \"n\"",
        "title": "Because {panel.spouseName} died before {deceasedDateOfDeathPlus4}, the people managing {panel.spouseName}'s belongings do not need to know that you are applying for a `Representation Grant` for {deceasedName}.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -6240,7 +6367,8 @@
        "visible": false,
        "visibleIf": "{panel.spouseIsAlive} = \"n\" and {panel.spouseDied5DaysAfter} = \"y\" and {panel.spouseHasPersonalRep} = \"y\"  and {panel.spousePersonalRepName} notempty",
        "title": "Because {panel.spouseName} died after {deceasedDateOfDeathPlus4}, {panel.spousePersonalRepName} needs to know that you are applying for a `Representation Grant` for {deceasedName}.\n<br><br>\nThis service will tell you how to let them know in a later step.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "text",
@@ -6257,7 +6385,8 @@
        "visible": false,
        "visibleIf": "{panel.spouseIsAlive} = \"n\" and {panel.spouseDied5DaysAfter} = \"y\" and {panel.spouseHasPersonalRep} = \"n\"  and {panel.spouseInformalPersonalRepName} notempty",
        "title": "Because {panel.spouseName} died after {deceasedDateOfDeathPlus4}, {panel.spouseInformalPersonalRepName} should know that you are applying for a `Representation Grant` for {deceasedName}.\n<br><br>\nThis service will tell you how to let them know in a later step.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       }
      ],
      "panelCount": 1,
@@ -6276,6 +6405,7 @@
      "visible": false,
      "title": "Spouse Exit Check",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -6314,6 +6444,7 @@
        "visibleIf": "{spouseCompleted} = \"n\"",
        "title": "Please identify everyone who may be considered {deceasedName}'s `spouse` at the time {deceasedName} died. They should know that you are applying for a `Representation Grant` for {deceasedName}. \n<br><br>\nYou want as much transparency in your application as possible in case the Court decides that this person should be considered {deceasedName}'s spouse. \n<br><br>\nJust because you are giving this person notice, it may not mean that they get part of {deceasedName}'s `estate`. \n<br><br>\n<a href=\"https://www.bclaws.gov.bc.ca/civix/document/id/lc/statreg/09013_01#section2\" target=\"_blank\">\nFor more information, click here to read about who should be included as {deceasedName}'s spouse from the <i>Wills, Estate and Succession Act</i> (WESA).</a> (This link opens in a new tab)",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       }
      ],
@@ -6326,6 +6457,7 @@
      "visible": false,
      "title": "Spouse Exit",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -6336,7 +6468,8 @@
        "type": "infotext",
        "name": "spouseExitExplanation",
        "title": "Next, this service will ask about {deceasedName}'s children.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       }
      ],
      "visible": false,
@@ -6356,6 +6489,7 @@
      "visible": false,
      "title": "Child Intro",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -6385,6 +6519,7 @@
        "visible": false,
        "title": "To Do List:",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "- content for GP/AWW intro that explains there may be overlap with executors\n- create intro and logic for AGAWOW\n- create intro and logic for AGP/AGAWW\n- create intro and logic for RAWOW\n- create intro and logic for RGP/RAWW",
        "messageStyle": "error"
       }
@@ -6396,6 +6531,7 @@
      "visible": false,
      "title": "Child Exists",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -6446,6 +6582,7 @@
      "visible": false,
      "title": "Child Info",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -6469,6 +6606,7 @@
        "visible": false,
        "title": "Child Extra Will Questions ",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -6522,6 +6660,7 @@
        "visible": false,
        "title": "Child Is Alive",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -6543,6 +6682,7 @@
        "visible": false,
        "title": "Child Is Adult",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -6559,6 +6699,7 @@
        "visible": false,
        "title": "Logic Documentation - [childIsAdult] = 'n'",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "see the following Message Texts on spousePage:\n<br>\n[successorIsAdultLogic]\n<br>\n[successorRule25-2(8)]\n<br>\n[successorRule25-2(9)]\n<br>\n[successorRule25-2(13)]",
        "messageStyle": "error"
       },
@@ -6665,6 +6806,7 @@
        "visible": false,
        "title": "Child has Guardian",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -6681,7 +6823,8 @@
        "visible": false,
        "visibleIf": "{panel.childIsAlive} = \"y\" and {panel.childIsAdult} = \"n\" and {panel.childHasGuardian} = \"n\"",
        "title": "Because {panel.childName} is under the age of 19 and does not have a parent or guardian, the Provincial Direct of Child Welfare needs to know that you are applying for a `Representation Grant`.\n<br><br>\nThis service will tell you how to let them know in a later step.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "text",
@@ -6775,6 +6918,7 @@
        "visible": false,
        "title": "Child Is Competent",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -6783,6 +6927,7 @@
        "visible": false,
        "title": "Logic Documentation - [childIsCompetent] = 'n'",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "see the following Message Texts on spousePage:\n<br>\n[successorIsCompetentLogic]\n<br>\n[successorRule25-2(10&11]",
        "messageStyle": "error"
       },
@@ -6897,6 +7042,7 @@
        "visible": false,
        "title": "Child has Nominee",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -6914,7 +7060,8 @@
        "visible": false,
        "visibleIf": "{panel.childIsAlive} = \"y\" and {panel.childIsAdult} = \"y\" and {panel.childIsCompetent} = \"n\" and {panel.childHasNominee} = \"n\"",
        "title": "Because {panel.childName} is not `mentally competent`, but they do not have a `nominee`, you need to let {panel.childName} know directly that you are applying for a `Representation Grant`.\n<br><br>\nThis service will tell you how to let them know in a later step.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "text",
@@ -7035,6 +7182,7 @@
        "visible": false,
        "title": "Child is Dead",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -7104,7 +7252,8 @@
        "visible": false,
        "visibleIf": "{panel.childIsAlive} = \"n\" and {panel.childDied5DaysAfter} = \"n\" and {panel.childDied5DaysAfterNoGchildExists} = \"n\"",
        "title": "Because {panel.childName} died before {deceasedDateOfDeathPlus4} and {panel.childName} did not have children, the people managing {panel.childName}'s belongings do not need to know that you are applying for a `Representation Grant` for {deceasedName}.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
@@ -7112,7 +7261,8 @@
        "visible": false,
        "visibleIf": "{panel.childIsAlive} = \"n\" and {panel.childDied5DaysAfter} = \"n\"  and {panel.childDied5DaysAfterNoGchildExists} = \"y\"",
        "title": "Because {panel.childName} died before {deceasedDateOfDeathPlus4}, {panel.childName}'s children need to know that you are applying a `Representation Grant` for {deceasedName}.\n<br><br>\nThis service will ask about {panel.childName}'s children in the next step. \n<br><br>\nFor now, continue identifying {deceasedName}'s children until you have included them all.\n",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -7138,7 +7288,8 @@
        "visible": false,
        "visibleIf": "{panel.childIsAlive} = \"n\" and {panel.childDied5DaysAfter} = \"y\" and {panel.childHasPersonalRep} = \"y\"  and {panel.childPersonalRepName} notempty",
        "title": "Because {panel.childName} died after {deceasedDateOfDeathPlus4}, {panel.childPersonalRepName} needs to know that you are applying for a `Representation Grant` for {deceasedName}.\n<br><br>\nThis service will tell you how to let them know in a later step.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "text",
@@ -7155,12 +7306,14 @@
        "visible": false,
        "visibleIf": "{panel.childIsAlive} = \"n\" and {panel.childDied5DaysAfter} = \"y\" and {panel.childHasPersonalRep} = \"n\"  and {panel.childInformalPersonalRepName} notempty",
        "title": "Because {panel.childName} died after {deceasedDateOfDeathPlus4}, {panel.childInformalPersonalRepName} should know that you are applying for a `Representation Grant` for {deceasedName}.\n<br><br>\nThis service will tell you how to let them know in a later step.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       }
      ],
      "panelCount": 1,
      "minPanelCount": 1,
      "confirmDelete": true,
+     "confirmDeleteText": "Are you sure you want to delete this child?",
      "panelAddText": "Add another child",
      "panelRemoveText": "Delete this child"
     },
@@ -7170,6 +7323,7 @@
      "visible": false,
      "title": "Child Exit Check",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -7198,6 +7352,7 @@
        "visibleIf": "(({childCompleted} == 'n') or ({childCompleted} == 'n'))",
        "title": "Please identify everyone who may be considered {deceasedName}'s child at the time {deceasedName} died. {deceasedName}'s children should know that you are applying for a `Representation Grant` for {deceasedName}. \n<br><br>\nYou want as much transparency in your application as possible in case the Court decides that a person you've left out should be considered {deceasedName}'s child. \n<br><br>\nEven though you are telling this person you are applying for a Representation Grant, if they are not {deceasedName}'s child anymore, they don't automatically get part of {deceasedName}'s `estate`.\n<br><br>\n<a href=\"https://www.bclaws.gov.bc.ca/civix/document/id/lc/statreg/09013_01#section3\" target=\"_blank\">\nFor more information, click here to read about who should be included as {deceasedName}'s child from the <i>Wills, Estate and Succession Act</i> (WESA).</a> (This link opens in a new tab)",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       }
      ],
@@ -7210,6 +7365,7 @@
      "visible": false,
      "title": "Child Exit",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -7220,42 +7376,48 @@
        "type": "infotext",
        "name": "childExitTempExplanation",
        "title": "Next, this service will ask if {deceasedName} owned anyone more than $10,000.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
        "name": "question457",
        "visible": false,
        "title": "AWOW yes spouse, yes children, done successors, move on to creditors",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
        "name": "question28",
        "visible": false,
        "title": "AWOW no spouse, yes children, all alive, \nmove to creditors",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
        "name": "question26",
        "visible": false,
        "title": "yes spouse, no children, creditors",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
        "name": "question486",
        "visible": false,
        "title": "Grandchildren\nYes spouse, some children alive, dead children have own children\nNo spouse, some children alive, dead children have own children\n<br><br>\nParents\nNo spouse, no children \nNo spouse, all children dead (dead children have no children)\n<br><br>\n[actually let's go to beneficiaries first and only if there is a will] Creditors/Beneficiaries\nNo spouse, yes children (all alive)\nYes spouse, all children dead (dead children have no children)\nYes spouse, yes children (all alive)",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
        "name": "childExitGrandchildrenExplanation",
        "visible": false,
        "title": "Because {childPanel[1].childName} has died, doesn't have a personal representative but has children who are alive, lets move on to information about {childPanel[1].childName}'s children.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       }
      ],
      "visible": false,
@@ -7278,7 +7440,8 @@
        "name": "gChildIntroExplanation",
        "title": "Jack to do a displayIF that explains some children's names are going to show and not others.",
        "titleLocation": "hidden",
-       "isRequired": true
+       "isRequired": true,
+       "requiredErrorText": "Please press Continue"
       }
      ]
     },
@@ -7325,7 +7488,8 @@
        "type": "infotext",
        "name": "grandchildExitExpanation",
        "title": "We have enough information about {deceasedName}'s family. Next we move on to information about you, the applicants.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       }
      ],
      "visible": false
@@ -7509,6 +7673,7 @@
      "visible": false,
      "title": "Creditor Intro",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -7518,7 +7683,7 @@
       {
        "type": "infotext",
        "name": "creditorIntroExplanation",
-       "title": "Because {deceasedName} did not make a `Will`,  if {deceasedName} owed more than $10,000 to a single person or single organization, then they know that you are applying for a `Representation Grant`.\n<br><br>\nIf any of these people or organizations don't think you should manage {deceasedName}'s belongings, they will have a fair chance tell to the Court.\n<br><br>\nThis step will start by asking about people first, and then follow up with organizations second.\n",
+       "title": "Because {deceasedName} did not make a `Will`,  if {deceasedName} owed more than $10,000 to a single person or single organization, they need know that you are applying for a `Representation Grant`.\n<br><br>\nIf any of these people or organizations don't think you should manage {deceasedName}'s belongings, they will have a fair chance tell to the Court.\n<br><br>\nThis step will start by asking about people first, and then follow up with organizations second.\n",
        "titleLocation": "hidden",
        "isRequired": true,
        "requiredErrorText": "Please press Continue"
@@ -7531,6 +7696,7 @@
      "visible": false,
      "title": "Creditor Person Exists",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -7540,18 +7706,10 @@
       {
        "type": "infotext",
        "name": "creditorPersonExplanationDisplay",
-       "title": "{displayIf({spouseExists} = n and {childExists} = n, In past steps, you have not yet identified anyone who needs to that you are applying for a `Representation Grant` for {deceasedName}.)}\n\n{displayIf({spouseExists} = y or {childExists} = y, In past steps, you have already identified the following people:\n<ul>\n<b>\n{bullets(spouseInfoPanel.spouseName)}\n{bullets(childInfoPanel.childName)}\n</b>\n</ul>\nBecause you are already letting these people know that you are applying for a `Representation Grant`, do not identify them again in this step.\n)}",
+       "title": "{displayIf({spouseExists} = n and {childExists} = n, In past steps, you have not yet identified anyone who needs to know that you are applying for a `Representation Grant` for {deceasedName}.)}\n\n{displayIf({spouseExists} = y or {childExists} = y, In past steps, you have already identified the following people:\n<ul>\n<b>\n{bullets(spouseInfoPanel.spouseName)}\n{bullets(spouseInfoPanel.spouseGuardianName)}\n{bullets(spouseInfoPanel.spouseNomineeName)}\n{bullets(spouseInfoPanel.spousePersonalRepName)}\n{bullets(childInfoPanel.childName)}\n{bullets(childInfoPanel.childGuardianName)}\n{bullets(childInfoPanel.childNomineeName)}\n{bullets(childInfoPanel.childPersonalRepName)}\n</b>\n</ul>\nBecause you are already letting these people know that you are applying for a `Representation Grant`, do not identify them again in this step.\n)}",
        "titleLocation": "hidden",
        "isRequired": true,
        "requiredErrorText": "Please press Continue"
-      },
-      {
-       "type": "infotext",
-       "name": "question2temp",
-       "visible": false,
-       "title": "{bullets(spouseInfoPanel.spouseGuardianName)}\n{bullets(spouseInfoPanel.spouseNomineeName)}\n{bullets(spouseInfoPanel.spousePersonalRepName)}\n{bullets(spouseInfoPanel.spouseInformalPersonalRepName)}\n\n{bullets(childInfoPanel.childGuardianName)}\n{bullets(childInfoPanel.childNomineeName)}\n{bullets(childInfoPanel.childPersonalRepName)}\n{bullets(childInfoPanel.childInformalPersonalRepName)}",
-       "titleLocation": "hidden",
-       "body": "perhaps this only shows if successorExists = 'y' or other"
       },
       {
        "type": "yesno",
@@ -7574,9 +7732,10 @@
        "type": "infotext",
        "name": "creditorPersonExistsNoTempError",
        "visible": false,
-       "visibleIf": "{creditorPersonExists} = 'y'",
+       "visibleIf": "{creditorPersonExists} = 'yy'",
        "title": "If {deceasedName} owed more than $10,000 to a single person, this service cannot help you apply for a `Representation Grant` at this time.\n<br><br>\nFor now, this service has only been developed for a limited number of situations.\n<br><br>\nPlease check later to see if this service has been developed for your specific situation. This service is continuously expanding to help more and more people.\n<br><br>\nIn the mean time, the Government of British Columbia offers PDF forms that you may find helpful for your application. <a href=\"https://www2.gov.bc.ca/gov/content/justice/courthouse-services/documents-forms-records/court-forms/probate-forms\" target=\"_blank\">Click here to go to the forms.</a> (This link opens in a new tab)",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       }
      ],
@@ -7587,7 +7746,8 @@
      "type": "paneldynamic",
      "name": "creditorPersonInfoPanel",
      "visible": false,
-     "visibleIf": "{creditorPersonExists} = 'yy'",
+     "visibleIf": "{creditorPersonExists} = 'y'",
+     "title": " ",
      "templateElements": [
       {
        "type": "text",
@@ -7602,6 +7762,7 @@
        "name": "creditorExtraWillQuestionsLogic",
        "visible": false,
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "Extra Will Questions are not required because this service is asking the applicant to omit previously identified people, which includes executors. In addition, when there is no Will, this service does not ask for beneficiaries.",
        "messageStyle": "error"
       },
@@ -7611,6 +7772,7 @@
        "visible": false,
        "title": "Creditor Is Alive",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -7632,6 +7794,7 @@
        "visible": false,
        "title": "Creditor Is Adult",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -7648,6 +7811,7 @@
        "visible": false,
        "title": "Logic Documentation - [creditorPersonIsAdult] = 'n'",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "see the following Message Texts on spousePage:\n<br>\n[successorIsAdultLogic]\n<br>\n[successorRule25-2(8)]\n<br>\n[successorRule25-2(9)]\n<br>\n[successorRule25-2(13)]",
        "messageStyle": "error"
       },
@@ -7655,7 +7819,7 @@
        "type": "infotext",
        "name": "creditorPersonIsAdultNoExplanation",
        "visible": false,
-       "visibleIf": "{panel.spouseIsAlive} = \"y\" and {panel.spouseIsAdult} = \"n\"",
+       "visibleIf": "{panel.creditorPersonIsAlive} = \"y\" and {panel.creditorPersonIsAdult} = \"n\"",
        "title": "Because {panel.creditorPersonName} is under the age of 19, {panel.creditorPersonName}'s parent or guardian needs to know that you are applying for a `Representation Grant`.\n<br><br>\nThe Public Guardian and Trustee (PGT) of British Columbia also needs to know that you are applying for a Representation Grant.\n<br><br>\nThis service will tell you how to let them know in a later step.",
        "titleLocation": "hidden",
        "isRequired": true,
@@ -7744,6 +7908,7 @@
        "visible": false,
        "title": "Creditor has Guardian",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -7760,7 +7925,8 @@
        "visible": false,
        "visibleIf": "{panel.creditorPersonIsAlive} = \"y\" and {panel.creditorPersonIsAdult} = \"n\" and {panel.creditorPersonHasGuardian} = \"n\"",
        "title": "Because {panel.creditorPersonalName} is under the age of 19 and does not have a parent or guardian, the Provincial Direct of Child Welfare needs to know that you are applying for a `Representation Grant`.\n<br><br>\nThis service will tell you how to let them know in a later step.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "text",
@@ -7844,6 +8010,7 @@
        "visible": false,
        "title": "Creditor Is Competent",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -7852,6 +8019,7 @@
        "visible": false,
        "title": "Logic Documentation - creditorPersonIsCompetent = \"n\"\n\n",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "see the following Message Texts on spousePage:\n<br>\n{successorIsCompetentLogic}\n<br>\n{successorRule25-2(10&11)}",
        "messageStyle": "error"
       },
@@ -7956,6 +8124,7 @@
        "visible": false,
        "title": "Creditor has Nominee",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -7973,7 +8142,8 @@
        "visible": false,
        "visibleIf": "{panel.creditorPersonIsAlive} = \"y\" and {panel.creditorPersonIsAdult} = \"y\" and {panel.creditorPersonIsCompetent} = \"n\" and {panel.creditorPersonHasNominee} = \"n\"",
        "title": "Because {panel.creditorPersonName} is not `mentally competent`, but they do not have a `nominee`, you need to let {panel.creditorPersonName} know directly that you are applying for a `Representation Grant`.\n<br><br>\nThis service will tell you how to let them know in a later step.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "text",
@@ -8086,41 +8256,48 @@
        "visible": false,
        "title": "Creditor is Dead",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
-       "type": "yesno",
-       "name": "creditorPersonDied5DaysAfter",
+       "type": "infotext",
+       "name": "creditorPersonIsDeadLogic",
        "visible": false,
-       "visibleIf": "{panel.creditorPersonIsAlive} = 'n'",
-       "title": "Did {panel.creditorPersonName} die after {deceasedDateOfDeathPlus4}?",
-       "isRequired": true
-      },
-      {
-       "type": "helptext",
-       "name": "creditorPersonDied5DaysAfterFAQ1",
-       "visible": false,
-       "visibleIf": "{panel.creditorPersonIsAlive} = 'n'",
-       "title": "Why does this date matter?",
        "titleLocation": "hidden",
-       "body": "Under the law, in order for {panel.creditorPersonName} to qualify for {deceasedName}'s `assets`, {panel.creditorPersonName} must have lived for at least 5 days after {deceasedName} died. Once {panel.creditorPersonName} has qualified, it doesn't matter if {panel.creditorPersonName} is now dead.\n<br><br>\nThe people managing {panel.creditorPersonName}'s belongings need to know that you are applying for a `Representation Grant` for {deceasedName}.\n<br><br>\n<a href=\"https://www.bclaws.gov.bc.ca/civix/document/id/lc/statreg/09013_01#section10\" target=\"_blank\">For more information, click here for the Five-day survival rule from the  <i>Wills, Estate and Succession Act</i> (WESA).</a> (This link opens in a new tab)"
+       "requiredErrorText": "Please press Continue",
+       "body": "We do not need to ask if the creditor died before or after [deceasedName] because when the creditor died does not change the fact that [deceasedName] owed the creditor money.",
+       "messageStyle": "error"
       },
       {
        "type": "infotext",
-       "name": "creditorPersonDied5DaysAfterNo",
+       "name": "creditorPersonIsDeadExplanation",
        "visible": false,
-       "visibleIf": "{panel.creditorPersonIsAlive} = 'n' and {panel.creditorPersonDied5DaysAfter} = 'n'",
-       "title": "Because {panel.creditorPersonName} died before {deceasedDateOfDeathPlus4}, the people managing {panel.creditorPersonName}'s belongings do not need to know that you are applying for a `Representation Grant` for {deceasedName}.",
-       "titleLocation": "hidden"
+       "title": "Because {panel.creditorPersonName} has died, {panel.creditorPersonName}'s `personal representative` needs to know that you are applying for a `Representation Grant` for {deceasedName}.\n<br><br>\nIt is your responsibility to check with {panel.creditorPersonName}'s family and friends to find out who is {panel.creditorPersonName}'s personal representative.\n<br><br>\nIf you find out that {panel.creditorPersonName} does not have a `personal representative`, this service will help tell that to The Court.",
+       "titleLocation": "hidden",
+       "isRequired": true,
+       "requiredErrorText": "Please press Continue"
       },
       {
-       "type": "yesno",
-       "name": "creditorPersonHasPersonalRep",
+       "type": "radiogroup",
+       "name": "creditorPersonPersonalRepExists",
        "visible": false,
-       "visibleIf": "{panel.creditorPersonIsAlive} = 'n' and {panel.creditorPersonDied5DaysAfter} = 'y'",
-       "title": "Does {panel.creditorPersonName} have a `personal representative`",
-       "description": "If {panel.creditorPersonName}'s personal representative is not alive anymore, select \"NO\".",
-       "isRequired": true
+       "title": "Do you know if {panel.creditorPersonName} has a `personal representative`?",
+       "description": "If {panel.creditorPersonName}'s personal representative is not alive anymore, contact that person's personal representative to find out who is now representing {panel.creditorPersonName}. ",
+       "isRequired": true,
+       "choices": [
+        {
+         "value": "item1",
+         "text": "I know {panel.creditorPersonName} has a personal representative"
+        },
+        {
+         "value": "item2",
+         "text": "I know {panel.creditorPersonName} does NOT have a personal representative"
+        },
+        {
+         "value": "item3",
+         "text": "I don't know if {panel.creditorPersonName} has a personal representative"
+        }
+       ]
       },
       {
        "type": "text",
@@ -8136,30 +8313,103 @@
        "name": "creditorPersonPersonalRepNameExplanation",
        "visible": false,
        "visibleIf": "{panel.creditorPersonIsAlive} = 'n' and {panel.creditorPersonDied5DaysAfter} = 'y' and {panel.creditorPersonHasPersonalRep} = 'y'  and {panel.creditorPersonPersonalRepName} notempty",
-       "title": "Because {panel.creditorPersonName} died after {deceasedDateOfDeathPlus4}, {panel.creditorPersonPersonalRepName} needs to know that you are applying for a `Representation Grant` for {deceasedName}.\n<br><br>\nThis service will tell you how to let them know in a later step.",
-       "titleLocation": "hidden"
-      },
-      {
-       "type": "text",
-       "name": "creditorPersonInformalPersonalRepName",
-       "visible": false,
-       "visibleIf": "{panel.creditorPersonIsAlive} = 'n' and {panel.creditorPersonDied5DaysAfter} = 'y' and {panel.creditorPersonHasPersonalRep} = 'n'",
-       "title": "What is the name of the person most likely to manage {panel.creditorPersonName}'s money and belongings?",
-       "description": "This name should be written using the Roman alphabet. English and French are examples of languages that use the Roman alphabet.",
-       "isRequired": true
+       "title": "Because {panel.creditorPersonName} has died, {panel.creditorPersonPersonalRepName} needs to know that you are applying for a `Representation Grant` for {deceasedName}.\n<br><br>\nThis service will tell you how to let {panel.creditorPersonPersonalRepName} know in a later step.",
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
-       "name": "creditorPersonInformalPersonalRepNameExplanation",
+       "name": "creditorPersonPersonalRepExistsNoExplanation",
        "visible": false,
-       "visibleIf": "{panel.creditorPersonIsAlive} = 'n' and {panel.creditorPersonDied5DaysAfter} = 'y' and {panel.creditorPersonHasPersonalRep} = 'n'  and {panel.creditorPersonInformalPersonalRepName} notempty",
-       "title": "Because {panel.creditorPersonName} died after {deceasedDateOfDeathPlus4}, {panel.creditorPersonInformalPersonalRepName} should know that you are applying for a `Representation Grant` for {deceasedName}.\n<br><br>\nThis service will tell you how to let them know in a later step.",
-       "titleLocation": "hidden"
+       "title": "You are responsible for finding and contacting enough of {panel.creditorPersonName}'s family and friends who are able to tell you for sure if {panel.creditorPersonName} has a `personal representative`.",
+       "titleLocation": "hidden",
+       "isRequired": true,
+       "requiredErrorText": "Please press Continue"
+      },
+      {
+       "type": "yesno",
+       "name": "creditorPersonPersonalRepExistsNoConfirmed",
+       "visible": false,
+       "title": "Did {panel.creditorPersonName}'s family and friends confirm that {panel.creditorPersonName} does NOT have a `personal representative`?"
+      },
+      {
+       "type": "infotext",
+       "name": "creditorPersonPersonalRepExistsNoConfirmedYesExplanation",
+       "visible": false,
+       "visibleIf": "{panel.creditorPersonIsAlive} = 'n' and {panel.creditorPersonDied5DaysAfter} = 'y' and {panel.creditorPersonHasPersonalRep} = 'y'  and {panel.creditorPersonPersonalRepName} notempty",
+       "title": "Because {panel.creditorPersonName} has died, and their family and friends have confirmed {panel.creditorPersonName} does NOT have a `personal representative`, \n<br><br>\n[needs work]\nthis service will create the documents you need to ask The Court to skip notifying them. [maybe explain the 3 actions the app will do?]\n",
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
+      },
+      {
+       "type": "yesno",
+       "name": "question238",
+       "visible": false,
+       "title": "Did you talk to {panel.creditorPersonName}'s family and friends to know if {panel.creditorPersonName} has a `personal representative`?"
+      },
+      {
+       "type": "infotext",
+       "name": "question1",
+       "visible": false,
+       "title": "no - Contact them dummy",
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
+       "messageStyle": "error"
+      },
+      {
+       "type": "radiogroup",
+       "name": "question262",
+       "visible": false,
+       "title": "Does {panel.creditorPersonName} have a `personal representative?`?",
+       "choices": [
+        {
+         "value": "item1",
+         "text": "yes - scroll up"
+        },
+        {
+         "value": "item3",
+         "text": "no - done"
+        },
+        {
+         "value": "item4",
+         "text": "family and friends don't know - hire pros?"
+        }
+       ]
+      },
+      {
+       "type": "infotext",
+       "name": "question259",
+       "visible": false,
+       "title": "hire a pro",
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
+      },
+      {
+       "type": "yesno",
+       "name": "question258",
+       "visible": false,
+       "title": "Did {panel.creditorPersonName}'s family or friends tell you that {panel.creditorPersonName} currently has a `personal representative`?"
+      },
+      {
+       "type": "infotext",
+       "name": "question242",
+       "visible": false,
+       "title": "contact them and ask if they are the personal rep or if they know if something else. \nif successful, say yes\nif not, do know moe's friends/family",
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
+      },
+      {
+       "type": "yesno",
+       "name": "question253",
+       "visible": false,
+       "title": "want to hire a professional?",
+       "description": "you don't have to. the court will decide whether you can skip serving Moe. however hiring a professional would give you more credibility in the eye'ss of the court."
       }
      ],
      "panelCount": 1,
      "minPanelCount": 1,
      "confirmDelete": true,
+     "confirmDeleteText": "Are you sure you want to delete this person?",
      "panelAddText": "Add another person who is owed more than $10,000",
      "panelRemoveText": "Delete this person"
     },
@@ -8169,6 +8419,7 @@
      "visible": false,
      "title": "Creditor Organization Exists",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -8186,9 +8437,10 @@
        "type": "infotext",
        "name": "creditorOrganizationExistsYesTempError",
        "visible": false,
-       "visibleIf": "{creditorOrganizationExists} = 'y'",
+       "visibleIf": "{creditorOrganizationExists} = 'yy'",
        "title": "If {deceasedName} owed more than $10,000 to a single organization, this service cannot help you apply for a `Representation Grant` at this time.\n<br><br>\nFor now, this service has only been developed for a limited number of situations.\n<br><br>\nPlease check later to see if this service has been developed for your specific situation. This service is continuously expanding to help more and more people.\n<br><br>\nIn the mean time, the Government of British Columbia offers PDF forms that you may find helpful for your application. <a href=\"https://www2.gov.bc.ca/gov/content/justice/courthouse-services/documents-forms-records/court-forms/probate-forms\" target=\"_blank\">Click here to go to the forms.</a> (This link opens in a new tab)",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       }
      ],
@@ -8199,7 +8451,8 @@
      "type": "paneldynamic",
      "name": "creditorOrganizationInfoPanel",
      "visible": false,
-     "visibleIf": "{creditorOrganizationExists} = 'yy'",
+     "visibleIf": "{creditorOrganizationExists} = 'y'",
+     "title": " ",
      "templateElements": [
       {
        "type": "text",
@@ -8210,8 +8463,8 @@
      ],
      "panelCount": 1,
      "minPanelCount": 1,
-     "panelAddText": "Add an Organization",
-     "panelRemoveText": "Remove {panel.creditorOrganizationName}"
+     "panelAddText": "Add another organization who is owed more than $10,000",
+     "panelRemoveText": "Remove this organiation"
     },
     {
      "type": "infotext",
@@ -8219,6 +8472,7 @@
      "visible": false,
      "title": "Creditor Exit Check",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -8248,11 +8502,12 @@
        "visibleIf": "{creditorComplete} = \"n\"",
        "title": "Please identify everyone who {deceasedName} may have owed $10,000. These people or organizations should know that you are applying for a `Representation Grant` for {deceasedName}. \n<br><br>\nYou want as much transparency in your application as possible in case the Court decides that you should have let a person or organization know you were applying for a `Representation Grant` for {deceasedName}.\n<br><br>\nEven though you are telling this person or organization you are applying for a Representation Grant, they don't automatically get part of {deceasedName}'s `estate`. \n<br><br>\n<a href=\"https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/168_2009_03_1#part25\" target=\"_blank\">\nClick here to go to the <i>Supreme Court Civil Rules</i> for more information about who should know you are applying for a Representation Grant.</a> Scroll down to Rule 25-2, Subrule (2) (b) (ii). (This link opens in a new tab)",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       }
      ],
      "visible": false,
-     "visibleIf": "{creditorPersonExists} = 'n' and {creditorOrganizationExists} = 'n'"
+     "visibleIf": "({creditorPersonExists} = 'n' or ({creditorPersonExists} = \"y\" and isContainerReady('creditorPersonInfoPanel'))) \nand\n({creditorOrganizationExists} = 'n' or ({creditorOrganizationExists} = \"y\" and isContainerReady('creditorOrganizationInfoPanel')))"
     },
     {
      "type": "panel",
@@ -8262,18 +8517,20 @@
        "type": "infotext",
        "name": "creditorExitAWOWExplanation",
        "title": "You have now identified all of the people that need to know that you are applying for a `Representation Grant` for {deceasedName}.\n<br><br> \nNext, this service will ask about who is applying for this Representation Grant. The questions will be about you and anyone applying together with you.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
        "name": "creditorExitForeignAWOWExplanation",
        "visible": false,
        "title": "[TBD]\n<br>\nNext, this service will ask about any other person who was notified when you got the Foreign Grant??",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       }
      ],
      "visible": false,
-     "visibleIf": "{creditorPersonExists} = 'n' and {creditorOrganizationExists} = 'n' and {creditorComplete} = 'y'"
+     "visibleIf": "({creditorPersonExists} = 'n' or ({creditorPersonExists} = \"y\" and isContainerReady('creditorPersonInfoPanel'))) \nand\n({creditorOrganizationExists} = 'n' or ({creditorOrganizationExists} = \"y\" and isContainerReady('creditorOrganizationInfoPanel')))\nand\n{creditorComplete} = 'y'"
     }
    ],
    "visible": false,
@@ -8287,7 +8544,8 @@
      "type": "infotext",
      "name": "question274",
      "title": "catch-all for resealing/ancillary. notify everyone other than \"above\" who also got notified for the original grant. ",
-     "titleLocation": "hidden"
+     "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue"
     }
    ],
    "visible": false,
@@ -8301,6 +8559,7 @@
      "name": "question48",
      "visible": false,
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "body": "[Notes for how to fill out forms when multiple applicants]\nWould allow executors across multiple ranks to apply together, no extra messaging required. Swear P3 together, single \"we\" paragraphs with multiple applicants listed\n<br><br>\nWith a mix of executors of different ranks and non-executors, check the admin with will box instead of grant of probate. only check grant of probate when executors of same rank applying.\n<br><br>\ncan co-mingle executors and non-executors. on the P3, if joint swearing, select admin with will instead of grant of probate. separate entries for Paragraph 4. otherwise, P3 + P8.\n<br><br>\nscenario 1: executor + admin apply together<br>\nscenario 2: executor does P3, admin does P8<br>\nscenario 3: admin does P3, executor does P8\n<br><br>\nadmin with will - can have multiple applicants with different 131 paragraphs on the same. groups will likely be all (a) and/or (a.1). or all (b) and/or (c), no need to validate these groupings too hard because they are self-reporting"
     },
     {
@@ -8308,6 +8567,7 @@
      "name": "question3asdfdsf",
      "visible": false,
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "body": "[make 2 version. v1 is only eligible people; v2 is eligible plus excluded list, explaining why they are excluded\nhere's a list of everyone you've identified so far. \n<br><br>\n<b>In the List</b>\n<li>eligible people ({deceasedName}'s spouse)\n<li>ex. Jill Taylor (Executor - spouse name Jillian Smith; beneficiary name Jilly Smith) able to combine executor/family position/beneficiary?\n<li>deceased people's personal reps (XYX's personal rep) - ask all support questions\n<li>human creditor (alive) (creditor)  - ask all support questions\n<li>Jill Taylor (guardian for Austin) nor nominees - ask all support questions\n<br><br>\n<b>Not In the List</b>\n<li>deceased people (deceased - role)\n<li>Austin (minor/not mentally competent)\n\n<br><br>\n<b>Do not display at all</b>\n<li>organization creditor (creditor) [they can add themselves as new applicant and go through org questions] (still need to be notified though)"
     },
     {
@@ -8330,10 +8590,11 @@
      "elements": [
       {
        "type": "infotext",
-       "name": "jiraRepGrant239a",
+       "name": "jiraRepGrant249a",
        "visible": false,
        "titleLocation": "hidden",
-       "body": "<a href=\"https://justice.gov.bc.ca/jira/browse/REPGRANT-239\" target=\"_blank\">[JIRA REPGRANT-239]</a>\n<br><br>\nName: applicant\n<br><br>\nTitle: Who is applying to represent [deceasedName]?\n<br><br>\nCheckbox with choices dynamically generated by [spouseInfoPanel], [childInfoPanel] and <b>[deceasedFirstNationsName]</b>. \"Other\" is currently not in scope.\n<br><br>\nDisplay: \"[spouseName] ([deceasedName]'s spouse)\" if \n<li>[spouseIsAlive] = 'y',</li>\n<li>[spouseIsAdult] = 'y', and</li>\n<li>[spouseIsCompetent] = 'y'</li>\n<ul><li>[panel.applicantRole] = 'spouse'</li></ul>\n<br>\nDisplay: \"[childName] ([deceasedName]'s child)\" if \n<li>[childIsAlive] = 'y',</li>\n<li>[childIsAdult] = 'y', and</li>\n<li>[childIsCompetent] = 'y'</li>\n<ul><li>[panel.applicantRole] = 'child'</li></ul>\n<br>\n<b>New for REGPRANT-239</b>\n<br>\nDisplay \"[deceasedFirstNationsName]\" (the text, not the value) if\n<li>[deceasedFirstNations] = 'y'</li>\n<ul><li>[panel.applicantRole] should be 'firstNations'</li></ul>\n<br>\nBeing able to access each person's role is important for questions further down this page."
+       "requiredErrorText": "Please press Continue",
+       "body": "<a href=\"https://justice.gov.bc.ca/jira /browse/REPGRANT-249\" target=\"_blank\">[JIRA REPGRANT-249]</a>\n\n<br><br>\nName: [applicantChoice]\n<br><br>\nTitle: Who is applying to represent [deceasedName]?\n<br><br>\nCheckbox with choices dynamically generated by [spouseInfoPanel], [childInfoPanel], [creditorPersonName], [creditorOrganizationName] and  [deceasedFirstNationsName]. \"Other\" is currently not in scope.\n<br><br>\n\nDisplay: \"[spouseName] ([deceasedName]'s spouse)\" if \n<li>[spouseExists] = 'y',</li>\n<li>[spouseIsAlive] = 'y',</li>\n<li>[spouseIsAdult] = 'y', and</li>\n<li>[spouseIsCompetent] = 'y'</li>\n<ul><li>[panel.applicantRole] = 'spouse'</li></ul>\n<br>\n\nDisplay: \"[childName] ([deceasedName]'s child)\" if \n<li>[childExists] = 'y',</li>\n<li>[childIsAlive] = 'y',</li>\n<li>[childIsAdult] = 'y', and</li>\n<li>[childIsCompetent] = 'y'</li>\n<ul><li>[panel.applicantRole] = 'child'</li></ul>\n<br>\n\nDisplay \"[creditorPersonName] ([deceasedName] owed them more than $10,000)\"\n<li>[creditorPersonExists] = 'y',</li>\n<li>[creditorPersonIsAlive] = 'y',</li>\n<li>[creditorPersonIsAdult] = 'y', and</li>\n<li>[creditorPersonIsCompetent] = 'y'</li>\n<ul><li>[panel.applicantRole] = 'creditorPerson'</li></ul>\n<br>\nDisplay \"[deceasedFirstNationsName]\" (the text, not the value) if\n<li>[deceasedFirstNations] = 'y'</li>\n<ul><li>[panel.applicantRole] should be 'firstNations'</li></ul>\n<br>\n\n\nDisplay \"[creditorOrganizationName] ([deceasedName] owed them more than $10,000)\" if\n<li>[creditorOrganizationExists] = 'y'</li>\n<ul><li>[panel.applicantRole] should be 'creditorOrganization'</li></ul>\n<br>\n\n<b>New for REGPRANT-249</b>\n<br>\n<br>\nDisplay \"<b>[successorGuardianName] ([successorName]'s Guardian)</b>\" if\n<li>[successorIsAlive] = 'y',</li>\n<b><li>[successorIsAdult] = 'n', and</li>\n<li>[successorHasGuardian] = 'y'</b></li>\n<br>\n\n<br>\nBeing able to access each person's role is important for questions further down this page."
       },
       {
        "type": "radiogroup",
@@ -8363,6 +8624,7 @@
        "visible": false,
        "title": "OXD List Builder Idea",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "[JIRA-REPGRANT-2XX Future Ticket]<br>\n[Old Notes from Google Sheets - copied here Nov 4 2021]\n<br><br>\nApplicant picker/selector tool with an \"Add  another applicant\" button\n<br>\nOf the family members you've provided information for, who is applying to represent {deceasedName}?\n<br>\nIs not applying\n<br>\nIs applying (None of the previously mentioned family members are applying.)\n<br><br>\nList on left\n<br>\nTitle: Is not applying\n<br>\nContent: populated with relatives from Step 2: About the Relatives who are alive, 19+ and mentally competent\n<br>\nList on right\n<br>\nTitle: Is applying\n<br>\nInteraction:\n<br>\nUser clicks left/ right arrow buttons beside the name they want to move\n<br>\nNote to developer: When a name is moved over and the applicant's accordion section is displayed, the section should be expanded by default and should not collapse when new applicants are added here or through Additional Applicant Names. The accordion only collapses if user initiates the action."
       },
       {
@@ -8370,6 +8632,7 @@
        "name": "applicantFutureScope",
        "visible": false,
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "[Sample description for future scope with people who have multiple roles] \n<br><br>\nIf your name appears more than once because you have multiple roles in this family??, select the version without a bracket..... or select the instance of your name that appears higher in the list"
       },
       {
@@ -8396,6 +8659,7 @@
        "visible": false,
        "title": "New Applicant",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -8410,6 +8674,7 @@
        "name": "question42",
        "visible": false,
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "[note] for new applicants we don't know anything a about, no need to ask if over 19 nor mentally competent - leave it up to notice of dispute to find that out. low likelihood that this would happen"
       },
       {
@@ -8440,7 +8705,8 @@
        "name": "question44",
        "visible": false,
        "title": "If there is 1 applicant on behalf of an organization, use organization address as service address.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -8519,6 +8785,7 @@
        "visible": false,
        "title": "Standard Applicant Questions",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -8561,6 +8828,7 @@
        "visible": false,
        "title": "AWOW Questions",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -8569,6 +8837,7 @@
        "visible": false,
        "title": "DO we even need this?",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "Is it good enough just drop a link to WESA 130 here?",
        "messageStyle": "error"
       },
@@ -8578,6 +8847,7 @@
        "visible": false,
        "title": "Notes about 130 and 131 from Google Sheets - Copied Nov 4 2021",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "If Applicant has support of spouse, give them 130a. If there is a more than 1 spouse, if anyone of these spouses nominates the child, that is enough to get them 130a even if some other spouses don't support the child.\n<br><br>\nIf Child does not have a spouse's support, but they reaches majority of support of all the living children, give them 130b\n<br><br>\nIf Applicant (non-spouse, non-child) does not have the support of the spouse, but reaches majority of support of all the living children, give them 130c\n<br><br>\nIf Child does not have a spouse's support nor does not reach majority of support of all living children, give them 130d\n<br><br>\nWe will skip 130e and 130f for now until we take in information for other intestate successors.\n<br><br>\nIf Applicant (non-spouse, non-child) does not have a spouse's support nor any support of any living child, give them 130g\n<br><br>\n-----\n<br><br>\nWESA 130 (b) a child of the deceased person having the consent of a majority of the children of the deceased person;\n<br><br>\nwhat if multiple child applicants on same applicant; and they support each other? probably should be fine.\n<br><br>\nDo we need consent from a personal rep? No. Only living children have a \"vote\".\n<br><br>\nWhat if the personal rep is a person rep for more than 1 person? Does their vote count as more than 1? No votes for personal reps. Only living children. So if the living child is also a personal rep for 2 other children of the deceased, they only get 1 vote, not 3.",
        "messageStyle": "error"
       },
@@ -8620,6 +8890,7 @@
        "name": "jiraApplicantSomething",
        "visible": false,
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "For the 2021 Q4 Release, we are going to assume that everyone who applies together are the highest rank. \n\nSo if a spouse is also applying along with children, the children get assigned 130a rank.\n\nIf a spouse is not applying, child gets asked if spouse has nominated them. \n\nMore logic to come..."
       },
       {
@@ -8627,6 +8898,7 @@
        "name": "applicantNominatedBySpouseNoExplanationFuture",
        "visible": false,
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "[Tyler and Jack wonder if we can assume that if there is a spouse and children applying together, we can assume 130a for all applicants]\ncan't use this service at this time. passing over requires different forms\n",
        "messageStyle": "error"
       },
@@ -8649,6 +8921,7 @@
        "name": "applicant130gExplanation",
        "visible": false,
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "If there are no qualified relatives to give \"support\" and they get g, display:\n<br><br>\n\"Although there are no relatives of {deceasedName} to agree with you applying to represent them, you can still apply. There will be one additional step. This service will give you instructions for this step later.\"\n<br><br>\nIf answer = None of the above (e.g. there are qualified relatives to give \"support\" BUT none of them agree) and they get g, display:\n<br><br>\n\"Although the relatives of {deceasedName} do not agree with you applying to represent {deceasedName}, you can still apply. There will be one additional step. This service will give you instructions for this step later.\""
       },
       {
@@ -8657,6 +8930,7 @@
        "visible": false,
        "title": "Executor Questions",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -8688,6 +8962,7 @@
        "visible": false,
        "title": "AWW Questions",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -8725,6 +9000,7 @@
      "visible": false,
      "title": "Foreign Grant",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -8736,7 +9012,8 @@
        "name": "question237",
        "visible": false,
        "title": "can this section be invisible until all applicants say Yes to being on the foreign grant",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -8751,6 +9028,7 @@
        "visible": false,
        "title": "Foreign Grant Applicant Confirmation",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "inline"
       },
       {
@@ -8776,6 +9054,7 @@
      "visible": false,
      "title": "Applicant Exit Check",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -8787,7 +9066,8 @@
        "name": "applicantExitCheckReview",
        "title": "In this step, you have identified the people working together to get a `Representation Grant` for {deceasedName} include:\n<ul>\n<b>\n{bullets(applicantInfoPanel.applicantName)}\n</b></ul>",
        "titleLocation": "hidden",
-       "isRequired": true
+       "isRequired": true,
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -8804,6 +9084,7 @@
        "visibleIf": "{applicantCompleted} = 'n'",
        "title": "[update this]\n<br>\nBefore moving on to the next step, please add your information as an `applicant`. It is important to identify yourself as this service will prepare the paperwork based on this information.\n<br><br>\nIf several people are applying together to represent {deceasedName}, you need to identify them all as `applicants` on this page so that they appear on the `Representation Grant`.  ",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       }
      ],
@@ -8815,6 +9096,7 @@
      "visible": false,
      "title": "Competing Applications",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -8834,7 +9116,8 @@
        "visibleIf": "{applicantCompetingApplicationExists} = 'y'",
        "title": "The Court wants to know who else is applying for a `Representation Grant` for {deceasedName}. The Court will look at all of the applications and decide who should be given the Representation Grant according on the law.\n<br><br>\ndisplayIf stuff: With will. link to WESA 131\n<br><br>\ndisplayIf stuff: Without will. link to WESA 130.",
        "titleLocation": "hidden",
-       "isRequired": true
+       "isRequired": true,
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "matrixdynamic",
@@ -8877,6 +9160,7 @@
        "visibleIf": "({applicantCompetingApplicationExists} = 'n' or\n({applicantCompetingApplicationExists} = 'y' and {applicantCompetingApplicantMatrix} notempty) and {applicantCompetingApplicationExistsCompleted} = 'n'",
        "title": "[update this]\n<br>\nPlease add your information as an `applicant`. It is important to identify yourself as this service will prepare the paperwork based on this information.\n  ",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       }
      ],
@@ -8888,6 +9172,7 @@
      "visible": false,
      "title": "Citation Questions",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -8897,48 +9182,49 @@
       {
        "type": "yesno",
        "name": "applicantCited",
-       "title": "Did you, {applicantInfoPanel[0].applicantName}, receive a `citation`?\n",
+       "title": "Did {commaListOr(applicantChoice)} receive a `citation`?",
        "isRequired": true
       },
       {
        "type": "infotext",
        "name": "applicantCitedYesTempError",
        "visible": false,
-       "visibleIf": "{applicantCited} = 'y'",
+       "visibleIf": "{applicantCited} = 'yy'",
        "title": "If someone sent you a `citation`, this service cannot help you apply for a `Representation Grant` at this time.\n<br><br>\nFor now, this service has only been developed for a limited number of situations.\n<br><br>\nPlease check later to see if this service has been developed for your specific situation. This service is continuously expanding to help more and more people.\n<br><br>\nIn the mean time, the Government of British Columbia offers PDF forms that you may find helpful for your application. <a href=\"https://www2.gov.bc.ca/gov/content/justice/courthouse-services/documents-forms-records/court-forms/probate-forms\" target=\"_blank\">Click here to go to the forms.</a> (This link opens in a new tab)",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       },
       {
        "type": "infotext",
        "name": "applicantCitedReviewCheck",
        "visible": false,
-       "visibleIf": "{applicantCited} = 'yy'",
-       "title": "1. display alive names (but not the active applicants? maybe need to display them all in case current applicant was past citor and now joined forces)\n2. display dead names separately\n3. say, don't include these people in either of these lists answering next question",
+       "visibleIf": "{applicantCited} = 'y'",
+       "title": "{displayIf({spouseExists} = n and {childExists} = n and {creditorPersonExists} = n and {creditorOrganizationExists} = n, In past steps, you have not yet identified anyone else who needs to know that you are applying for a `Representation Grant` for {deceasedName}.)}\n\n{displayIf({spouseExists} = y or {childExists} = y {creditorPersonExists} = y or {creditorOrganizationExists} = y, In past steps, you have already identified the following people:\n<ul>\n<b>\n{bullets(spouseInfoPanel.spouseName)}\n{bullets(spouseInfoPanel.spouseGuardianName)}\n{bullets(spouseInfoPanel.spouseNomineeName)}\n{bullets(spouseInfoPanel.spousePersonalRepName)}\n{bullets(childInfoPanel.childName)}\n{bullets(childInfoPanel.childGuardianName)}\n{bullets(childInfoPanel.childNomineeName)}\n{bullets(childInfoPanel.childPersonalRepName)}\n{bullets(creditorPersonInfoPanel.creditorPersonName)}\n{bullets(creditorOrganizationInfoPanel.creditorOrganizationName)}\n</b>\n</ul>\nBecause you are already letting these people know that you are applying for a `Representation Grant`, you do not need to identify them again even if they gave you a `citation`.\n)}",
        "titleLocation": "hidden",
        "isRequired": true,
        "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
-       "name": "applicantCitorNew",
+       "name": "applicantCitorNewExists",
        "visible": false,
        "visibleIf": "{applicantCited} = 'y' and {applicantCitedReviewCheck} > 0",
-       "title": "Is there someone who gave you a `citation` AND is not in the above list?",
-       "description": "If someone in the above list gave [applicantName] a citation, you do not need to include them because they are already included in the list of people who need to know [applicant name] is applying for a `Representation Grant` for {deceasedName}."
+       "title": "Is there someone that is NOT in the above list who gave {commaListOr(applicantChoice)} a `citation`?",
+       "description": "If someone in the above list gave {commaListOr(applicantChoice)} a citation, you do NOT need to identify them again them because this service will already help you tell them you applying for a `Representation Grant` for {deceasedName}."
       },
       {
        "type": "paneldynamic",
        "name": "applicantCitorInfoPanel",
        "visible": false,
-       "visibleIf": "{applicantCited} = 'y' and {applicantCitorNew} = 'y'",
-       "title": "Information about people who gave you a `citation`.",
+       "visibleIf": "{applicantCited} = 'y' and {applicantCitorNewExists} = 'y'",
+       "title": " ",
        "templateElements": [
         {
          "type": "text",
          "name": "applicantCitorName",
-         "title": "Please enter the name of the person who gave you a `citation`.",
-         "description": "Use the information as it appears on the citation.",
+         "title": "What is the name of the person who gave {commaListOr(applicantChoice)} a `citation`?",
+         "description": "Use the name as it appears on the citation.",
          "isRequired": true
         },
         {
@@ -8952,27 +9238,32 @@
          "name": "applicantCitorAliveNoExplanation",
          "visible": false,
          "visibleIf": "{applicantCitorAlive} = 'n'",
-         "title": "citation is personal to the citor. you don't need to notify them if they're dead",
-         "titleLocation": "hidden"
+         "title": "wrong - add new content Because {panel.applicantCitorName} has died, you don't need to let them know you are applying for a `Representation Grant` for {deceasedName}. Only the actual person who made the `citation` needs to know you are applying.",
+         "titleLocation": "hidden",
+         "requiredErrorText": "Please press Continue"
         }
        ],
        "panelCount": 1,
        "minPanelCount": 1,
+       "confirmDeleteText": "Are you sure you want to delete this person?",
        "panelAddText": "Add another citor",
        "panelRemoveText": "Remove this citor"
       },
       {
        "type": "yesno",
-       "name": "applicantCitorComplete",
+       "name": "applicantCitorCompleted",
        "visible": false,
-       "title": "include all the citors (not already listed above)?"
+       "visibleIf": "{applicantCited} = 'n' \nor \n({applicantCited} = \"y\" and ({applicantCitorNewExists} = 'n') \nor ({applicantCitorNewExists} = 'y' and isContainerReady('applicantCitorInfoPanel')))",
+       "title": "Have all the people who gave {commaListOr(applicantChoice)} a `citation` now been identified?"
       },
       {
        "type": "infotext",
-       "name": "applicantCitorCompleteNoError",
+       "name": "applicantCitorCompletedNoError",
        "visible": false,
-       "title": "go back and include them all.\n\nyou can't use this yet.",
+       "visibleIf": "({applicantCited} = 'n' \nor \n({applicantCited} = \"y\" and ({applicantCitorNewExists} = 'n') \nor ({applicantCitorNewExists} = 'y' and isContainerReady('applicantCitorInfoPanel'))))\nand\n{applicantCitorCompleted} = 'n'",
+       "title": "Please identify anyone who gave {commaListOr(applicantChoice)} a `citation`. These people need to know that you are applying for a `Representation Grant` for {deceasedName}. \n<br><br>\nYou want as much transparency in your application as possible.\n<br><br>\nEven though you are telling this person you are applying for a Representation Grant, they don't automatically get part of {deceasedName}'s `estate`. \n<br><br>\n<a href=\"https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/168_2009_03_1#part25\" target=\"_blank\">\nClick here to go to the <i>Supreme Court Civil Rules</i> for more information about citations.</a> Scroll down to Rule 25-11 — Citations. (This link opens in a new tab)",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       }
      ],
@@ -8985,6 +9276,7 @@
      "visible": false,
      "title": "Multiple Applicants",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -8996,7 +9288,8 @@
        "name": "question307",
        "visible": false,
        "title": "Who is swearing what?",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "radiogroup",
@@ -9015,6 +9308,7 @@
        "name": "applicantsMultipleNotes",
        "title": "Notes and Copywriting from Google Sheets - Nov 4 2021",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "Coordinating efforts between multiple applicants\n<br><br>\nWhen there are multiple people applying to be the deceased's personal representative, the group will need to decide whether to do some of the steps together or separately.\n<br><br>\nBefore you can file your documents at the court, all applicants need to swear/affirm their affidavits. Each affidavit costs around $40 to swear. If applicants can come together to swear their affidavits together, they may be able to save some of the costs.\n<br><br>\n(Note to dev: Only show if the question Swear Together or Separate is shown. Vertically anchor to the question )\n<br><br>\nWho should be considered the main applicant?\n<br><br>\nIf a group of applicants decide that it is not possible for everyone to get together to swear their affidavits, we will provide documents for the applicants who will swear separately.\n<br><br>\nAs part of this process, you will need to identify main applicant(s). They are generally the ones who do most of the work. However, this does not mean they have more power over the other appilcants.\n<br><br>\nIf there is more than one main applicant, the main applicants must all swear their affidavits together. \n<br><br>\n(Note to dev: Only show if the question Main Applicant is shown. Vertically anchor to the question )\n<br><br>\n<br><br>\nSubmitting (filing) your application\n<br><br>\nYou will need to submit (file) your application at a court registry. It can be at any Supreme Court registry and usually people file their documents at the Supreme Court registry nearest to where they live or work.\n<br><br>\n(Note to dev: vertically anchor this paragraph to the question Courthouse Location if possible)"
       }
      ],
@@ -9026,6 +9320,7 @@
      "visible": false,
      "title": "Service Address",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -9037,7 +9332,8 @@
        "name": "applicantServiceAddressIntroExplanation",
        "title": "The last part of this step is to decide how and where the the Court should contact you about your `application`.",
        "titleLocation": "hidden",
-       "isRequired": true
+       "isRequired": true,
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -9107,14 +9403,16 @@
        "visibleIf": "{applicantHasLawyer} = 'y' and {applicantLawyerHasFax} = 'y'",
        "title": "What is {applicantLawyerName}'s fax number?",
        "isRequired": true,
-       "inputType": "tel"
+       "inputType": "tel",
+       "autoComplete": "tel"
       },
       {
        "type": "infotext",
        "name": "applicantServiceAddressMultipleExplanation",
        "visible": false,
        "title": "[conditional messaging for 1 applicant vs multiple]<br>\nYou have multiple applicants and no lawyer. You need to pick one single service address that you all agree to",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "address",
@@ -9122,7 +9420,7 @@
        "visible": false,
        "visibleIf": "{applicantHasLawyer} = 'n'",
        "title": "Where do you want the Court to send you documents if they need to?",
-       "description": "(also known as an Address for Service)",
+       "description": "(also know as an Address for Service)",
        "isRequired": true
       },
       {
@@ -9131,6 +9429,7 @@
        "visible": false,
        "title": "Ignore the 30km rule in favour of a required email",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "[Nov 10 2021]\n<br>\nJack and Tyler decided to make the email address required. DDRs from remote regions reported that most people have email addresses. In fact the applicant would need an email address to use this service. \n<br><br>\nA required email address would satisfy the requirement to include extra contact information if the applicant's service address is not within a 30km radius of the courthouse they chose to file at."
       },
       {
@@ -9139,7 +9438,7 @@
        "visible": false,
        "visibleIf": "{applicantHasLawyer} = 'n'",
        "title": "What number do you want the Court to call if they have questions?",
-       "description": "(also known as a Service Phone Number)\n<br><br>\nThe Court will only call during business hours.",
+       "description": "(also know as a Service Phone Number)\n<br><br>\nThe Court will only call during business hours.",
        "isRequired": true,
        "inputType": "tel"
       },
@@ -9149,7 +9448,7 @@
        "visible": false,
        "visibleIf": "{applicantHasLawyer} = 'n'",
        "title": "What email address do you want the Court to use if they have questions?",
-       "description": "(also known as an Email for Service)",
+       "description": "(also know as an Email for Service)",
        "isRequired": true,
        "inputType": "email"
       },
@@ -9159,7 +9458,7 @@
        "visible": false,
        "visibleIf": "{applicantHasLawyer} = 'n'",
        "title": "Do you have a fax number if the Court needs to send you documents?",
-       "description": "(also known as a Fax Number for Service)",
+       "description": "(also know as a Fax Number for Service)",
        "isRequired": true
       },
       {
@@ -9168,9 +9467,10 @@
        "visible": false,
        "visibleIf": "{applicantHasLawyer} = 'n' and {applicantHasFax} = 'y'",
        "title": "What number do you want the Court to fax if they have documents to send you?",
-       "description": "(also known as a Fax Number for Service)",
+       "description": "(also know as a Fax Number for Service)",
        "isRequired": true,
-       "inputType": "tel"
+       "inputType": "tel",
+       "autoComplete": "tel"
       },
       {
        "type": "dropdown",
@@ -9201,7 +9501,7 @@
       }
      ],
      "visible": false,
-     "visibleIf": "{applicantCited} = 'n'"
+     "visibleIf": "({applicantCited} = 'n' \nor \n({applicantCited} = \"y\" and ({applicantCitorNewExists} = 'n') \nor ({applicantCitorNewExists} = 'y' and isContainerReady('applicantCitorInfoPanel'))))\nand\n{applicantCitorCompleted} = 'y'"
     },
     {
      "type": "infotext",
@@ -9209,6 +9509,7 @@
      "visible": false,
      "title": "AWOW Exit Explanations",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -9221,13 +9522,15 @@
        "visible": false,
        "title": "JIRA Panel Count for recipients??",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "Will need to have 2 different exit explanations.\n<li>1) if there is no one to notify.\n<li>2) telling people the next step is to notify\n<br><br>\nShould we do this with 2 message texts or 1 message text that has conditions? Jack thinks 1 message text with conditions but doesn't know how to access [recipients > 0] "
       },
       {
        "type": "infotext",
        "name": "applicantExitSpouseOnly",
        "title": "Next, this service will help you formally tell people you are applying for a `Representation Grant` for {deceasedName}.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       }
      ],
      "visible": false,
@@ -9248,7 +9551,7 @@
       {
        "type": "infotext",
        "name": "notifyIntroExplanation",
-       "title": "This step will help you formally tell the people who need to know you are applying for a `Representation Grant` for {deceasedName}.\n<br><br>\nBased on the answered the questions, the type of Representation Grant you are applying for is called a: <b>Grant of Administration Without Will Annexed.</b>\n<ul>\n<li>You do not need to remember this term. It will automatically be written onto your court documents.</li>\n</ul>\n<br>\nThis step will create 2 PDF court documents for you:\n<ul>\n<li>You will give people the <b>Form P1</b> to formally let them know you are applying for a Representation Grant.</li>\n<li>You will then swear or affirm a <b>Form P9</b> `affidavit` to confirm that you have actually given the P1 to people who should get it.</li>\n</ul>",
+       "title": "This step will help you formally tell the people who need to know you are applying for a `Representation Grant` for {deceasedName}.\n<br><br>\nBased on how you answered the questions, the type of Representation Grant you are applying for is called a: <b>Grant of Administration Without Will Annexed.</b>\n<ul>\n<li>You do not need to remember this term. It will automatically be written onto your court documents.</li>\n</ul>\n<br>\nThis step will create 2 PDF court documents for you:\n<ul>\n<li>You will give people the <b>Form P1</b> to formally let them know you are applying for a Representation Grant.</li>\n<li>You will then affirm or swear a <b>Form P9</b> `affidavit` to confirm that you have actually given the P1 to people who should get it.</li>\n</ul>",
        "titleLocation": "hidden",
        "isRequired": true,
        "requiredErrorText": "Please press Continue"
@@ -9261,6 +9564,7 @@
      "visible": false,
      "title": "Review Answers",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -9271,7 +9575,8 @@
        "type": "infotext",
        "name": "notifyReviewIntro",
        "title": "First, let's review your answers and make sure they are correct.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
@@ -9279,6 +9584,7 @@
        "visible": false,
        "title": "JIRA REPGRANT-Future123\n",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "Edit answers on this page instead of going back to the original page?? Deferred <a href=\"https://justice.gov.bc.ca/jira/browse/REPGRANT-221\" target=\"_blank\">REPGRANT-221</a>'s first choice."
       },
       {
@@ -9301,6 +9607,7 @@
        "visibleIf": "{notifyReviewDeceasedConfirmed} = 'n'",
        "title": "You will need to correct your answers. Click the \"Edit\" button to go back to the step where you originally answered the question.\n<br><br>\nWhen you are done editing, you will have to navigate back to this step. The fastest way back to this step is to click on \"Tell People You Are Applying\" in the navigation column on the left.",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       },
       {
@@ -9326,6 +9633,7 @@
        "visibleIf": "{notifyReviewDeceasedConfirmed} = 'y' and {notifyReviewApplicantConfirmed} = 'n'",
        "title": "You will need to correct your answers. Click the \"Edit\" button to go back to the step where you originally answered the question.\n<br><br>\nWhen you are done editing, you will have to navigate back to this step. The fastest way back to this step is to click on \"Tell People You Are Applying\" in the navigation column on the left.",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       },
       {
@@ -9333,6 +9641,7 @@
        "name": "jiraRepGrant238",
        "visible": false,
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "<a href=\"https://justice.gov.bc.ca/jira/browse/REPGRANT-238\" target=\"_blank\">JIRA REPGRANT-238</a> Functionality to toggle on answers to read-only\n<br><br>\nAfter a P1 is generated, past answers should not be changeable. If the applicant does need to change some answers, it may require them to generate a new P1 and notify people again.\n<br><br>\nPerhaps the functionality would need to evaluate whether changes were actually made or not in case the applicant is just experimenting but doesn't make relevant changes."
       },
       {
@@ -9342,7 +9651,8 @@
        "visibleIf": "{notifyReviewDeceasedConfirmed} = 'yy' and {notifyReviewApplicantConfirmed} = 'yy'",
        "title": "[unimplemented] This service will now create the Form P1 for you based on the information you have confirmed. \n<br><br>\nThis service will now set the answers you've made up until now in read-only mode. If you need to change the answers, you can unlock those answers but you may need to create a new P1 and notify people all over again.",
        "titleLocation": "hidden",
-       "isRequired": true
+       "isRequired": true,
+       "requiredErrorText": "Please press Continue"
       }
      ],
      "visible": false,
@@ -9354,6 +9664,7 @@
      "visible": false,
      "title": "Download P1",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -9365,7 +9676,8 @@
        "name": "notifyP1DownloadExplanation",
        "title": "This service will now create the Form P1 for you based on the information you have confirmed. \n<br><br>\nYou will give the Form P1 to people who need to know you are applying to manage {deceasedName}'s belongings.\n<br><br>\nThe P1 has instructions about how someone can tell the Court if they don't think you should manage {deceasedName}'s belongings.",
        "titleLocation": "hidden",
-       "description": "[when read-only-answers get enabled] Next, download the Form P1."
+       "description": "[when read-only-answers get enabled] Next, download the Form P1.",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "formdownloadbutton",
@@ -9385,7 +9697,7 @@
       {
        "type": "infotext",
        "name": "notifyP1InstructionsExplanation",
-       "title": "There are many ways you can give someone a Form P1:\n<ul>\n<li>In person (print the Form P1)</li>\n<li>Physical mail (print the Form P1)</li>\n<li>Electronically (e-mail, fax, direct/private messages, etc)</li>\n<ul>\n<li>If you give someone a Form P1 electronically, you need to ask them to write back to tell you they got it.</li>\n<li>Their response could be as simple as  \"thanks\" or \"I have received your email\".</li>\n</ul>\n</ul>\n<br>\nBelow is a list of people (you identified in past steps) who you need to give a Form P1.\n<br><br>\nIf you choose to give a Form P1 to people not on this list, you do not need to keep track of them in this service.\n",
+       "title": "There are many ways you can give someone a Form P1:\n<ul>\n<li>In person (print the Form P1)</li>\n<li>Physical mail (print the Form P1)</li>\n<li>Electronically (e-mail, fax, direct/private messages, etc)</li>\n<ul>\n<li>If you give someone a Form P1 electronically, you need to ask them to write back to tell you they got it.</li>\n<li>Their response could be as simple as  \"thanks\" or \"I have received your email\".</li>\n</ul>\n</ul>\n<br>\nBelow is a list of people (you identified in earlier steps) who you need to give a Form P1.\n<br><br>\nIf you choose to give a Form P1 to people not on this list, you do not need to keep track of them in this service.\n",
        "titleLocation": "hidden",
        "isRequired": true,
        "requiredErrorText": "Please press Continue"
@@ -9395,6 +9707,7 @@
        "name": "jiraRepGrantFuture123Email",
        "visible": false,
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "auto-send email function? or email from this service?"
       }
      ],
@@ -9403,11 +9716,12 @@
     },
     {
      "type": "infotext",
-     "name": "jiraRepGrant239b",
+     "name": "jiraRepGrant249b",
      "visible": false,
-     "title": "JIRA REPGRANT-239b - P1 Recipient Logic Documentation",
+     "title": "JIRA REPGRANT-249b - P1 Recipient Logic Documentation",
      "titleLocation": "hidden",
-     "body": "<b>Current Receipients</b>\n<br><br>\nInclude [successorName] (spouse or child) if\n<li>[successorName] is NOT an [applicant], and</li>\n<li>[successorIsAlive] = 'y', and</li>\n<li>[successorIsAdult] = 'y', and</li>\n<li>[successorIsCompetent] = 'y'</li>\n\n<hr>\n\n<b>New for REPGRANT-239</b>\n<br><br>\n\nInclude <b>[deceasedFirstNationsName]</b> (the text, not the value) if\n<li>[deceasedFirstNations] = 'y'</li>\n<br>\n\n<hr>\n\n<b>New for REPGRANT-249</b>\n<br><br>\n\n<b>Alive - Not Adult - Yes Guardian</b>\n<br>\nInclude \"<b>[successorGuardianName] (Guardian of [successorName])</b>\" if\n<li>[successorName] is NOT an [applicant], and</li>\n<li>[successorIsAlive] = 'y', and</li>\n<b><li>[successorIsAdult] = 'n', and</li>\n<li>[successorHasGuardian] = 'y'</b></li>\n<br>\n\n<b>Alive - Not Adult - No Guardian</b>\n<br>\nInclude \"<b>[successorName]</b>\" if\n<li>[successorName] is NOT an [applicant], and</li>\n<li>[successorIsAlive] = 'y', and</li>\n<b><li>[successorIsAdult] = 'n', and</li>\n<li>[successorHasGuardian] = 'n'</b></li>\n<br>\n\n<b>The Provincial Director of Child Welfare</b> for Alive - Not Adult - No Guardian\n<br>\nInclude \"<b>the Provincial Director of Child Welfare</b>\" if\n<li>the Provincial Director of Child Welfare is NOT an [applicant], and</li>\n<li>[successorIsAlive] = 'y', and</li>\n<b><li>[successorIsAdult] = 'n', and</li>\n<li>[successorHasGuardian] = 'n'</b></li>\n<ul><li>If feasible, sequence this recipient immediately after the template for the minor who doesn't have a guardian</li></ul>\n<br>\n\n<hr>\n\n<b>New for REPGRANT-250</b>\n<br><br>\n<b>Alive - Adult - Not Competent - Yes Nominee</b>\n<br>\nInclude \"<b>[successorName]</b>\" if\n<li>[successorName] is NOT an [applicant], and</li>\n<li>[successorIsAlive] = 'y', and</li>\n<li>[successorIsAdult] = 'y', and</li>\n<b><li>[successorIsCompetent] = 'n', and</li>\n<li>[successorHasNominee] = 'y'</b></li>\n<br>\n\n<b>[successorNomineeName] (Nominee of [successorName])</b> for Alive - Adult - Not Competent - Yes Nominee\nInclude \"<b>[successorNomineeName] (Nominee of [successorName])</b>\" if\n<li>[successorNomineeName] is NOT an [applicant], and</li>\n<li>[successorIsAlive] = 'y', and</li>\n<li>[successorIsAdult] = 'y', and</li>\n<b><li>[successorIsCompetent] = 'n', and</li>\n<li>[successorHasNominee] = 'y'</b></li>\n<br>\n\n<b>Alive - Adult - Not Competent - No Nominee</b>\n<br>\nInclude \"<b>[successorName]</b>\" if\n<li>[successorName] is NOT an [applicant], and</li>\n<li>[successorIsAlive] = 'y', and</li>\n<li>[successorIsAdult] = 'y', and</li>\n<li><b>[successorIsCompetent] = 'n', and</li>\n<li>[successorHasNominee] = 'n'</b></li>\n<br>\n\n<hr>\n\n<b>New for REPGRANT-245</b>\n<br><br>\n<b>PGT</b> (multiple scenarios)\n<br>\nInclude \"<b>The Public Guardian & Trustee (PGT)</b>\" if\n<li>PGT is NOT an [applicant], and</li>\n<li>[successorIsAlive] = 'y', and</li>\n<li><b>[successorIsAdult] = 'n' <b>or</b> [successorIsCompetent] = 'n'</b></li>\n<ul><li>If feasible, sequence this recipient immediately after the template for the \"family\" (spouse, child, etc) but before the creditors/citors</li></ul>\n<br>\n\n<hr>\n\n<b>New for REPGRANT-246</b>\n<br><br>\n\n<hr>\n\n<b>New for REPGRANT-247</b>\n<br><br>\n\n{element:notifyP1InstructionsExplanation}<hr>\n\n<b>New for REPGRANT-248</b>\n<br><br>\n\n<hr>\n\n\nFuture Scope for Q1 2022\n<br><br>\n\n<b>Alive - Adult - Competent</b>\n<br>\nInclude <i>[successorName]</i> if\n<li>[successorName] is NOT an [applicant], and</li>\n<li>[successorIsAlive] = 'y', and</li>\n<li>[successorIsAdult] = 'y', and</li>\n<li>[successorIsCompetent] = 'y'</li>\n<br><br>\n\n<b>Not Alive - Official Personal Rep</b>\n<br>\nInclude <i>[successorPersonalRepName] (Personal Representative for [successorName])</i> if\n<li><b>[successorIsAlive] = 'n', and</b></li>\n<li>[successorDied5DaysAfter] = 'y', and</li>\n<li><b>[successorHasPersonalRep] = 'y'</b></li>\n<br><br>\n\n<b>Not Alive - Informal Personal Rep</b>\n<br>\nInclude <i>[successorInformalPersonalRepName] (Personal Representative for [successorName])</i> if\n<li><b>[successorIsAlive] = 'n', and</b></li>\n<li>[successorDied5DaysAfter] = 'y', and</li>\n<li><b>[successorHasPersonalRep] = 'n'</b></li>"
+     "requiredErrorText": "Please press Continue",
+     "body": "<b>Current Receipients</b>\n<br><br>\nInclude [successorName] (spouse or child) if\n<li>[successorName] is NOT an [applicant], and</li>\n<li>[successorExists] = 'y', and</li>\n<li>[successorIsAlive] = 'y', and</li>\n<li>[successorIsAdult] = 'y', and</li>\n<li>[successorIsCompetent] = 'y'</li>\n<br>\n\nInclude [creditorPersonName] if\n<li>[creditorPersonExists] = 'y',</li>\n<li>[creditorPersonIsAlive] = 'y',</li>\n<li>[creditorPersonIsAdult] = 'y', and</li>\n<li>[creditorPersonIsCompetent] = 'y'</li>\n<br>\nInclude [creditorOrganizationName] if\n<li>[creditorOrganizationExists] = 'y'</li>\n<br>\n\nInclude [deceasedFirstNationsName] (the text, not the value) if\n<li>[deceasedFirstNations] = 'y'</li>\n<ul><li>If feasible, sequence this recipient last </li></ul>\n\n<hr>\n\n<b>New for REPGRANT-249</b>\n<br><br>\n\n<b>Alive - Not Adult - Yes Guardian</b>\n<br>\nInclude \"<b>[successorGuardianName] ([successorName]'s Guardian)</b>\" if\n<li>[successorName] is NOT an [applicant], and</li>\n<li>[successorIsAlive] = 'y', and</li>\n<b><li>[successorIsAdult] = 'n', and</li>\n<li>[successorHasGuardian] = 'y'</b></li>\n<br>\n\n<b>New for REPGRANT-245</b>\n<br><br>\n<b>PGT</b> (multiple scenarios)\n<br>\nInclude \"<b>The Public Guardian & Trustee (PGT)</b>\" if\n<li>PGT is NOT an [applicant], and</li>\n<li>[successorIsAlive] = 'y', and</li>\n<li><b>[successorIsAdult] = 'n' <b>or</b> [successorIsCompetent] = 'n'</b></li>\n<ul><li>If feasible, sequence this recipient second last, ahead of First Nations</li></ul>\n<br>\n\n<hr>\n\n<b>New for REPGRANT-308</b>\n<br><br>\n<b>Alive - Not Adult - No Guardian</b>\n<br>\nInclude \"<b>[successorName]</b>\" if\n<li>[successorName] is NOT an [applicant], and</li>\n<li>[successorIsAlive] = 'y', and</li>\n<b><li>[successorIsAdult] = 'n', and</li>\n<li>[successorHasGuardian] = 'n'</b></li>\n<br>\n\n<b>The Provincial Director of Child Welfare</b> for Alive - Not Adult - No Guardian\n<br>\nInclude \"<b>the Provincial Director of Child Welfare</b>\" if\n<li>the Provincial Director of Child Welfare is NOT an [applicant], and</li>\n<li>[successorIsAlive] = 'y', and</li>\n<b><li>[successorIsAdult] = 'n', and</li>\n<li>[successorHasGuardian] = 'n'</b></li>\n<ul><li>If feasible, sequence this third last, ahead of PGT and First Nations</li></ul>\n<br>\n\n<hr>\n\n<b>New for REPGRANT-250</b>\n<br><br>\n<b>Alive - Adult - Not Competent - Yes Nominee</b>\n<br>\nInclude \"<b>[successorName]</b>\" if\n<li>[successorName] is NOT an [applicant], and</li>\n<li>[successorIsAlive] = 'y', and</li>\n<li>[successorIsAdult] = 'y', and</li>\n<b><li>[successorIsCompetent] = 'n', and</li>\n<li>[successorHasNominee] = 'y'</b></li>\n<br>\n\n<b>[successorNomineeName] (Nominee of [successorName])</b> for Alive - Adult - Not Competent - Yes Nominee\nInclude \"<b>[successorNomineeName] (Nominee of [successorName])</b>\" if\n<li>[successorNomineeName] is NOT an [applicant], and</li>\n<li>[successorIsAlive] = 'y', and</li>\n<li>[successorIsAdult] = 'y', and</li>\n<b><li>[successorIsCompetent] = 'n', and</li>\n<li>[successorHasNominee] = 'y'</b></li>\n<br>\n\n<b>Alive - Adult - Not Competent - No Nominee</b>\n<br>\nInclude \"<b>[successorName]</b>\" if\n<li>[successorName] is NOT an [applicant], and</li>\n<li>[successorIsAlive] = 'y', and</li>\n<li>[successorIsAdult] = 'y', and</li>\n<li><b>[successorIsCompetent] = 'n', and</li>\n<li>[successorHasNominee] = 'n'</b></li>\n<br>\n\n<hr>\n\n\n\n\n<b>New for REPGRANT-248</b>\n<br><br>\n\n<hr>\n\n\nFuture Scope for Q1 2022\n<br><br>\n\n<b>Alive - Adult - Competent</b>\n<br>\nInclude <i>[successorName]</i> if\n<li>[successorName] is NOT an [applicant], and</li>\n<li>[successorIsAlive] = 'y', and</li>\n<li>[successorIsAdult] = 'y', and</li>\n<li>[successorIsCompetent] = 'y'</li>\n<br><br>\n\n<b>Not Alive - Official Personal Rep</b>\n<br>\nInclude <i>[successorPersonalRepName] (Personal Representative for [successorName])</i> if\n<li><b>[successorIsAlive] = 'n', and</b></li>\n<li>[successorDied5DaysAfter] = 'y', and</li>\n<li><b>[successorHasPersonalRep] = 'y'</b></li>\n<br><br>\n\n<b>Not Alive - Informal Personal Rep</b>\n<br>\nInclude <i>[successorInformalPersonalRepName] (Personal Representative for [successorName])</i> if\n<li><b>[successorIsAlive] = 'n', and</b></li>\n<li>[successorDied5DaysAfter] = 'y', and</li>\n<li><b>[successorHasPersonalRep] = 'n'</b></li>"
     },
     {
      "type": "paneldynamic",
@@ -9418,35 +9732,351 @@
      "templateElements": [
       {
        "type": "infotext",
-       "name": "jiraREPGRANT239c",
-       "visible": false,
-       "titleLocation": "hidden",
-       "body": "jiraREPGRANT239\n<br><br>\n[notifyP1FirstNationsExplanation] (the messsage text directly below) should only appear for the specific instance where (not sure of the correct property) ??[panel.applicantRole]??  = 'firstNations'. need to know how to employ the visibleIf statements."
-      },
-      {
-       "type": "infotext",
        "name": "notifyP1FirstNationsExplanation",
        "visible": false,
-       "visibleIf": "{panel.key} contains 'f'",
+       "visibleIf": "{panel.recipientRole} = 'firstNation'",
        "title": "You will need to give {deceasedFirstNationsName} a Form P1.\n<br><br>\n{displayIf(#deceasedFirstNationsName = huuayaht,\n<b>In-person or physical mail, choose one of the following:</b><br>\n<ul>\n<li>Anacla Government Office<br>\n170 Nookemus Road<br>\nAnacla, BC<br>\nV0R 1B0</li>\n</ul>\n<ul>\n<li>Port Alberni Government Office<br>\n4644 Adelaide Street<br>\nPort Alberni, BC<br>\nV9Y 6N4</li>\n</ul>\n<b>Email:</b>\n<ul>\n<li>communications@huuayaht.org</li>\n<li>Use the subject title: \"Re: Representation Grant Application\"</li>\n</ul>\n)}\n\n{displayIf(#deceasedFirstNationsName = 'kyuquot', \nFor information on how to contact the the Ka:'yu:'k't'h'/Chek'tles7et'h' First Nations (Kyuquot/Checleseht), <a href=\"https://kyuquotbc.ca/\" target=\"_blank\">click here to go to their website</a> (This link opens in a new tab)\n)}\n\n{displayIf(#deceasedFirstNationsName = 'nisgaa',\n<b>In-person or physical mail:</b><br>\n<ul>\n<li>Nisg̱a'a Lisims Government<br>\nPO Box 231, 2000 Lisims Drive<br>\nGitlaxt'aamiks (formerly New Aiyansh), BC<br>\nV0J 1A0</li>\n</ul>\n<b>Email:</b>\n<ul>\n<li>info@nisgaa.net</li>\n<li>Use the subject title: \"Re: Representation Grant Application\"</li>\n</ul>\n)}\n\n{displayIf(#deceasedFirstNationsName = 'tlaamin',\n<b>In-person or physical mail:</b><br>\n<ul>\n<li>Tla'amin Nation<br>\n4779 Klahanie Rd<br>\nPowell River, BC<br>\nV8A 0C4</li>\n</ul>\n<b>Email:</b>\n<ul>\n<li>reception@tn-bc.ca</li>\n<li>Use the subject title: \"Re: Representation Grant Application\"</li>\n</ul>\n)}\n\n{displayIf(#deceasedFirstNationsName = 'toquaht',\n<b>In-person or physical mail:</b><br>\n<ul>\n<li>Toquaht Nation Government Administration<br>\nPO Box 759<br>\n1971 Peninsula Rd<br>\nUcluelet, BC<br>\nV0R 3A0</li>\n</ul>\n<b>Email:</b>\n<ul>\n<li>general@toquaht.ca</li>\n<li>Use the subject title: \"Re: Representation Grant Application\"</li>\n</ul>\n)}\n\n{displayIf(#deceasedFirstNationsName = 'tsawwassen', \n<b>In-person or physical mail:</b><br>\n<ul>\n<li>“Attention: General Counsel”<br>\nTsawwassen First Nation<br>\n1926 Tsawwassen Drive<br>\nTsawwassen, BC<br>\nV4M 4G2</li>\n</ul>\n<b>Email:</b>\n<ul>\n<li>info@tsawwassenfirstnation.com</li>\n<li>Use the subject title: \"Attention: General Counsel Re: Representation Grant Application\"</li>\n</ul>\n)}\n\n{displayIf(#deceasedFirstNationsName = 'uchucklesaht',\n<b>In-person or physical mail:</b><br>\n<ul>\n<li>“Attention: Director of Operations”<br>\nUchucklesaht Tribe<br>\nSuite A – 5251 Argyle Street<br>\nPort Alberni, BC<br>\nV9Y 1V1</li>\n</ul>\n<b>Email:</b>\n<ul>\n<li>Carla.Halvorsen@uchucklesaht.ca</li>\n<li>Use the subject title: \"Attention: Director of Operations\n Re: Representation Grant Application\"</li>\n</ul>\n)}\n\n{displayIf(#deceasedFirstNationsName = 'ucluelet',\n<b>In-person:</b><br>\n<ul>\n<li>Yuułuʔiłʔatḥ Government – Ucluelet First Nation<br>\nCixʷatin Centre<br>\n700 Wya Road<br>\nHitacu, BC<br>\nV0R 3A0</li>\n</ul>\n<b>Physical mail:</b><br>\n<ul>\n<li>Yuułuʔiłʔatḥ Government – Ucluelet First Nation<br>\nCixʷatin Centre<br>\nPO Box 699 <br>\nUcluelet, BC<br>\nV0R 3A0</li>\n</ul>\n<b>Email:</b>\n<ul>\n<li>communications@ufn.ca</li>\n<li>Use the subject title: \"Re: Representation Grant Application\"</li>\n</ul>\n)}",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
+      },
+      {
+       "type": "yesno",
+       "name": "notifyP1Delivered",
+       "title": "Was someone able to give {panel.recipientName} a Form P1?"
       },
       {
        "type": "infotext",
-       "name": "jiraREPGRANT206",
+       "name": "notifyP1DeliveredNoErrorTemp",
        "visible": false,
+       "title": "can't use app",
        "titleLocation": "hidden",
-       "body": "jiraREPGRANT206\n<br><br>\nFor the 2021 Q4 Release, the applicants should be the only options in this radio group.\n<br><br>\nFuture considerations, need to be able to \"add other deliverer\" and allow applicants to enter a new name. This new deliverer should also:\n<li>a) be a selectable choice for subsequent instances of [p1Deliverer]</li>\n<li>b) pop up p1NewDelivererInfoPanel to capture information about this new person for the P9</li>"
+       "requiredErrorText": "Please press Continue",
+       "messageStyle": "error"
+      },
+      {
+       "type": "infotext",
+       "name": "notifyP1DeliveredNoExplanation",
+       "visible": false,
+       "title": "[new] gotta give notice.\n<br><br>\nbut you might not be able to find them\n<br><br>\n if the court isn't satisfied, the court will ask you make more effort to find this person (delay your application)\n<br><br>\nif you tried your hardest, you can apply to court to dispense with notice to [recipient name]\n<br><br>\nyou will need to provide evidence you tried and explain why it was not possible.\n<br><br>\n\nif you believe you have tried hard, click here to P41 and sample order\n<br><br>\nYour affidavit should set out the reasons why personal service is impossible. If it's because you don't know where the respondent is, you should say so. You should also say that you have no means of contacting the respondent, for example, through family or friends. If you can't serve the respondent because they are avoiding service, you should describe how you've tried to serve the respondent and how often you've tried.\n<br><br>\nIf you have no idea at all where the respondent might be, you can ask the judge to allow you to serve the respondent by posting a copy of your Notice of Family Claim in the court registry for a certain period of time, usually no less than 30 days. This is the cheapest means of alternative service, and you really have to show that you've got no idea where the respondent is, no relatives or friends to contact them through, and no idea where the respondent works.\n<br><br>\nNotices in the classified ads\nhttp://wiki.clicklaw.bc.ca/index.php/How_Do_I_Substitutionally_Serve_Someone_with_Legal_Documents%3F",
+       "titleLocation": "hidden",
+       "isRequired": true,
+       "requiredErrorText": "Please press Continue"
+      },
+      {
+       "type": "yesno",
+       "name": "notifyP1NotDeliveredKnowAddress",
+       "visible": false,
+       "title": "Do you know where {panel.recipientName} live or work?"
+      },
+      {
+       "type": "infotext",
+       "name": "notifyP1NotDeliveredKnowAddressYesExplanation",
+       "visible": false,
+       "title": "yes - send it by mail or in-person. easy",
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
+      },
+      {
+       "type": "infotext",
+       "name": "notifyP1NotDeliveredKnowAddressNoExplanation",
+       "visible": false,
+       "title": "asking the following questions allow the P9 to have a special paragraph saying i can't notify them. default to main applicant. if main applicant does not do any service, still default to a P9 just with this section for main applicant.\n<br><br>\nask the person's family or friend or acquaintance to give you their home or work address.\nif unnsuccessful, select \"No\" to the previous question.",
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
+      },
+      {
+       "type": "yesno",
+       "name": "notifyP1NotDeliveredKnowContacts",
+       "visible": false,
+       "title": "do you know of this person's family or friends?\nor other acquaintances or anyone else who may know how to get in contact with them"
+      },
+      {
+       "type": "infotext",
+       "name": "notifyP1NotDeliveredKnowContactsYesExplanation",
+       "visible": false,
+       "title": "excellent, mail or drop off in person. \nscroll back to \"Was someone able to give {panel.recipientName} a Form P1?\" select \"YES\".",
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
+      },
+      {
+       "type": "infotext",
+       "name": "notifyP1NotDeliveredKnowContactsNoExplanation",
+       "visible": false,
+       "title": "if you can't get their address/contact info, you can try social media. problem with social media/email is you need them to respond. if they don't confirm receipt, go to next question?",
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
+      },
+      {
+       "type": "yesno",
+       "name": "notifyP1NotDeliveredKnowElectronic",
+       "visible": false,
+       "title": "can you find their electronic contact information , email, fax, other electronic means including. social media?",
+       "description": "problems if they are not active"
+      },
+      {
+       "type": "infotext",
+       "name": "notifyP1NotDeliveredKnowElectronicYesExplanation",
+       "visible": false,
+       "title": "yes [go to written response question] notify them by social media or email\n<br>\nkeep in mind, for electronic notification, require written response. \n<br>\nscroll back to \"Was someone able to give {panel.recipientName} a Form P1?\" select \"YES\".",
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
+      },
+      {
+       "type": "infotext",
+       "name": "notifyP1NotDeliveredKnowElectronicNoExplanation",
+       "visible": false,
+       "title": "no [go to do you want to hire a professional] similar but not the same as yes-social, no-response",
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
+      },
+      {
+       "type": "checkbox",
+       "name": "notifyP1NotDeliveredElectronicMethod",
+       "visible": false,
+       "title": "Which electronic methods have you tried?",
+       "choices": [
+        {
+         "value": "item1",
+         "text": "Email"
+        },
+        {
+         "value": "item2",
+         "text": "Fax"
+        },
+        {
+         "value": "item3",
+         "text": "Facebook"
+        },
+        {
+         "value": "item4",
+         "text": "Twitter"
+        },
+        {
+         "value": "item5",
+         "text": "Instagram"
+        },
+        {
+         "value": "item6",
+         "text": "Snapchat"
+        },
+        {
+         "value": "item7",
+         "text": "TikTok"
+        }
+       ]
+      },
+      {
+       "type": "yesno",
+       "name": "notifyP1NotDeliveredKnowElectronicYesReceipt",
+       "visible": false,
+       "title": "did you get written response?"
+      },
+      {
+       "type": "infotext",
+       "name": "notifyP1NotDeliveredKnowElectronicYesReceiptYesExplanation",
+       "visible": false,
+       "title": "yes - awesome, scroll back up to the question asking \"was someone able to give person a Form P1\" and select \"YES\"",
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
+      },
+      {
+       "type": "infotext",
+       "name": "notifyP1NotDeliveredKnowElectronicYesReceiptNoExplanation",
+       "visible": false,
+       "title": "no - you've tried reasonable things within your power / time. \noption to hire a pro?\n<br><br>\nwhat are pros?\n<br><br>\nCourt may decided you haven't tried hard enough.",
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
+      },
+      {
+       "type": "infotext",
+       "name": "question3",
+       "visible": false,
+       "title": "gotta try your hardest to\noptions include\nyou may want to hire a PI or air tracer to satisfy the court.\n<br><br>\nwhen you tried your hardest and no success contacting them, click \"YES' to \"did you try your hardest?\"\n<br><br>\nif you tried hard, and you contact them, go back to \"Was someone able to give {panel.recipientName} a Form P1?\" select \"YES\".",
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
+       "messageStyle": "error"
+      },
+      {
+       "type": "yesno",
+       "name": "question2",
+       "visible": false,
+       "title": "do you want to want hire professionals?",
+       "description": "you dont' have to. the court may look at what you've done already and say that's enough. However, they might not. "
+      },
+      {
+       "type": "checkbox",
+       "name": "notifyP1DelivererNameYYYYY",
+       "visible": false,
+       "title": "What profession services have you hired to find {name} in order to give them a Form P1?",
+       "description": "bill for PI. contract for heir tracer; other written communication ",
+       "choices": [
+        {
+         "value": "item1",
+         "text": "Private investigator"
+        },
+        {
+         "value": "item2",
+         "text": "heir tracer"
+        }
+       ],
+       "hasOther": true
+      },
+      {
+       "type": "yesno",
+       "name": "question4",
+       "visible": false,
+       "title": "Did the [commaListOr from last question] find a work or home address or another kind of mailing address for [name]?",
+       "description": "the court needs to be satisfied that you made an effort. if the court isn't satisfied, the court will ask you make more effort to find this person (delay your application)\nexamples: bills, reports, emails with family/friends. affidavits\nthis becomes exhibit to P41 along with the sample order"
+      },
+      {
+       "type": "infotext",
+       "name": "question13",
+       "visible": false,
+       "title": "yes - awesome, scroll back up to the question asking \"was someone able to give person a Form P1\" and select \"YES\"",
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
+      },
+      {
+       "type": "yesno",
+       "name": "question20",
+       "visible": false,
+       "title": "Did the [commaListOr from last question] find a social media or other electronic means that you haven't already tried?"
+      },
+      {
+       "type": "infotext",
+       "name": "question22",
+       "visible": false,
+       "title": "no - jump to invoice question",
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
+      },
+      {
+       "type": "yesno",
+       "name": "question29",
+       "visible": false,
+       "title": "did they give you a written response?"
+      },
+      {
+       "type": "infotext",
+       "name": "question30",
+       "visible": false,
+       "title": "yes - scroll back up",
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
+      },
+      {
+       "type": "infotext",
+       "name": "question263",
+       "visible": false,
+       "title": "Do you have invoices or other proof that you hired the pros?\n",
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
+      },
+      {
+       "type": "yesno",
+       "name": "notifyP1DelivererNameYYYYYY",
+       "visible": false,
+       "title": "Do you have evidence that you want to share with the court that you tried hard?\n",
+       "description": "examples: bills, reports\nthis becomes exhibit to P41 along with the sample order"
+      },
+      {
+       "type": "infotext",
+       "name": "question265",
+       "visible": false,
+       "title": "no pros\n<br>\nthis service will 3 things\n<br>1. parapgraph in the P9 saying you tried but weren't successful to notify person (including hiring a Pro)\n<br>2. generate P41 that will say you tried family/friends/social media with no luck and you are asking the court to allow you to not need to notify person.\n<br>\n3. a sample order for the court to sign\n<br><br>\nCourt may decided you haven't tried hard enough.\n<br><br>\n<b>For P9</b> - I don't know and I was not able to find where [person] lives or works. I made an effort to find their friends, family and other acquaintances. I asked [person]'s friends, family and other acquaintances if they knew where [person] lives or works.\n<br>\nyes social but no response sentence\nI sent [person] a Form P1 through [commaListAnd]. However, [person[ did not provide a written response confirming they received the Form P1.\n<br>\nno social media sentence\nI was not able to find a way to contact [person] through email, fax or other electronic means, including social media.\n\n",
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
+      },
+      {
+       "type": "expression",
+       "name": "notifyP1DelivererNameYYYYYYY",
+       "visible": false,
+       "title": "Upload",
+       "description": "upload now <br> examples of proof would an invoice/bill from a PI or heir tracer. or a report."
+      },
+      {
+       "type": "infotext",
+       "name": "notifyP1DelivererNameYYYYYY",
+       "visible": false,
+       "title": "yes invoice\n<br><br>\nthis service will 3 things\n<br>1. parapgraph in the P9 saying you tried but weren't successful to notify person (including hiring a Pro)\n<br>2. generate P41 that will say you tried family/friends/social media with no luck and you are asking the court to allow you to not need to notify person.\n<br>\n3. a sample order for the court to sign\n<br><br>\nCourt may decided you haven't tried hard enough.\n<br><br>\n<b>For P9</b> - I don't know and I was not able to find where [person] lives or works. I made an effort to find [person]'s friends, family and other acquaintances. I asked [person]'s friends, family and other acquaintances if they knew where [person] lives or works.\n<br>\nyes pro\n<br>\nI hired a [commaListAnd] and they were not able to find where [person] lives, works or receives mail.\n<br>\nno pro\n<br>\ndon't need to add anything\n<br>\nyes social but no response sentence\n<br>\nI sent [person] a Form P1 through [commaListAnd]. However, [person] did not provide a written response confirming they received the Form P1.\n<br>\nno social media sentence\n<br>\nI was not able to find a way to contact [person] through email, fax or other electronic means, including social media.\n\n",
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
+      },
+      {
+       "type": "infotext",
+       "name": "question264",
+       "visible": false,
+       "title": "no invoice\n<br>\nthis service will 3 things\n<br>1. parapgraph in the P9 saying you tried but weren't successful to notify person (including hiring a Pro)\n<br>2. generate P41 that will say you tried family/friends/social media with no luck and you are asking the court to allow you to not need to notify person.\n<br>\n3. a sample order for the court to sign\n<br><br>\nCourt may decided you haven't tried hard enough.",
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "radiogroup",
        "name": "notifyP1DelivererName",
+       "visible": false,
+       "visibleIf": "{panel.notifyP1Delivered} = 'y'",
        "title": "Who gave {panel.recipientName} a Form P1?",
        "isRequired": true
       },
       {
+       "type": "infotext",
+       "name": "notifyP1NewDelivererName",
+       "visible": false,
+       "title": "[<a href=\"https://justice.gov.bc.ca/jira/browse/REPGRANT-284\" target=\"_blank\">JIRA REPGRANT-284</a>]\n<br><br>\nCan the new deliverer name be the \"other\" from  {notifyP1DelivererName}\n<br>\nSee below:",
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
+       "body": "Holding area for \"was someone able to notify person?\"\n<br>\nYou can ask someone else (such as a friend, family member, or a professional document server) to give a Form P1 to {panel.recipientName}. \n<br><br>\nIf you get someone else to gave a Form P1, this service will create a separate  Form P9 `affidavit` to confirm that they had actually given the P1 to {panel.recipientName}."
+      },
+      {
+       "type": "radiogroup",
+       "name": "notifyP1NewDelivererNameSample",
+       "visible": false,
+       "choices": [
+        {
+         "value": "item1",
+         "text": "Marge Simpson"
+        },
+        {
+         "value": "item2",
+         "text": "Lisa Simpson"
+        }
+       ],
+       "hasOther": true,
+       "otherText": "Enter someone else's name"
+      },
+      {
+       "type": "text",
+       "name": "notifyP1NewDelivererOccupation",
+       "visible": false,
+       "title": "What is {panel.notifyP1DelivererName}'s job or profession?",
+       "description": "For example: Nurse, Homemaker, Carpenter, Accountant, etc.",
+       "isRequired": true
+      },
+      {
+       "type": "address",
+       "name": "notifyP1NewDelivererOrdinaryAddress",
+       "visible": false,
+       "title": "Where does {panel.notifyP1DelivererName} normally live?",
+       "isRequired": true,
+       "postalCode": false
+      },
+      {
+       "type": "customdate",
+       "name": "notifyP1DeliveryDate",
+       "visible": false,
+       "visibleIf": "{panel.notifyP1DelivererName} notempty",
+       "title": "When did {panel.notifyP1DelivererName} give the Form P1 to {panel.recipientName}?",
+       "isRequired": true,
+       "pastDateHandler": "Past Reference Variable",
+       "pastReferenceVariable": "{deceasedDateOfDeath}",
+       "futureDateHandler": "Future Reference Variable",
+       "futureReferenceVariable": "{deceasedCurrentDate}"
+      },
+      {
        "type": "radiogroup",
        "name": "notifyP1DeliveryMethod",
+       "visible": false,
+       "visibleIf": "{panel.notifyP1DelivererName} notempty",
        "title": "How did {panel.notifyP1DelivererName} give the Form P1 to {panel.recipientName}?",
        "isRequired": true,
        "choices": [
@@ -9465,14 +10095,6 @@
        ]
       },
       {
-       "type": "customdate",
-       "name": "notifyP1DeliveryDate",
-       "title": "When did {panel.notifyP1DelivererName} give the Form P1 to {panel.recipientName}?",
-       "isRequired": true,
-       "pastDateHandler": "Past Reference Variable",
-       "pastReferenceVariable": "{deceasedDateOfDeath}"
-      },
-      {
        "type": "yesno",
        "name": "notifyP1DeliveryElectronicReceipt",
        "visible": false,
@@ -9488,6 +10110,7 @@
        "visibleIf": "{panel.notifyP1DeliveryMethod} = 'electronic' and {panel.notifyP1DeliveryElectronicReceipt} = 'n'",
        "title": "You need to make sure {panel.recipientName} writes a response confirming they received a Form P1.\n<br><br>\nIf {panel.recipientName} will not write a response, consider giving them a Form P1 in person or in the mail. These methods do not require a written response.\n<br><br>\nIf you choose a new method of delivering the Form P1 to {panel.recipientName}, remember to update the relevant information about who gave it to them and when.",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "messageStyle": "error"
       },
       {
@@ -9529,6 +10152,7 @@
      "visible": false,
      "title": "Deliverer Name Future Element 1",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "body": "do we need an option for \"This is me\" for service type? without causing fraud or people leaping over 21 day timeline"
     },
     {
@@ -9537,48 +10161,8 @@
      "visible": false,
      "title": "Deliverer Name Future Element 2",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "body": "apology message for legal guardians/nominees in case they need duplicate notification. tell applicants they just need to notify once?"
-    },
-    {
-     "type": "infotext",
-     "name": "notifyP1DelivererNameFutureElement3",
-     "visible": false,
-     "title": "Deliverer Name Future Element 3\n",
-     "titleLocation": "hidden",
-     "body": "can't notify someone\n<br>\nRule 25-2 (14) - on application"
-    },
-    {
-     "type": "infotext",
-     "name": "notifyP1NewDelivererInfoBookmark",
-     "visible": false,
-     "title": "New Deliverer Info",
-     "titleLocation": "hidden",
-     "messageStyle": "inline"
-    },
-    {
-     "type": "paneldynamic",
-     "name": "notifyP1NewDelivererInfoPanel",
-     "visible": false,
-     "title": " ",
-     "templateElements": [
-      {
-       "type": "text",
-       "name": "notifyP1NewDelivererName",
-       "title": "Server Name"
-      },
-      {
-       "type": "text",
-       "name": "notifyP1NewDelivererOccupation",
-       "title": "Server Occupation"
-      },
-      {
-       "type": "address",
-       "name": "notifyP1NewDelivererOrdinaryAddress",
-       "title": "Server Ordinary Address",
-       "description": "city, prov, country only"
-      }
-     ],
-     "panelCount": 1
     },
     {
      "type": "infotext",
@@ -9586,6 +10170,7 @@
      "visible": false,
      "title": "PGT",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -9595,8 +10180,9 @@
       {
        "type": "infotext",
        "name": "notifyP1PGTIntroExplanation",
-       "title": "Things to Include with Notice to Public Guardian and Trustee (PGT)\n<br><br>\n-P1<br>\n-Letter app generates<br>\n$315 in certified cheque or bank draft payable to \"Public Guardian and Trustee\"",
-       "titleLocation": "hidden"
+       "title": "Things to Include with Notice to Public Guardian and Trustee (PGT)\n<br><br>\n-P1<br>\n-Letter app generates<br>\n$315 in certified cheque or bank draft payable to \"Public Guardian and Trustee\"\nhttps://www.trustee.bc.ca/services/Pages/Grant-Application-Review-Services-(GARS).aspx",
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "radiogroup",
@@ -9624,12 +10210,14 @@
        "type": "infotext",
        "name": "question400",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "[JIRA] Autogenerate letter to PGT including:\n<br>\nFor the minor or mentally incompetent person\n<br>\n•  Full name<br>\n•  Date of birth<br>\n•  Address of where they live\n<br><br>\nFor the parent/ guardian of the minor or committee of the mentally incompetent person\n<br>\n•  Full name<br>\n•  Address of where they live if they don't live with the minor/ mentally incompetent personThings to Include with Notice to Public Guardian and Trustee (PGT)"
       },
       {
        "type": "infotext",
        "name": "question456",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "[Old Spreadsheet Notes copied here Nov 12 2020]\n<br>\nGiving notification to the Public Guardian and Trustee (PGT)\n\nPart of the process in getting a representation grant requires you to notify specific people that you are applying. If those people are under 19 years of age, or they are not mentally competent, you will also need to notify the Public Guardian and Trustee (PGT). The PGT charges a fee for their services. The required fees are detailed in their list of fees (section for Wills, Estates and Succession Act, item (d)). \nhttp://www.trustee.bc.ca/fees/Documents/PGT%20Fee%20Schedule.pdf"
       },
       {
@@ -9641,6 +10229,7 @@
        "type": "infotext",
        "name": "question403",
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "[JIRA] Parse address of child or mentally incapable person. If outside of BC, they need to serve another PGT or equivalent"
       },
       {
@@ -9654,7 +10243,8 @@
        "name": "notifyP1PGTExitExplanation",
        "visible": false,
        "title": "Make sure you provide a copy to the court. We'll remind you later. [In the future. Scan and upload?]",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       }
      ],
      "visible": false
@@ -9665,6 +10255,7 @@
      "visible": false,
      "title": "21 Day Countdown ",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -9677,7 +10268,8 @@
        "visible": false,
        "title": "Now that you have given the Form P1 to all the people who need to know you are applying for a `Representation Grant`, the earliest date you can file your application is <b> {earliestSubmissionDate}.</b>\n<br><br>\nThis date gives people time to tell the Court if they don't think you should manage {deceasedName}'s belongings.",
        "titleLocation": "hidden",
-       "isRequired": true
+       "isRequired": true,
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "helptext",
@@ -9698,6 +10290,7 @@
        "name": "question455",
        "visible": false,
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "Special Circumstances for rushed grant. Jack asked Kristen and Dani Nov 12 2020 for frequency. Explore necessity for a rush option and look at the pre-requisites for a petition (Form 66)."
       }
      ],
@@ -9710,6 +10303,7 @@
      "visible": false,
      "title": "Download P9",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -9720,13 +10314,15 @@
        "type": "infotext",
        "name": "notifyP9DownloadIntro",
        "title": "This service will now create the Form P9. \n<br><br>\nThe Form P9 is an `affidavit` to show the Court the details of how and when you gave people a Form P1. ",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
        "name": "jiraMultipleDeliverers",
        "visible": false,
        "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue",
        "body": "Should we have one P9 Button that generates all P9s collated?"
       },
       {
@@ -9756,7 +10352,8 @@
        "name": "notifyP9DownloadExit",
        "title": "You will need swear or affirm the Form P9 `affidavit`.\n<br><br>\nYou can choose to do this right away, or wait until this service creates all the other documents you will need so that you can take everything to the courthouse at the same time.\n<br><br>\nTo swear or affirm an affidavit, you can go to a variety of service providers including:\n<ul>\n<li>a lawyer</li>\n<li>a notary</li>\n<li>a commissioner for taking affidavits (available at courthouses)</li>\n</ul>",
        "titleLocation": "hidden",
-       "isRequired": true
+       "isRequired": true,
+       "requiredErrorText": "Please press Continue"
       }
      ],
      "visible": false,
@@ -9768,6 +10365,7 @@
      "visible": false,
      "title": "Notify Exit",
      "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue",
      "messageStyle": "inline"
     },
     {
@@ -9778,7 +10376,8 @@
        "type": "infotext",
        "name": "notifyExitExplanation",
        "title": "The next steps is to identify {deceasedName}'s `assets`. \n<br><br>\n<b>However, as of Dec 17, 2021, this service has not been developed to help you finish the rest of your documents.</b> The development team is hard at work to create the rest of the service.  \n<br><br>\nIn the mean time, make sure you gather all of the documents involving {deceasedName}'s assets that you can get.\n<br><br>\nIf you would like to be notified when new features are added to this service, <a href=\"mailto:product.owner.represent.some.who.died@gov.bc.ca\">click here to send an email to the Product Owner for this service (\"Represent Someone Who Died\").</a> ",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       }
      ],
      "visible": false,
@@ -9801,6 +10400,58 @@
    "visible": false,
    "visibleIf": "{applicantCourthouse} notempty or {surveyEnvironment} = 'DEV'",
    "title": "Tell People You Are Applying"
+  },
+  {
+   "name": "p5Page",
+   "elements": [
+    {
+     "type": "infotext",
+     "name": "question32",
+     "title": "https://www2.gov.bc.ca/assets/gov/law-crime-and-justice/courthouse-services/court-files-records/court-forms/probate/p5.pdf?forcedownload=true",
+     "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue"
+    }
+   ],
+   "title": "How to fill out a P5"
+  },
+  {
+   "name": "p10Page",
+   "elements": [
+    {
+     "type": "infotext",
+     "name": "question206",
+     "title": "https://www2.gov.bc.ca/assets/gov/law-crime-and-justice/courthouse-services/court-files-records/court-forms/probate/p10.pdf?forcedownload=true",
+     "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue"
+    }
+   ],
+   "title": "How to fill out a P10"
+  },
+  {
+   "name": "willSearchPageTemp",
+   "elements": [
+    {
+     "type": "infotext",
+     "name": "question229",
+     "title": "<a href=\"https://www2.gov.bc.ca/assets/gov/health/forms/vital-statistics/vsa532_fill.pdf\" target=\"blank\">click here to download a blank form</a>. (This link opens in a new tab)",
+     "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue"
+    }
+   ],
+   "title": "How to fill out a Notice of Will Search"
+  },
+  {
+   "name": "p2Page",
+   "elements": [
+    {
+     "type": "infotext",
+     "name": "question207",
+     "title": "https://www2.gov.bc.ca/assets/gov/law-crime-and-justice/courthouse-services/court-files-records/court-forms/probate/p2.pdf?forcedownload=true",
+     "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue"
+    }
+   ],
+   "title": "How to fill out a P2"
   },
   {
    "name": "landPage",
@@ -9839,7 +10490,7 @@
       {
        "type": "helptext",
        "name": "landExistsFAQ1",
-       "title": "Do I include a manufactured home (also known as a mobile home or a trailer)?",
+       "title": "Do I include a manufactured home (also know as a mobile home or a trailer)?",
        "titleLocation": "hidden",
        "body": "[TBD - update ref to Personal Item step]\n<br>\nNo, do not include a manufactured home, a mobile home or a trailer as part of this question. \n<br><br>\nManufactured homes are not registered with BC Land Title & Survey.\n<br><br>\nInclude any manufactured homes in a future step for Personal Items. "
       },
@@ -12178,7 +12829,8 @@
        "visible": false,
        "visibleIf": "{willSearchStarted} = \"n\" and {willSearchHaveDeathCertificate} = \"n\" and {willSearchTempApplicantRelative} = \"n\" and ({willSearchRelativesHaveDeathCertificate} = \"y\" or ({willSearchRelativesHaveDeathCertificate} = \"n\" and {willSearchRelativesWillGetDeathCertificate} = \"y\" and \n{willSearchRelativesGotDeathCertificate} = \"y\")) and \n{willSearchRelativesHaveDeathCertificateVoluntaryTransfer} = \"y\"",
        "title": "go back to X question and say \"yes\" to having certificate of death.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
@@ -12203,7 +12855,8 @@
        "visible": false,
        "visibleIf": "{willSearchStarted} = \"n\" and {willSearchHaveDeathCertificate} = \"n\" and {willSearchTempApplicantRelative} = \"n\" and ({willSearchRelativesHaveDeathCertificate} = \"y\" or ({willSearchRelativesHaveDeathCertificate} = \"n\" and {willSearchRelativesWillGetDeathCertificate} = \"y\" and \n{willSearchRelativesGotDeathCertificate} = \"y\")) and \n{willSearchRelativesHaveDeathCertificateVoluntaryTransfer} = \"n\" and {willSearchApplicantRelativeNoGetDocuments} = \"y\"",
        "title": "go back to certificate of death question and say \"yes\" to having certificate of death.\n<br><br>\n(c) a person who is authorized by a court order to be issued the copy or extract;",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
@@ -12229,7 +12882,8 @@
        "visible": false,
        "visibleIf": "{willSearchStarted} = \"n\" and {willSearchHaveDeathCertificate} = \"n\" and {willSearchTempApplicantRelative} = \"n\" and ({willSearchRelativesHaveDeathCertificate} = \"y\" or ({willSearchRelativesHaveDeathCertificate} = \"n\" and {willSearchRelativesWillGetDeathCertificate} = \"y\" and {willSearchRelativesGotDeathCertificate} = \"y\")) and {willSearchRelativesHaveDeathCertificateVoluntaryTransfer} = \"n\" and {willSearchApplicantRelativeNoGetDocuments} = \"n\" and {willSearchApplicantRelativeNoGetCourtPermission} = \"y\"",
        "title": "yes - click here to apply for the double Vital Stats application. include a copy/original? of the order from the court.\n<br><br>\nOnce you get the will searches back, might take 3 weeks, go back to question about having certificate of death and say \"yes\" to having certificate of death. ",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
@@ -12237,7 +12891,8 @@
        "visible": false,
        "visibleIf": "{willSearchStarted} = \"n\" and {willSearchHaveDeathCertificate} = \"n\" and {willSearchTempApplicantRelative} = \"n\" and ({willSearchRelativesHaveDeathCertificate} = \"y\" or ({willSearchRelativesHaveDeathCertificate} = \"n\" and {willSearchRelativesWillGetDeathCertificate} = \"y\" and {willSearchRelativesGotDeathCertificate} = \"y\")) and {willSearchRelativesHaveDeathCertificateVoluntaryTransfer} = \"n\" and {willSearchApplicantRelativeNoGetDocuments} = \"n\" and {willSearchApplicantRelativeNoGetCourtPermission} = \"n\"",
        "title": "super done",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       }
      ],
      "visible": false,
@@ -12252,7 +12907,8 @@
        "name": "JIRAWillSearch2",
        "visible": false,
        "title": "[JIRA] Dynamically create a yes/no question for each alias, including {deceasedName}",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "yesno",
@@ -12406,7 +13062,8 @@
      "name": "question462",
      "visible": false,
      "title": "[Delete when reference not useful anymore]\n<br>\nA diligent search is doing your best to check all the places where {deceasedName} usually kept their important documents. This means checking physical places as well electronic places.\n<br>\n<ul>\n<li>Physical places include their home, safety deposit box, and their lawyer's office.</li>\n<li>Electronic places include their smart phone, computer, external hard drive, and cloud storage.</li>\n</ul>\nIf people are working together to apply for a `Representation Grant`, the `applicants` can decide which applicant searches which place.\n<br><br>\nThere is also a document called a Search of Wills Notice. This document can help reveal the location of a will.  You don't need to have gotten a Search of Wills Notice to answer \"Yes\" that you have done a diligent search. \n<br><br>\nThis document is not necessary for your diligent search yes/no but it is eventually necessary. this service will complete it at a later point. ",
-     "titleLocation": "hidden"
+     "titleLocation": "hidden",
+     "requiredErrorText": "Please press Continue"
     },
     {
      "type": "panel",
@@ -12418,7 +13075,8 @@
        "visible": false,
        "visibleIf": "{willSearchAlias} = \"nn\"",
        "title": "[JIRA] If any no,\n<br><br>\nYou need to do a will search for each alias. \n<br><br>\nClick here for a form that includes the aliases you still need to search for.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
@@ -12426,7 +13084,8 @@
        "visible": false,
        "visibleIf": "{willSearchAlias} = \"nn\"",
        "title": "[JIRA] Can we auto-generate form AND allow people to pay AND send directly to Vital Stats?",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
@@ -12434,7 +13093,8 @@
        "visible": false,
        "visibleIf": "{willSearchAlias} = \"nn\"",
        "title": "When you get your response, go back and check off \"Yes\" for the aliases that were just searched.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       }
      ]
     },
@@ -12447,14 +13107,16 @@
        "name": "willSearchExitABC",
        "visibleIf": "{willSearchApplicantDiligentSearchConfirmed} = ['yes']",
        "title": "You have done all of the searches for {deceasedName}'s name that are required. \n<br><br>\nYou will need to provide 2 photocopies of the Notice of Wills Search when you file your application. This service will remind you in a later step.\n<br><br>\nNext, you will review and finish your application.",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       },
       {
        "type": "infotext",
        "name": "willSearchExitDCE",
        "visible": false,
        "title": "[multiple will search]\nYou've done a will search for all of the spellings/aliases required.\n<br><br>\nYou will need to provide 2 copies of each of the the wills search (originals or copies ok?). \n<br><br>\nFor example, 2 copies of the first ",
-       "titleLocation": "hidden"
+       "titleLocation": "hidden",
+       "requiredErrorText": "Please press Continue"
       }
      ],
      "visible": false,
