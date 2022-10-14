@@ -45,7 +45,7 @@
     "surveyjs-widgets": "^1.9.8",
     "uuid": "^8.3.2",
     "v-runtime-template": "^1.10.0",
-    "vue": "^2.6.10",
+    "vue": "^3.2.41",
     "vue-axios": "^3.4.1",
     "vue-class-component": "7.2.6",
     "vue-cookies": "^1.8.1",
