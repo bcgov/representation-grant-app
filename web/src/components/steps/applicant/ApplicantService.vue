@@ -123,6 +123,9 @@ export default class ApplicantService extends Vue {
             value: "Port Coquitlam Law Courts (9999)", 
             text: "Port Coquitlam Law Courts"
         });
+        
+        // Sort the choices alphabetically by text
+        this.surveyJsonCopy.pages[0].elements[8]["choices"].sort((a, b) => a.text.localeCompare(b.text));
     }
     
     public addSurveyListener(){
