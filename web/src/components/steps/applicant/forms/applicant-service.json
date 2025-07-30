@@ -90,10 +90,6 @@
                         {
                             "value": "item3",
                             "text": "New Westminster"
-                        },
-                        {
-                            "value": "item4",
-                            "text": "Port Coquitlam Law Courts"
                         }
                     ],
                     "choicesByUrl": {
