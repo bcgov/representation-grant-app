@@ -117,15 +117,6 @@ export default class ApplicantService extends Vue {
         for(const location of this.locationsInfo){            
             this.surveyJsonCopy.pages[0].elements[8]["choices"].push({value:location["name"]+" ("+location["id"]+")", text: location["name"]})
         }
-        
-        // Manually add Port Coquitlam Law Courts option
-        this.surveyJsonCopy.pages[0].elements[8]["choices"].push({
-            value: "Port Coquitlam Law Courts (9999)", 
-            text: "Port Coquitlam Law Courts"
-        });
-        
-        // Sort the choices alphabetically by text
-        this.surveyJsonCopy.pages[0].elements[8]["choices"].sort((a, b) => a.text.localeCompare(b.text));
     }
     
     public addSurveyListener(){
