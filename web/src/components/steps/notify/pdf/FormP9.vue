@@ -70,7 +70,7 @@
                     </div>                    
                 </div>
     <!-- <Electronic> -->
-                <div v-if="notifyDeliveryInPerson.length>0" class="mt-2">
+                <div v-if="notifyDeliveryElectronic.length>0" class="mt-2">
                     by sending it to the following persons by e-mail, fax or other electronic means to that person:
                     <div style="margin-left:1rem; border-bottom:1px solid; width:100%;" 
                         v-for="notifyDelivery,inx in notifyDeliveryElectronic" :key="'notify-delivery-inperson-'+inx">                    
