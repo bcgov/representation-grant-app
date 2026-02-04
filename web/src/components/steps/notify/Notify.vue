@@ -83,7 +83,7 @@ export default class Notify extends Vue {
     
     public adjustSurveyForRelatedPeople(){
 
-        const relatedPeopleInfo = Vue.filter('getRelatedPeopleInfo')(this.steps[this.stPgNo.RELATIONS._StepNo], true, true, false, false, true, true);
+        const relatedPeopleInfo = Vue.filter('getRelatedPeopleInfo')(this.steps[this.stPgNo.RELATIONS._StepNo], true, true, false, true, true, true);
 
         const firstNationsName = this.getFirstNationName();
         if(firstNationsName) relatedPeopleInfo.push(firstNationsName);
