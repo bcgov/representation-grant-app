@@ -152,12 +152,12 @@ export default class PreviewP1 extends Vue {
     public checkErrorOnPages(){
         const stepsArr = _.range(0, Object.keys(this.stPgNo).length)    
         const optionalStepNames = ["NEXT"] 
-        const optionalPageNames = ["NotifyPeople", "PreviewP1", "PreviewP9"]
+        const optionalPageNames = ["NotifyPeople", "PreviewP1", "PreviewPGT", "PreviewP9"]
         for(const stepIndex of stepsArr){
             const step = this.$store.state.Application.steps[stepIndex]
             if(step.active && optionalStepNames.indexOf(step.name) == -1){
                 for(const page of step.pages){
-                    if(page.active && page.progress!=100 && optionalPageNames.indexOf(page.name) == -1){                       
+                    if(page.active && page.progress!=100 && optionalPageNames.indexOf(page.name) == -1){
                         this.$store.commit("Application/setCurrentStep", step.id);
                         this.$store.commit("Application/setCurrentStepPage", {currentStep: step.id, currentPage: page.key });                        
                         return false;

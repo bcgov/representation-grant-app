@@ -164,7 +164,7 @@ export default class PreviewP9 extends Vue {
     public checkErrorOnPages(){
         const stepsArr = _.range(0, Object.keys(this.stPgNo).length)    
         const optionalStepNames = ["NEXT"] 
-        const optionalPageNames = ["PreviewP9"]
+        const optionalPageNames = ["PreviewP1", "PreviewPGT", "NotifyPeople", "PreviewP9"]
         for(const stepIndex of stepsArr){
             const step = this.$store.state.Application.steps[stepIndex]
             if(step.active && optionalStepNames.indexOf(step.name) == -1){
